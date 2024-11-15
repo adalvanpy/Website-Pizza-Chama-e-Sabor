@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset = "UTF-8">
+        <title> PIZZARIA CHAMA E SABOR </title>
+
+    </head>
+    <body>
+        <div class="cabeca">
+            <button class="corB" onclick="document.getElementById('menuu').style.display='block'" > <div class="menu"><i class="fa-solid fa-bars"></i></div></button>
+            <button class="a0 b0" onclick="document.getElementById('endr').style.display='block'" >Opcão de entrega</button>
+            <p class="a1 b0">Clique aqui para inserir o seu endereço</p>
+            <button class="corB"><div class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></div></button>
+        </div>
+
+        <div class="logo">
+
+                <div class="logo2"></div>
+                <h3 class="cor1">PIZZARIA CHAMA E SABOR</h3>
+                <h3 class="cor1">Avenida Pedro Alvares Cabral,25,</h3>
+                <h3 class="cor1">Bulmenau - SP</h3>
+                <h3 class="cor1">HORÁRIO DE FUNCIONAMENTO:</h3>
+                <h3 class="cor1">Segunda a Domingo</h3>
+                <h3 class="cor1">18:00 ÁS 00:00</h3>
+
+
+        </div>
+        <nav>
+            <ul>
+                <li class="al1"><a href="index.html" >Pizzas tradicionais</a></li>
+                <li class="al1"><a href="pizzadoce.html">Pizzas doce</a></li>
+                <li class="al1"><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+            </nav>
+
+            <div class="pzatra">
+              <button class="bbb" onclick="document.getElementById('chocolate').style.display='block'" >
+                <div class="fei">
+                      <div>
+                        <p class="top6 top7">PIZZA CHOCOLATE</p>
+                        <p class="top6">Chocolate derretido e granulado.</p>
+                        <p class="top6"><strong>R$</strong> 35.00 A <strong>R$</strong>  75.00</p>
+                      </div>
+                      <div class="cho1"></div>
+                </div>
+              </button>
+              
+              <button class="bbb" onclick="document.getElementById('romeuej').style.display='block'" >
+                <div class="fei">
+                    <div>
+                        <p class="top6 top7">PIZZA ROMEU E JULIETA</p>
+                        <p class="top6">Queijo e Goiabada.</p>
+                        <p class="top6"><strong>R$</strong>  35.00 A <strong>R$</strong>  75.00</p>
+                      </div>
+                      <div class="rej1"></div>
+                </div>
+              </button>
+            </div>
+              
+            <div class="pzatra">
+              <button class="bbb" onclick="document.getElementById('bananac').style.display='block'" >
+                <div class="fei">
+                      <div>
+                        <p class="top6 top7">PIZZA BANANA COM CANELA</p>
+                        <p class="top6">Banana, açúcar e canela.</p>
+                        <p class="top6"><strong>R$</strong>  35.00 A <strong>R$</strong>  75.00</p>
+                      </div>
+                      <div class="ban1"></div>
+                </div>
+              </button>
+              
+              <button class="bbb" onclick="document.getElementById('brigadeiro').style.display='block'" >
+                <div class="fei">
+                    <div>
+                        <p class="top6 top7">PIZZA BRIGADEIRO</p>
+                        <p class="top6">Brigadeiro e granulado.</p>
+                        <p class="top6"><strong>R$</strong>  35.00 A <strong>R$</strong>  75.00</p>
+                      </div>
+                      <div class="bri1"></div>
+                </div>
+              </button>
+            </div>
+    
+            <div class="pzatra">
+              <button class="bbb" onclick="document.getElementById('morangoc').style.display='block'" >
+                <div class="fei">
+                      <div>
+                        <p class="top6 top7">PIZZA MORANGO COM CHOCOLATE</p>
+                        <p class="top6">Morango e chocolate derretido.</p>
+                        <p class="top6"><strong>R$</strong>  35.00 A <strong>R$</strong>  75.00</p>
+                      </div>
+                      <div class="mor1"></div>
+                </div>
+              </button>
+              
+              <button class="bbb" onclick="document.getElementById('cubana').style.display='block'" >
+                <div class="fei">
+                    <div>
+                        <p class="top6 top8">PIZZA CUBANA</p>
+                        <p class="top6">Banana, leite condensado, creme de leite,</p>
+                        <p class="top6">muçarela e canela.</p>
+                        <p class="top6"><strong>R$</strong>  35.00 A <strong>R$</strong>  75.00</p>
+                      </div>
+                      <div class="cub1"></div>
+                </div>
+              </button>
+            </div>
+
+        <!-- inicio pagina do menu -->
+        <div class="menuu" id="menuu">
+            <div class="menu1">
+                <div class="transparente"></div>
+                <div class="menu1_cont">
+                    <span onclick="document.getElementById('menuu').style.display='none'" ><i class="fa-solid fa-left-long"></i></span>
+                    <p>Menu</p>
+                </div>
+                <div class="menu2_cont">
+                    <div class="menu3"> <i class="fa-solid fa-utensils"></i> Cardapio</div>
+                    <div class="menu3" id="ctt"> <i class="fa-brands fa-whatsapp"></i> Contato</div>
+                    <div class="menu3"> <i class="fa-regular fa-star"></i>Avaliações</div>
+                    <div onclick="document.getElementById('entrarC').style.display='block'" id="entrar">Entrar</div>
+                </div>
+            </div>
+        </div>
+        <!-- fim da pagina do menu -->
+
+        <!--Inicio pizza chocolate-->
+
+    <div id="chocolate" class="doce">
+        <div class="pizzaDoce">
+            <form>
+                <div class="pai1">
+                    <div class="pai2">
+                        <button onclick="document.getElementById('chocolate').style.display='none'"  class="voltarPizza" type="button"><i class="fa-solid fa-angle-left close"></i> </button>
+                        <h2>Pizza CHOCOLATE</h2>
+                    </div>
+    
+                    <div class="filho1">
+                        <div class="filho2">
+                            <div class="foto3"></div>
+                            <p class="small_text mleft">Chocolate derretido e granulado</p>
+                            <h3 class="h3cor h32">Selecione um tamanho</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="radio" name="chocolate" id="pequena2">
+                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1">R$</strong> 35.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="chocolate" id="media2">
+                                <label for="media2">Média (até 2 sabores) <strong class="s2">R$</strong> 45.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="chocolate" id="grande2">
+                                <label for="grande2">Grande (até 3 sabores) <strong class="s3">R$</strong> 55.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="chocolate" id="familia2">
+                                <label for="familia2">Família (até 4 sabores) <strong class="s4">R$</strong> 75.00</label><br><br>
+                            </div>
+                        </div>
+    
+                        <div class="filho2">
+                            <div class="alin h3cor">
+                                <h3>Personalizar sabores</h3>
+                                <h3>Opcional</h3>
+                            </div>
+                            <h3 class="h3cor">Escolha um sabor adicional</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="checkbox" id="chocolate1" checked>
+                                <label for="chocolate1">Chocolate (principal)</label><br><br>
+    
+                                <input class="pai3" type="checkbox" id="banana1">
+                                <label for="banana1">Banana com canela</label>
+                                <p class="small_text">Banana, açúcar e canela.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="morango1">
+                                <label for="morango1">Morango com chocolate</label>
+                                <p class="small_text">Morango e chocolate derretido.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="rej1">
+                                <label for="rej1">Romeu e Julieta</label>
+                                <p class="small_text">Queijo e goiabada.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="brigadeiro1">
+                                <label for="brigadeiro1">Brigadeiro</label>
+                                <p class="small_text">Brigadeiro e granulado.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="cubana1">
+                                <label for="cubana1">Cubana</label>
+                                <p class="small_text">Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="centro">
+                        <h3 class="h30">Alguma observação?</h3>
+                        <p class="marg1">1/60</p>
+                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                    </div>
+    
+                    <div class="contador">
+                        <div class="brd1">
+                            <button class="bttm2" type="button" id="menos">–</button>
+                            <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
+                            <button class="bttm2" type="button" id="mais">+</button>
+                        </div>
+                        <div class="brd1 brd2">
+                            <button class="bttm2 brd2" type="button">
+                                <p>Adicionar</p>
+                                <input type="number" id="quantidade" class="quantidade brd2" value="35" min="35">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Fim pizza chocolate-->
+
+    <!--ROMEU E JULIETA-->
+    
+    <div id="romeuej" class="doce">
+        <div class="pizzaDoce">
+            <form>
+                <div class="pai1">
+                    <div class="pai2">
+                        <button onclick="document.getElementById('romeuej').style.display='none'"  class="voltarPizza" type="button"><i class="fa-solid fa-angle-left close"></i> </button>
+                        <h2>Pizza ROMEU E JULIETA</h2>
+                    </div>
+    
+                    <div class="filho1">
+                        <div class="filho2">
+                            <div class="romeu"></div>
+                            <p class="small_text mleft">Queijo e goiabada</p>
+                            <h3 class="h3cor h32">Selecione um tamanho</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="radio" name="romeu" id="pequena2">
+                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 35.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="romeu" id="media2">
+                                <label for="media2">Média (até 2 sabores) <strong class="s2"> R$</strong> 45.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="romeu" id="grande2">
+                                <label for="grande2">Grande (até 3 sabores) <strong class="s3"> R$</strong> 55.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="romeu" id="familia2">
+                                <label for="familia2">Família (até 4 sabores) <strong class="s4"> R$</strong> 75.00</label><br><br>
+                            </div>
+                        </div>
+    
+                        <div class="filho2">
+                            <div class="alin h3cor">
+                                <h3>Personalizar sabores</h3>
+                                <h3>Opcional</h3>
+                            </div>
+                            <h3 class="h3cor">Escolha um sabor adicional</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="checkbox" id="rej1" checked>
+                                <label for="rej1">Romeu e Julieta (principal)</label><br><br>
+    
+                                <input class="pai3" type="checkbox" id="banana1">
+                                <label for="banana1">Banana com canela</label>
+                                <p class="small_text">Banana, açúcar e canela.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="morango1">
+                                <label for="morango1">Morango com chocolate</label>
+                                <p class="small_text">Morango e chocolate derretido.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="chocolate1">
+                                <label for="chocolate1">Chocolate</label>
+                                <p class="small_text">Chocolate derretido e granulado.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="brigadeiro1">
+                                <label for="brigadeiro1">Brigadeiro</label>
+                                <p class="small_text">Brigadeiro e granulado.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="cubana1">
+                                <label for="cubana1">Cubana</label>
+                                <p class="small_text">Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="centro">
+                        <h3 class="h30">Alguma observação?</h3>
+                        <p class="marg1">1/60</p>
+                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                    </div>
+    
+                    <div class="contador">
+                        <div class="brd1">
+                            <button class="bttm2" type="button" id="menos">–</button>
+                            <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
+                            <button class="bttm2" type="button" id="mais">+</button>
+                        </div>
+                        <div class="brd1 brd2">
+                            <button class="bttm2 brd2" type="button">
+                                <p>Adicionar</p>
+                                <input type="number" id="quantidade" class="quantidade brd2" value="35" min="35">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!--FIM ROMEU E JULIETA-->
+
+    <!--BANANA COM CANELA-->
+
+    <div id="bananac" class="doce">
+        <div class="pizzaDoce">
+            <form>
+
+                <div class="pai1">
+                    <div class="pai2">
+                        <button onclick="document.getElementById('bananac').style.display='none'"  class="voltarPizza" type="button"><i class="fa-solid fa-angle-left close"></i></button>
+                        <h2>Pizza BANANA</h2>
+                    </div>
+    
+                    <div class="filho1">
+                        <div class="filho2">
+                            <div class="banana"></div>
+                            <p class="small_text mleft">Banana, açúcar e canela.</p>
+                            <h3 class="h3cor h32">Selecione um tamanho</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="radio" name="banana" id="pequena2">
+                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1">R$</strong> 35.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="banana" id="media2">
+                                <label for="media2">Média (até 2 sabores) <strong class="s2">R$</strong> 45.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="banana" id="grande2">
+                                <label for="grande2">Grande (até 3 sabores) <strong class="s3">R$</strong> 55.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="banana" id="familia2">
+                                <label for="familia2">Família (até 4 sabores) <strong class="s4">R$</strong> 75.00</label><br><br>
+                            </div>
+                        </div>
+    
+                        <div class="filho2">
+                            <div class="alin h3cor">
+                                <h3>Personalizar sabores</h3>
+                                <h3>Opcional</h3>
+                            </div>
+                            <h3 class="h3cor">Escolha um sabor adicional</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="checkbox" id="banana1" checked>
+                                <label for="banana1">Banana (principal)</label><br><br>
+    
+                                <input class="pai3" type="checkbox" id="chocolate1">
+                                <label for="chocolate1">Chocolate</label>
+                                <p class="small_text">Chocolate derretido e granulado</p><br>
+    
+                                <input class="pai3" type="checkbox" id="morango1">
+                                <label for="morango1">Morango com chocolate</label>
+                                <p class="small_text">Morango e chocolate derretido.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="rej1">
+                                <label for="rej1">Romeu e Julieta</label>
+                                <p class="small_text">Queijo e goiabada.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="brigadeiro1">
+                                <label for="brigadeiro1">Brigadeiro</label>
+                                <p class="small_text">Brigadeiro e granulado.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="cubana1">
+                                <label for="cubana1">Cubana</label>
+                                <p class="small_text">Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="centro">
+                        <h3 class="h30">Alguma observação?</h3>
+                        <p class="marg1">1/60</p>
+                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                    </div>
+    
+                    <div class="contador">
+                        <div class="brd1">
+                            <button class="bttm2" type="button" id="menos">–</button>
+                            <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
+                            <button class="bttm2" type="button" id="mais">+</button>
+                        </div>
+    
+                        <div class="brd1 brd2">
+                            <button class="bttm2 brd2" type="button">
+                                <p>Adicionar</p>
+                                <input type="number" id="quantidade" class="quantidade brd2" value="35" min="35">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <!--FIM BANANA COM CANELA-->
+
+    <!--BRIGADEIRO-->
+
+    <div id="brigadeiro" class="doce">
+        <div class="pizzaDoce">
+            <form>
+                <div class="pai1">
+                    <div class="pai2">
+                        <button onclick="document.getElementById('brigadeiro').style.display='none'" class="voltarPizza" type="button">
+                            <i class="fa-solid fa-angle-left close"></i>
+                        </button>
+                        <h2>Pizza BRIGADEIRO</h2>
+                    </div>
+    
+                    <div class="filho1">
+                        <div class="filho2">
+                            <div class="brigadeiro"></div>
+                            <p class="small_text mleft">Brigadeiro e granulado</p>
+                            <h3 class="h3cor h32">Selecione um tamanho</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="radio" name="brigadeiro" id="pequena2">
+                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1">R$ 35.00</strong></label><br><br>
+    
+                                <input class="pai3" type="radio" name="brigadeiro" id="media2">
+                                <label for="media2">Média (até 2 sabores) <strong class="s2">R$ 45.00</strong></label><br><br>
+    
+                                <input class="pai3" type="radio" name="brigadeiro" id="grande2">
+                                <label for="grande2">Grande (até 3 sabores) <strong class="s3">R$ 55.00</strong></label><br><br>
+    
+                                <input class="pai3" type="radio" name="brigadeiro" id="familia2">
+                                <label for="familia2">Família (até 4 sabores) <strong class="s4">R$ 75.00</strong></label><br><br>
+                            </div>
+                        </div>
+    
+                        <div class="filho2">
+                            <div class="alin h3cor">
+                                <h3>Personalizar sabores</h3>
+                                <h3>Opcional</h3>
+                            </div>
+                            <h3 class="h3cor">Escolha um sabor adicional</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="checkbox" id="brigadeiro1" checked>
+                                <label for="brigadeiro1">Brigadeiro (principal)</label><br><br>
+    
+                                <input class="pai3" type="checkbox" id="banana1">
+                                <label for="banana1">Banana com canela</label>
+                                <p class="small_text">Banana, açúcar e canela.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="morango1">
+                                <label for="morango1">Morango com chocolate</label>
+                                <p class="small_text">Morango e chocolate derretido.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="rej1">
+                                <label for="rej1">Romeu e Julieta</label>
+                                <p class="small_text">Queijo e goiabada.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="chocolate1">
+                                <label for="chocolate1">Chocolate</label>
+                                <p class="small_text">Chocolate derretido e granulado.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="cubana1">
+                                <label for="cubana1">Cubana</label>
+                                <p class="small_text">Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="centro">
+                        <h3 class="h30">Alguma observação?</h3>
+                        <p class="marg1">1/60</p>
+                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                    </div>
+    
+                    <div class="contador">
+                        <div class="brd1">
+                            <button class="bttm2" type="button" id="menos">–</button>
+                            <input type="number" id="quantidadeInput" class="quantidade" value="1" min="1" readonly>
+                            <button class="bttm2" type="button" id="mais">+</button>
+                        </div>
+                        <div class="brd1 brd2">
+                            <button class="bttm2 brd2" type="button">
+                                <p>Adicionar</p>
+                                <input type="number" id="quantidadePrice" class="quantidade brd2" value="35" min="35">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <!--FIM RBRIGADEIRO-->
+
+    <!--MORANGO COM CHOCOLATE-->
+
+    <div id="morangoc" class="doce">
+        <div class="pizzaDoce">
+            <form>
+                <div class="pai1">
+                    <div class="pai2">
+                        <button onclick="document.getElementById('morangoc').style.display='none'" class="voltarPizza" type="button">
+                            <i class="fa-solid fa-angle-left close"></i>
+                        </button>
+                        <h2 class="h21">Pizza MORANGO COM CHOCOLATE</h2>
+                    </div>
+    
+                    <div class="filho1">
+                        <div class="filho2">
+                            <div class="morango"></div>
+                            <p class="small_text mleft">Morango e chocolate derretido.</p>
+                            <h3 class="h3cor h32">Selecione um tamanho</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="radio" name="morango" id="pequena2">
+                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 35.00 </label><br><br>
+    
+                                <input class="pai3" type="radio" name="morango" id="media2">
+                                <label for="media2">Média (até 2 sabores) <strong class="s2"> R$</strong> 45.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="morango" id="grande2">
+                                <label for="grande2">Grande (até 3 sabores) <strong class="s3"> R$</strong> 55.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="morango" id="familia2">
+                                <label for="familia2">Família (até 4 sabores) <strong class="s4"> R$</strong> 75.00</label><br><br>
+                            </div>
+                        </div>
+    
+                        <div class="filho2">
+                            <div class="alin h3cor">
+                                <h3>Personalizar sabores</h3>
+                                <h3>Opcional</h3>
+                            </div>
+                            <h3 class="h3cor">Escolha um sabor adicional</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="checkbox" id="morango1" checked>
+                                <label for="morango1">Morango (principal)</label><br><br>
+    
+                                <input class="pai3" type="checkbox" id="banana1">
+                                <label for="banana1">Banana com canela</label>
+                                <p class="small_text">Banana, açúcar e canela.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="chocolate1">
+                                <label for="chocolate1">Chocolate</label>
+                                <p class="small_text">Chocolate derretido e granulado</p><br>
+    
+                                <input class="pai3" type="checkbox" id="rej1">
+                                <label for="rej1">Romeu e Julieta</label>
+                                <p class="small_text">Queijo e goiabada.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="brigadeiro1">
+                                <label for="brigadeiro1">Brigadeiro</label>
+                                <p class="small_text">Brigadeiro e granulado.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="cubana1">
+                                <label for="cubana1">Cubana</label>
+                                <p class="small_text">Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="centro">
+                        <h3 class="h30">Alguma observação?</h3>
+                        <p class="marg1">1/60</p>
+                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                    </div>
+    
+                    <div class="contador">
+                        <div class="brd1">
+                            <button class="bttm2" type="button" id="menos">–</button>
+                            <input type="number" id="quantidadeInput" class="quantidade" value="1" min="1" readonly>
+                            <button class="bttm2" type="button" id="mais">+</button>
+                        </div>
+                        <div class="brd1 brd2">
+                            <button class="bttm2 brd2" type="button">
+                                <p>Adicionar</p>
+                                <input type="number" id="quantidadePrice" class="quantidade brd2" value="35" min="35">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <!--FIM MORANGO COM CHOCOLATE-->
+
+    <!--CUBANA-->
+
+    <div id="cubana" class="doce">
+        <div class="pizzaDoce">
+            <form>
+                <div class="pai1">
+                    <div class="pai2">
+                        <button onclick="document.getElementById('cubana').style.display='none'" class="voltarPizza" type="button">
+                            <i class="fa-solid fa-angle-left close"></i>
+                        </button>
+                        <h2 class="h21">Pizza CUBANA</h2>
+                    </div>
+    
+                    <div class="filho1">
+                        <div class="filho2">
+                            <div class="cubana"></div>
+                            <p class="small_text mleft">Banana, leite condensado, creme de leite</p>
+                            <p class="small_text mleft"> muçarela e canela.</p>
+                            <h3 class="h3cor h32">Selecione um tamanho</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="radio" name="cubana" id="pequena2">
+                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 35.00 </label><br><br>
+    
+                                <input class="pai3" type="radio" name="cubana" id="media2">
+                                <label for="media2">Média (até 2 sabores) <strong class="s2"> R$</strong> 45.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="cubana" id="grande2">
+                                <label for="grande2">Grande (até 3 sabores) <strong class="s3"> R$</strong> 55.00</label><br><br>
+    
+                                <input class="pai3" type="radio" name="cubana" id="familia2">
+                                <label for="familia2">Família (até 4 sabores) <strong class="s4"> R$</strong> 75.00</label><br><br>
+                            </div>
+                        </div>
+    
+                        <div class="filho2">
+                            <div class="alin h3cor">
+                                <h3>Personalizar sabores</h3>
+                                <h3>Opcional</h3>
+                            </div>
+                            <h3 class="h3cor">Escolha um sabor adicional</h3>
+    
+                            <div class="filho3">
+                                <input class="pai3" type="checkbox" id="cubana1" checked>
+                                <label for="cubana1">Cubana (principal)</label><br><br>
+    
+                                <input class="pai3" type="checkbox" id="banana1">
+                                <label for="banana1">Banana com canela</label>
+                                <p class="small_text">Banana, açúcar e canela.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="morango1">
+                                <label for="morango1">Morango com chocolate</label>
+                                <p class="small_text">Morango e chocolate derretido.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="rej1">
+                                <label for="rej1">Romeu e Julieta</label>
+                                <p class="small_text">Queijo e goiabada.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="brigadeiro1">
+                                <label for="brigadeiro1">Brigadeiro</label>
+                                <p class="small_text">Brigadeiro e granulado.</p><br>
+    
+                                <input class="pai3" type="checkbox" id="chocolate1">
+                                <label for="chocolate1">Chocolate</label>
+                                <p class="small_text" style="padding-right: 200px;">Chocolate derretido e granulado</p><br>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="centro">
+                        <h3 class="h30">Alguma observação?</h3>
+                        <p class="marg1">1/60</p>
+                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                    </div>
+    
+                    <div class="contador">
+                        <div class="brd1">
+                            <button class="bttm2" type="button" id="menos">–</button>
+                            <input type="number" id="quantidadeInput" class="quantidade" value="1" min="1" readonly>
+                            <button class="bttm2" type="button" id="mais">+</button>
+                        </div>
+                        <div class="brd1 brd2">
+                            <button class="bttm2 brd2" type="button">
+                                <p>Adicionar</p>
+                                <input type="number" id="quantidadePrice" class="quantidade brd2" value="35" min="35">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <!--FIM CUBANA-->
+
+    <!--Endereco-->
+
+    <div class="endr" id="endr">
+        <div class="cont_endr">
+            <div class="cent">
+                <div class="escol" >
+                    <p>Escolha a sua opção</p>
+                    <p> <i onclick="document.getElementById('endr').style.display='none'" class="fa-solid fa-xmark close"></i> </p>
+                </div>
+                <p class="pdd2"> Entregar em</p>
+                <div class="ngr">
+                    <input class="ipt" type="text" id="search" name="query" placeholder="Informe o CEP" required>
+                    <button class="bt" type="submit">Buscar</button>
+                </div>
+                <p id="pdd">Não sei meu CEP</p>
+                <P class="pdd2">Vou até o local</P>
+                <div class="cons">
+                    <div class="ret"> <i class=" cdd fa-solid fa-bag-shopping"></i>Retirar</div>
+                    <div class="ret"> <i class=" cdd fa-solid fa-utensils"></i>Consumir</div>
+                </div>
+                <p class="pdd2">Possui endereço cadrastado?</p>
+                <p onclick="document.getElementById('entrarC').style.display='block'" class="pdd2" style="color:#21C3D9; cursor: pointer;"> Entrar</p>
+            </div>
+       </div>
+    </div>
+
+     <!--ENTRAR-->
+
+     <div id="entrarC">
+        <div class="cont_entrarC">
+            <div style="display: flex; justify-content: center;">
+                <img src="imagem/logoen.png">
+                <p onclick="document.getElementById('entrarC').style.display='none'" style="position: absolute; right: 10px; top: 0;"> <i class="fa-solid fa-xmark close"></i></p>
+            </div>
+            <form>
+                <label for="email"></label><br>
+                <input class="larg" type="text" id="user" name="user" value="usuário" required><br><br>
+
+                <label for="senha"></label><br>
+                <input class="larg"  type="password" id="senha" name="senha" value="senha" required><br><br>
+
+                <input class="larg corr"  type="submit" value="Entrar"><br><br>
+                <button class="larg" ><i class="fa-brands fa-google"></i> entrar com a conta do google</button>
+            </form>
+        </div>
+    </div>
+
+
+            <footer>
+                <p> Desenvolvido por MenúdoSabor</p>
+                    <p>© 2024 Pizzaria chama e sabor. Todos os direitos reservados.
+                    </p>
+                    
+            </footer>
+            <script src="js/pizzadoce.js"></script>
+            <script src="js/scritp.js"></script>
+    </body>
+</html>
