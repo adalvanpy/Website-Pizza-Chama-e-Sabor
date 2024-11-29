@@ -15,6 +15,7 @@ body {
 }
 .cabeca{
     display: flex;
+    flex-wrap: wrap;
     background-color: black;
     color: white;
     align-items: center;
@@ -22,32 +23,35 @@ body {
     padding: 7px;
     width: 100%;
 }
-.menu{
+
+.corB{
     background-color: black;
     color: white;
-    font-size: 60px ;
-    height: 60px;
-    width: 60px;
+    border: none;
+    font-size: 60px 
+
+}
+.menu{
+    margin-left: 10px;
+    cursor: pointer;
 }
 .lupa{
-    background-color: black;
-    color: white;
     font-size: 30px ;
-    height: 30px;
-    width: 30px;
     padding-right: 40px;
+    cursor: pointer;
     
 }
 
 .a0{
     position: absolute;
-    margin-left: 95px;
-    margin-bottom: 20px;
+    top:3%;
+    left:7%;
     padding: 2px;
-    border-radius: 100px;
+    border-radius: 5px;
+    cursor: pointer;
 
 }
-.a1{
+.cabeca p{
     position: absolute;
     margin-left: 70px;
     margin-top: 50px ;
@@ -74,11 +78,11 @@ body {
     width: 200px;
     border: solid black;
 }
-.cor1{
+.logo h3{
     color: white;
 }
 nav{
-    width: 70%;
+    width: 100%;
     justify-items: center;
     border-bottom: solid 1px;
 }
@@ -102,9 +106,14 @@ li{
 li:hover{
     background-color: skyblue;
 }
-.al1{
+ul li{
     width: 247px;
     height: 42;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
 }
 .pzatra{
     display: flex;
@@ -145,6 +154,11 @@ li:hover{
     padding-right: 0px;
     border-radius: 10px;
 
+}
+
+.fei p{
+    margin-top: 50px;
+    font-size: 15px;
 }
 .por1{
     background-image: url('../imagem/port.png');
@@ -365,44 +379,51 @@ footer{
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
+
 .foto2{
     background-image: url('../imagem/calabresa.png');
     width:315px;
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .pai2{
     display: flex;
     padding: 10px;
     border-radius: 10px 10px 0 0;
+    width: 100%;
+    gap:30px;
 
 }
 
 
 .voltarPizza{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 15px;
-    margin-left: 10px;
     border: none;
     
 
 }
-.pai3{
-    transform: scale(1.5);
+.filho3 input{
+    transform: scale(1.5);                         
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+.filho3 p {
+
+    font-size: 15px;
+    color: #888;
+
+
 }
 .h3cor{
     display: flex;
     align-items: center;
     background-color: black;
-    color: white;
+    color: white;                       
     width: 100%;
     height: 40px;
     padding: 1%;
@@ -416,41 +437,39 @@ footer{
 }
 .filho1{
     display:flex;
-    
+    width: 100%;                          
 }
 .filho2{
-border: solid 1px black;
-}
+    border: solid 1px black;
+    width: 100%;
+}                                              
+
+
 .filho3{
-    padding: 2%;
+    width: 100%;
+    padding: 2%;                   
    
 }
 .centro{
    text-align: center;
-   width: 100%;
+   width: 100%;                         
 }
 .h30{
     background-color: black;
-    color:white;
+    color:white;                       
     height: 40px;
     padding: 10px;
 }
 textarea {
     
-        width: 70%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: none; 
-        box-sizing: border-box;
+    width: 100%;             
+    padding: 10px;
+    border: 1px solid #ccc;               
+    border-radius: 4px;                        
+    resize: none; 
+    box-sizing: border-box;
 }
-.bttm{
-    background-color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    border: none;
-}
+
 .contador {
     display: flex;
     align-items: center;
@@ -471,7 +490,7 @@ textarea {
 .quantidade {
     font-size: 20px;
     width: 50px;
-    text-align: center;
+    text-align: center;    
     border: none;
 }
 .brd1{
@@ -496,38 +515,37 @@ textarea {
 .s4{
     margin-left: 40px;
 }
-.small_text{
-    font-size: 15px;
+
+small{
     color: gray;
 }
+
 .foto3{
-    background-image: url('../imagem/cho.png');
+    background-image: url('../imagem/cho.png'); 
     width:315px;
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .pai4{
     display: flex;
-    width:344px;
-    height: 33;
+    width:100%;                           
     padding: 10px;
+    gap:20px;
 }
 .centro1{
-    width:344px;
-    height: 33;
-    text-align: center;
+    width:100%;
+    text-align: center;                  
 }
 .text2{
-    width: 75%;
+    width: 100%;
     height: 40px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: none; 
-        box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;                      
+    resize: none; 
+    box-sizing: border-box;
 }
 .small_text2{
     font-size: 13px;
@@ -543,14 +561,15 @@ textarea {
     margin-left: 31px;
 }
 .colun{
-    width:344px;
-    border-top:  solid 1px black;
+    width:100%;
+    border-top:  solid 1px black;             
     padding-top: 10px;
 }
 .contador1 {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;                 
     gap: 50px;
     padding: 10px;
 }
@@ -558,9 +577,9 @@ textarea {
     background-image: url('../imagem/1lit.png');
     width:244px;
     height: 239px;
-    background-position: center;
+    background-position: center;                    
     background-size: cover;
-    margin-left: 40px;
+    margin: auto;
 }
 .bordatop{
     border-top: solid 1px black;
@@ -570,8 +589,8 @@ textarea {
     width:213px;
     height: 232px;
     background-position: center;
-    background-size: cover;
-    margin-left: 40px;
+    background-size: cover;                      
+    margin: auto;
 
 }
 .marg1{
@@ -582,8 +601,8 @@ textarea {
     width:213px;
     height: 232px;
     background-position: center;
-    background-size: cover;
-    margin-left: 60px;
+    background-size: cover;                         
+    margin: auto;
 
 
 }
@@ -592,8 +611,8 @@ textarea {
     width:213px;
     height: 232px;
     background-position: center;
-    background-size: cover;
-    margin-left: 60px;
+    background-size: cover;                        
+    margin: auto;
 
 
 }
@@ -602,18 +621,18 @@ textarea {
     width:213px;
     height: 232px;
     background-position: center;
-    background-size: cover;
-    margin-left: 60px;
+    background-size: cover;                         
+    margin: auto;
 
 
 }
 .corona1{
     background-image: url('../imagem/cor.webp');
     width:213px;
-    height: 232px;
+    height: 232px;                                 
     background-position: center;
     background-size: cover;
-    margin-left: 60px;
+    margin: auto;
 
 
 }
@@ -622,8 +641,8 @@ textarea {
     width:213px;
     height: 232px;
     background-position: center;
-    background-size: cover;
-    margin-left: 60px;
+    background-size: cover;                     
+    margin: auto;
 
 }
 .abacaxi1{
@@ -631,8 +650,8 @@ textarea {
     width:213px;
     height: 232px;
     background-position: center;
-    background-size: cover;
-    margin-left: 60px;
+    background-size: cover;                        
+    margin: auto;
 
 }
 .maracuja1{
@@ -640,8 +659,8 @@ textarea {
     width:213px;
     height: 232px;
     background-position: center;
-    background-size: cover;
-    margin-left: 60px;
+    background-size: cover;                 
+    margin: auto;
 
 }
 .redbul{
@@ -649,8 +668,8 @@ textarea {
     width:213px;
     height: 232px;
     background-position: center;
-    background-size: cover;
-    margin-left: 60px;
+    background-size: cover;                 
+    margin: auto;
 
 }
 .lata{
@@ -658,8 +677,8 @@ textarea {
     width:213px;
     height: 232px;
     background-position: center;
-    background-size: cover;
-    margin-left: 60px;
+    background-size: cover;          
+    margin: auto;
 
 }
 .refri2{
@@ -667,8 +686,8 @@ textarea {
     width:213px;
     height: 232px;
     background-position: center;
-    background-size: cover;
-    margin-left: 60px;
+    background-size: cover;               
+    margin: auto;
 
 }
 .frango{
@@ -677,8 +696,7 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .portuguesa{
     background-image: url('../imagem/port.png');
@@ -686,8 +704,7 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .atum{
     background-image: url('../imagem/atm.png');
@@ -695,8 +712,7 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .queijo{
     background-image: url('../imagem/qq.png');
@@ -704,8 +720,7 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .pepperoni{
     background-image: url('../imagem/pep.png');
@@ -713,8 +728,7 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .marguerita{
     background-image: url('../imagem/mar.png');
@@ -722,8 +736,7 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .napolitana{
     background-image: url('../imagem/nap.png');
@@ -731,8 +744,7 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .romeu{
     background-image: url('../imagem/rej.png');
@@ -740,8 +752,7 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .cubana{
     background-image: url('../imagem/cub.png');
@@ -749,8 +760,7 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .brigadeiro{
     background-image: url('../imagem/bri.png');
@@ -758,8 +768,7 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .morango{
     background-image: url('../imagem/mor.png');
@@ -767,8 +776,7 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .banana{
     background-image: url('../imagem/bec.png');
@@ -776,47 +784,19 @@ textarea {
     height: 211px;
     background-position: center;
     background-size: cover;
-    margin-right:5px;
-    margin-left: 5px;
+    margin:auto;
 }
 .bbb{
     border: none;
     background-color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
 .top1{
     margin-top: 30%;
 }
 .top2{
     margin-right: 75%;
-}
-.redb {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.4); 
-}
-
-
-        
-.cont_redb{
-
-    justify-items: center;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0%;
-    border: 1px solid #888;
-    width: 80%; 
-    max-width: 345px; 
-    position: relative;
-    top: 50%; 
-    transform: translateY(-50%); 
-    border-radius: 10px;
 }
 
 .close {
@@ -848,24 +828,23 @@ textarea {
 .conteudoCal{
     justify-items: center;
     background-color: #fefefe;
-    margin: auto; /* Ajusta a margem para centralizar */
+    margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%; /* Largura do modal */
-    max-width: 700px; /* Limita a largura máxima do modal */
+    width: 100%; 
+    max-width: 700px;
     position: relative;
     transform: translateY(-50%);
-    top: 65%; /* Move o modal para o meio da tela */ /* Ajusta a posição para que fique perfeitamente centralizado verticalmente */
+    top: 65%; 
     border-radius: 10px;
+    overflow:hidden;                        
 }
-.top5{
-    text-align: left;
-    
-    
+
+form{
+    width: 100%;
+    box-sizing: border-box;                    
 }
-.top4{
-margin-top: 45px;
-}
+
 .menu1{
     padding-top: 4px;
     background-color: #444;
@@ -874,8 +853,8 @@ margin-top: 45px;
     width: 100%;
     max-width: 260px;
     position: fixed;
-    top: 49%; /* Move o modal para o meio da tela */
-    transform: translateY(-50%); /* Ajusta a posição para que fique perfeitamente centralizado verticalmente */
+    top: 49%;
+    transform: translateY(-50%);
 }
 .menu1_cont{
     color: white;
@@ -890,7 +869,7 @@ margin-top: 45px;
     flex-direction: column;
     align-items: flex-start;
 }
-.menu3{
+.menu2_cont div{
     padding: 10px 0 0 10px;
     display: flex;
     justify-content: flex-start;
@@ -905,6 +884,16 @@ margin-top: 45px;
    
 
 }
+
+#wapp{
+    display: none;
+    background-color: rgb(107, 209, 237);
+    color: #444;
+    border-radius: 5px;
+    padding-bottom: 10px;
+
+}
+
 #entrar{
     padding-top: 10px;
     display: flex;
@@ -922,9 +911,7 @@ margin-top: 45px;
     text-decoration: none;
     cursor: pointer;
 }
-.corB{
-    border: none;
-}
+
 .menuu{
     display: none; 
     position: fixed; 
@@ -949,20 +936,20 @@ margin-top: 45px;
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.4);  
+    background-color: rgba(0, 0, 0, 0.4);          
 }
 .pizzaDoce{
     justify-items: center;
     background-color: #fefefe;
     margin: auto;
     padding: 0px;
-    border: 1px solid black;
-    width: 80%;
+    border: 1px solid #888;
+    width: 100%;
     max-width: 700px; 
     position: relative;
     transform: translateY(-50%);
     top: 65%; 
-    border-radius: 10px;
+    border-radius: 10px;                            
 
 }
 
@@ -972,7 +959,7 @@ margin-top: 45px;
     gap: 50px;
     padding:20px 10px 20px 10px;
     border-bottom: solid #A7A2A2 1px;
-    width: 100%;
+    width: 100%;                              
 }
 .cons{
     display: flex;
@@ -980,7 +967,7 @@ margin-top: 45px;
     border-bottom: 1px solid #A7A2A2;
     width: 100%;
     gap: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 10px;                          
 }
 .ret{
     display: flex;
@@ -989,66 +976,54 @@ margin-top: 45px;
     font-size: 20px;
     border: solid #A7A2A2 1px ;
     width: 30%;
-    height: 100%;
+    height: 100%;                              
 }
-.cont_endr{
-background-color: #fefefe;
-border: solid 1px black;
-text-align: center;
-font-size: 25px;
-width: 25%;
-margin-left: 70px ;/* Ajusta a margem para centralizar */
-padding: 0;
-border: 1px solid #888;
-max-width: 400px; /* Limita a largura máxima do modal */
-position: relative;
-transform: translateY(-50%);
-top: 38%; /* Move o modal para o meio da tela */ /* Ajusta a posição para que fique perfeitamente centralizado verticalmente */
-border-radius: 10px;
 
-    
-    
+.cont_endr{
+    background-color: #fefefe;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+    width: 30%;
+    height: 70%;
+    margin: auto;
+    padding: 0;
+    position: relative;                             
+    top: 10%; 
+    border-radius: 10px; 
+    overflow: hidden; 
+
 }
+
+
 .ngr{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     padding: 10px
 }
 .cent{
     justify-items: center;
 }
 #pdd{
-    color: #21C3D9;
-    border-bottom: solid #A7A2A2 1px;
-    padding: 10px;
+    font-size: 12px;
+    color: #888;                    
     width:100%;
 }
-.ipt{
-    width: 90%;
-    height: 30px;
-    border-radius: 10px 0 0 10px;
+.ngr input{
+    width: 100%;
+    height: 50px;                            
     border: solid 1px #a7a2a2
 }
 .pdd2{
-    padding: 10px;
+    padding: 10px;                         
 }
 .cdd{
-    font-size: 40px;
+    font-size: 40px;                     
     padding-top: 20px;
     padding-bottom: 10px ;
     
-}
-.bt{
-    color: white;
-    font-weight: bold;
-    background-color: black;
-    height: 30px;
-    width: 20%;
-    border: 1px solid black;
-    border-radius: 0 10px 10px 0;
-    overflow-wrap: break-word;
 }
 .endr{
     display: none; 
@@ -1060,14 +1035,6 @@ border-radius: 10px;
     height: 100%; 
     overflow: auto; 
     background-color: rgba(0, 0, 0, 0.4);
-}
-.top7{
-    margin-top: 60px;
-
-}
-.top6{
-    text-align: left;
-
 }
 
 .top8{
@@ -1108,8 +1075,8 @@ border-radius: 10px;
     margin: auto; 
     padding: 0%;
     border: 1px solid white;
-    width: 80%; 
-    max-width: 345px; 
+    width: 100%;                        
+    max-width: 400px;                 
     position: relative;
     top: 50%; 
     transform: translateY(-50%); 
@@ -1122,8 +1089,8 @@ border-radius: 10px;
     margin: auto; 
     padding: 0%;
     border: 1px solid #888;
-    width: 80%; 
-    max-width: 345px; 
+    width: 100%;                          
+    max-width: 400px; 
     position: relative;
     top: 50%; 
     transform: translateY(-50%); 
@@ -1150,14 +1117,14 @@ border-radius: 10px;
 .cont_abacaxi{
     justify-items: center;
     background-color: #fefefe;
-    margin: auto; /* Ajusta a margem para centralizar */
+    margin: auto;
     padding: 0%;
     border: 1px solid #888;
-    width: 80%; /* Largura do modal */
-    max-width: 345px; /* Limita a largura máxima do modal */
+    width: 100%;                                
+    max-width: 400px; 
     position: relative;
-    top: 60%; /* Move o modal para o meio da tela */
-    transform: translateY(-50%); /* Ajusta a posição para que fique perfeitamente centralizado verticalmente */
+    top: 60%;
+    transform: translateY(-50%); 
     border-radius: 10px;
 }
 #entrarC{
@@ -1177,20 +1144,21 @@ background-color: #fefefe;
 border: solid 1px black;
 text-align: center;
 font-size: 25px;
-width: 428px;
+width: 30%;
+height: 70%;
 margin:auto;
 padding-top: 10px;
 padding-bottom: 30px;
 border: 1px solid #888;
-max-width: 500px; /* Limita a largura máxima do modal */
+max-width: 500px;
 position: relative;
-transform: translateY(-50%);
-top: 50%; /* Move o modal para o meio da tela */ /* Ajusta a posição para que fique perfeitamente centralizado verticalmente */
+transform: translateY(-50%);                      
+top: 45%; 
 border-radius: 10px;
 
 }
 .larg{
-    width: 368px;
+    width: 70%;
     padding: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
@@ -1203,4 +1171,508 @@ border-radius: 10px;
 .mleft{
 
     margin-left: 10px;
+}
+
+.RS{
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 20px;    
+  
+
+}
+
+.pedid{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.cont_pedid{
+    background-color:#fefefe ;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: flex;
+    margin: auto ;
+    position: relative;
+    align-items: center;
+    top: 10%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.cont_1{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    border: solid 1px rgb(228, 225, 220);
+    gap: 110px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+.cont_2{
+   display: flex;
+   width: 100%;
+   height: 100%;
+   max-height: 400px;
+   flex-direction: column;
+   border: solid 1px rgb(228, 225, 220);
+   border-radius: 5px;
+   padding: 10px;
+   align-items: center;
+   gap:10px;
+  
+   
+}
+
+.pedidos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.pedidos p{
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+    height: auto;
+    border: solid 1px rgb(228, 225, 220);
+    padding: 10px;
+
+}
+
+.pedidos button{
+    width: auto;
+    display: none;
+    font-size: 10px;
+    border-radius: 5px;
+    height: auto;
+    border: solid 1px rgb(228, 225, 220);
+    padding: 10px;
+
+}
+
+.pedidos button:hover{
+    background-color: #6fefa0;
+    color:rgb(150, 147, 147);
+
+}
+
+
+
+
+.btEeC{
+    display: flex;
+    gap:20px;
+}
+
+.btEeC button{
+    font-size: 10px;
+    border-radius: 5px;
+    height: 40px;
+    border: solid 1px rgb(228, 225, 220);
+    padding: 10px;
+    
+}
+
+
+.conf:hover{
+    background-color: #6fefa0;
+    color:rgb(150, 147, 147);
+    
+}
+.excl:hover{
+    background-color: red;
+    color:white;
+}
+
+.cont_busca{
+    width: 20%;
+    position:absolute;
+    top:5%;
+    right: 6%;
+    display: none;
+}
+
+.cont_busca input{
+    height: 30px;
+    width: 100%;
+    border-radius:5px ;
+}
+
+input,textarea:focus{
+
+    outline: none;
+
+   
+}
+
+.regPedid{
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4);
+
+
+}
+
+.regPedido{
+    width: 30%;
+    margin: auto;
+    background-color: rgb(245, 235, 216);
+    position: relative;
+    height: 80%;
+    top:5%;
+    padding: 5px;
+    border-radius: 5px;
+    
+    
+}
+
+.regPedido div{
+    background-color: #fefefe;
+    width: auto;
+    border: solid 1px orange;
+    height: 100%;
+}
+
+.regPedido span{
+    position: absolute;
+    right: 5%;
+    font-size: 25px;
+}
+
+.regPedido p{
+    text-align: center;
+}
+
+.pagamento{
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4);
+
+
+}
+
+.paga_content{
+    width: 30%;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    height: 60%;
+    top:20%;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.paga_content input{
+    transform: scale(2); 
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.paga_content p{
+    padding-bottom: 20px;
+  
+}
+
+.paga_content textarea{
+    height: 40px;
+  
+}
+
+
+.paga_content button{
+    position: absolute;
+    bottom: 30%;
+    top:63%;
+    right: 34%;
+    border-radius: 5px;
+    border: 1px;
+    cursor: pointer;
+    height: 50px;
+    padding: 10px;
+}
+.paga_content img{
+    position: absolute;
+    bottom: 6%;
+    right: 38%;
+}
+
+.cent button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px;
+    cursor: pointer;
+}
+
+.nc{
+    display:none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nc form{
+    width: 30%;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    height: 45%;
+    top:30%;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nc button{
+    position: absolute;
+    bottom: 30%;
+    top:45%;
+    right: 34%;
+    border-radius: 5px;
+    border: 1px;
+    cursor: pointer;
+    height: 50px;
+    padding: 10px;
+}
+
+.nc div{
+    display: flex;
+    flex-direction: column;
+}
+
+.nc img{
+    position: absolute;
+    bottom: 0;
+    top:70%;
+    right: 38%;
+}
+
+.vermelho{
+    color:red;
+    font-size: 15px;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) { 
+
+    .nc button{
+        top:20%;
+       
+       
+    }
+    
+    .nc img{
+        position: absolute;
+        top:30%;
+    
+    }
+
+    .paga_content button{
+        top:40%;
+        right: 35%;
+        
+    }
+    .paga_content img{
+        position: absolute;
+        top:50%;
+        right: 40%;
+    }
+
+    .paga_content{
+        width: 100%;
+        height: 100%;
+        top: 0;
+
+    }
+
+    .nc form{
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+       
+
+    .regPedido{
+        width: 100%;
+        top:0;
+        height: 100%;
+        
+        
+        
+    }
+
+    .menu{
+        font-size: 30px;
+    }
+
+    .b0, .lupa{
+        display:none;
+    }
+
+
+    ul{
+        transform: scale(0.9);
+        flex-wrap: wrap;
+        padding: 0%;
+
+    }
+    .bebidas{
+        transform: scale(0.9);
+        flex-wrap: wrap;
+        padding: 0%;
+
+    }
+
+
+    .pzatra{
+        transform: scale(0.9);
+        flex-wrap: wrap;
+        padding: 0%;
+      }
+
+      .conteudoCal, .pizzaDoce{
+        
+            font-size: 20px; 
+            width: 100%; 
+            height: 100%; 
+            margin: 0;
+            padding: 0;
+            position:fixed ;
+            top: 50%; 
+            left: 0;
+            overflow: auto;
+      }
+    
+
+    .filho1, .filho2, .filho3, .colun, .centro1 {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .pai3 {
+        transform: scale(1.2); 
+        margin-right: 5px;
+    }
+
+    .mleft{
+        margin:auto;
+
+    }
+
+
+
+
+    .foto2, .frango, .portuguesa, .pepperoni, .marguerita, .atum, .queijo, .napolitana,
+    .foto4,.romeu,.cubana,.brigadeiro,.morango,.banana
+    {
+        margin: auto;
+    }
+
+    .foto4, .laranja1, .heinecken1,.budwiser1,.litrinho1,.corona1,.limao1,
+    .abacaxi1,.maracuja1,.redbul,.lata,.refri2{
+
+        margin:auto;
+    }
+
+    .cont_entrarC{
+
+        font-size: 20px;
+        width: 100%; 
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: fixed; 
+        top: 50%; 
+        left: 0; 
+        overflow: hidden;
+
+    }
+
+
+    .cont_endr{
+
+            font-size: 20px;
+            width: 100%;
+            height: 100%; 
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+           
+            
+    }
+
+    .cont_refr1l, .cont_cerveja{
+            width: 100%; 
+            height: 100%;
+            max-width: 500px;
+            top: 50%; 
+            
+    }
+        
+    .cont_abacaxi{
+              
+            
+            width: 100%; 
+            max-width: 500px; 
+            top: 56%; 
+
+    }
+
+    .cont_pedid{
+       top:0%;
+    }
+    
+    .cont_1{
+        gap: 170px;
+       
+    }
+          
+        
+
+        
+
 }

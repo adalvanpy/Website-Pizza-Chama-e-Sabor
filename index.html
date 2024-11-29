@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -9,125 +9,153 @@
     </head>
     <body>
         <div class="cabeca">
-            <button class="corB" onclick="document.getElementById('menuu').style.display='block'"> <div class="menu"><i class="fa-solid fa-bars"></i></div></button>
+            <button class="corB" onclick="document.getElementById('menuu').style.display='block'"> <span class="menu"><i class="fa-solid fa-bars"></i></span></button>
             <button class="a0 b0" onclick="document.getElementById('endr').style.display='block'">Opcão de entrega</button>
-            <p class="a1 b0">Clique aqui para inserir o seu endereço</p>
-            <button class="corB"><div class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></div></button>
+            <p class="b0">Clique aqui para inserir o seu endereço</p>
+            <div id="busca" class="cont_busca">
+                <form>
+                    <input type="search" placeholder="O que esta pensando?">
+                </form>
+            </div>
+            <button id="lupa" class="corB"><span class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></span></button>
         </div>
 
             <div class="logo">
 
                 <div class="logo2"></div>
-                <h3 class="cor1">PIZZARIA CHAMA E SABOR</h3>
-                <h3 class="cor1">Avenida Pedro Alvares Cabral,25,</h3>
-                <h3 class="cor1">Bulmenau - SP</h3>
-                <h3 class="cor1">HORÁRIO DE FUNCIONAMENTO:</h3>
-                <h3 class="cor1">Segunda a Domingo</h3>
-                <h3 class="cor1">18:00 ÁS 00:00</h3>
+                <h3 >PIZZARIA CHAMA E SABOR</h3>
+                <h3 >Avenida Pedro Alvares Cabral,25,</h3>
+                <h3 >Bulmenau - SP</h3>
+                <h3 >HORÁRIO DE FUNCIONAMENTO:</h3>
+                <h3 >Segunda a Domingo</h3>
+                <h3 >18:00 ÁS 00:00</h3>
             </div>
         <nav>
             <ul>
-                <li class="al1"><a href="index.html" >Pizzas tradicionais</a></li>
-                <li class="al1"><a href="pizzadoce.html">Pizzas doce</a></li>
-                <li class="al1"><a href="bebidas.html">Bebidas</a></li>
+                <li ><a href="index.html" >Pizzas tradicionais</a></li>
+                <li ><a href="pizzadoce.html">Pizzas doce</a></li>
+                <li ><a href="bebidas.html">Bebidas</a></li>
             </ul>
         </nav>
       
         <div class="pzatra">
-            <button class="bbb" onclick="document.getElementById('call').style.display='block'">
+            <div class="bbb" onclick="document.getElementById('call').style.display='block'">
                 <div class="fei">
-                  <div>
-                    <p class="top5 top4">PIZZA CALABRESA</p>
-                    <p>Queijo muçarela, calabresa em rodelas,</p>
-                    <p class="top5">cebola, tomate molho e orégano.</p>
-                    <p class="top5"> <strong>R$</strong>30.00 A <strong>R$</strong>  70.00</p>
-                  </div>
+                   <p>PIZZA CALABRESA<br>
+                     <small>
+                        Muçarela, calabresa em rodelas,
+                        cebola, tomate molho e orégano.<br>
+                     </small>
+                     <strong>R$</strong>30.00 A <strong>R$</strong>  70.00
+                   </p>
                   <div class="cal1"></div>
                 </div>
-           </button>
+            </div>
            
-           <button class="bbb" onclick="document.getElementById('frango').style.display='block'">
-            <div class="fei">
-                <div>
-                    <p class="top6 top7">PIZZA FRANGO COM CATPIRY</p>
-                    <p class="top6">Queijo muçarela, frango desfiado e catupiry</p>
-                    <p class="top6"><strong>R$</strong> 30.00 A <strong>R$</strong> 70.00</p>
+            <div class="bbb" onclick="document.getElementById('frango').style.display='block'">
+               <div class="fei">
+                  <div>
+                    <p>PIZZA FRANGO COM CATPIRY<br>
+                      <small>
+                       Queijo muçarela, frango desfiado e catupiry<br>
+                        </small>
+                       <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
+                    </p>
                   </div>
                   <div class="fra1"></div>
+               </div>
             </div>
-           </button>
         </div>
        
         <div class="pzatra">
-           <button class="bbb" onclick="document.getElementById('portuguesa').style.display='block'">
-            <div class="fei">
+           <div class="bbb" onclick="document.getElementById('portuguesa').style.display='block'">
+              <div class="fei">
                   <div>
-                    <p class="top5 top4">PIZZA PORTUGUESA</p>
-                    <p>Queijo muçarela, presunto, ovo cozido, cebola,</p>
-                    <p class="top5">ervilha, azetona e oregano.</p>
-                    <p class="top5"><strong>R$</strong> 30.00 A <strong>R$</strong> 70.00</p>
+                    <p>PIZZA PORTUGUESA<br>
+                        <small>
+                       Muçarela, presunto, ovo cozido, cebola,
+                       ervilha, azetona e oregano.<br>
+                        </small>
+                       <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
+                    </p>
                   </div>
                   <div class="por1"></div>
-            </div>
-           </button>
+               </div>
+           </div>
            
-           <button class="bbb" onclick="document.getElementById('pepperoni').style.display='block'">
-            <div class="fei">
-                <div>
-                    <p class="top6 top7">PIZZA PEPPERONI</p>
-                    <p class="top6">Queijo muçarela, peppernoi e oregano.</p>
-                    <p class="top6"><strong>R$</strong> 30.00 A <strong>R$</strong> 70.00</p>
+           <div class="bbb" onclick="document.getElementById('pepperoni').style.display='block'">
+              <div class="fei">
+                  <div>
+                    <p>PIZZA PEPPERONI<br>
+                        <small>
+                       Queijo muçarela, peppernoi e oregano.<br>
+                        </small>
+                       <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
+                    </p>
                   </div>
                   <div class="pep1"></div>
-            </div>
+              </div>
+           </div>
         </div>
 
         <div class="pzatra">
-           <button class="bbb" onclick="document.getElementById('marguerita').style.display='block'">
-            <div class="fei">
+           <div class="bbb" onclick="document.getElementById('marguerita').style.display='block'">
+               <div class="fei">
                   <div>
-                    <p class="top6 top7">PIZZA MARGUERITA</p>
-                    <p class="top6">Queijo muçarela, tomate, manjericão e oregano.</p>
-                    <p class="top6"><strong>R$</strong> 30.00 A <strong>R$</strong> 70.00</p>
+                    <p>PIZZA MARGUERITA<br>
+                        <small>
+                       Queijo muçarela, tomate, manjericão e oregano.<br>
+                        </small>
+                       <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
+                    </p>
                   </div>
                   <div class="mar1"></div>
-            </div>
-           </button>
+               </div>
+           </div>
            
-           <button class="bbb" onclick="document.getElementById('atum').style.display='block'">
-            <div class="fei">
-                <div>
-                    <p class="top6 top7">PIZZA ATUM</p>
-                    <p class="top6">Queijo muçarela, atum, cebola e oregano.</p>
-                    <p class="top6"><strong>R$</strong> 30.00 A <strong>R$</strong> 70.00</p>
+           <div class="bbb" onclick="document.getElementById('atum').style.display='block'">
+              <div class="fei">
+                  <div>
+                    <p>PIZZA ATUM<br>
+                    <small>
+                       Queijo muçarela, atum, cebola e oregano.<br>
+                    </small>
+                       <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
+                    </p>
                   </div>
                   <div class="at1"></div>
+              </div>
             </div>
-           </button>
         </div>
 
         <div class="pzatra">
-           <button class="bbb" onclick="document.getElementById('quatroqueijo').style.display='block'">
-            <div class="fei">
+           <div class="bbb" onclick="document.getElementById('quatroqueijo').style.display='block'">
+               <div class="fei">
                   <div>
-                    <p class="top6 top7">PIZZA QUATRO QUEIJOS</p>
-                    <p class="top6">Queijo muçarela, gorgonzola, permesão e catupiry.</p>
-                    <p class="top6"><strong>R$</strong> 30.00 A <strong>R$</strong> 70.00</p>
+                    <p>PIZZA QUATRO QUEIJOS<br>
+                        <small>
+                       Queijo muçarela, gorgonzola, permesão e catupiry.<br>
+                        </small>
+                       <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
+                    </p>
                   </div>
                   <div class="qq1"></div>
+              </div>
             </div>
-           </button>
 
-           <button class="bbb" onclick="document.getElementById('napolitana').style.display='block'">
-            <div class="fei">
-                <div>
-                    <p class="top6 top7"> PIZZA NAPOLITANA</p>
-                    <p class="top6">Queijo muçarela, tomate, alho e oregano.</p>
-                    <p class="top6"><strong>R$</strong> 30.00 A <strong>R$</strong> 70.00</p>
+           <div class="bbb" onclick="document.getElementById('napolitana').style.display='block'">
+              <div class="fei">
+                  <div>
+                    <p>PIZZA NAPOLITANA<br>
+                        <small>
+                       Queijo muçarela, tomate, alho e oregano.<br>
+                        </small>
+                       <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
+                    </p>
                   </div>
                   <div class="nap1"></div>
+              </div> 
             </div>
-           </button>
         </div>
       
 
@@ -136,13 +164,15 @@
             <div class="menu1">
                 <div class="transparente"></div>
                 <div class="menu1_cont">
-                    <span onclick="document.getElementById('menuu').style.display='none'"><i class="fa-solid fa-left-long"></i></span>
+                    <span class="cursor" onclick="document.getElementById('menuu').style.display='none'"><i class="fa-solid fa-left-long"></i></span>
                     <p>Menu</p>
                 </div>
                 <div class="menu2_cont">
-                    <div class="menu3"> <i class="fa-solid fa-utensils"></i> Cardapio</div>
-                    <div class="menu3" id="ctt"> <i class="fa-brands fa-whatsapp"></i> Contato</div>
-                    <div class="menu3"> <i class="fa-regular fa-star"></i>Avaliações</div>
+                    <div class="cursor">  <i class="fa-solid fa-utensils"></i> <a href="index.html" >Cardapio</a></div>
+                    <div class="cursor"  id="ctt"> <i class="fa-brands fa-whatsapp"></i> Contato</div>
+                    <div id="wapp"> 77 99993333 </div>
+                    <div class="cursor" onclick="document.getElementById('regPedid').style.display= 'block'"> <i class="fa-solid fa-book"></i>Meus pedidos</div>
+                    <div class="cursor" > <i class="fa-regular fa-star"></i>Avaliações</div>
                     <div class="azul" onclick="document.getElementById('entrarC').style.display='block'" id="entrar">Entrar</div>
                 </div>
             </div>
@@ -168,22 +198,22 @@
                     <div class="filho1">
                         <div class="filho2">
                             <div class="foto2"></div>
-                            <p class="small_text mleft">Queijo muçarela, calabresa em rodelas, cebola</p>
-                            <p class="small_text mleft">Tomate, molho e orégano.</p>
+                            <p class="mleft">Queijo muçarela, calabresa em rodelas, cebola
+                            tomate, molho e orégano.</p>
                             <h3 class="h3cor h32">Selecione um tamanho</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="radio" name="calabresa" id="pequena1">
-                                <label for="pequena1">Pequena (até 2 sabores) <strong class="s1">R$</strong> 30.00</label><br><br>
+                                <input onclick="valorCAL('30')"   type="radio" name="calabresa" id="bresa1">
+                                <label for="bresa1">Pequena (até 2 sabores) <strong class="s1">R$</strong> 30.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="calabresa" id="media1">
-                                <label for="media1">Média (até 2 sabores) <strong class="s2">R$</strong> 40.00</label><br><br>
+                                <input onclick="valorCAL('40')"   type="radio" name="calabresa" id="bresa2">
+                                <label for="bresa2">Média (até 2 sabores) <strong class="s2">R$</strong> 40.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="calabresa" id="grande1">
-                                <label for="grande1">Grande (até 3 sabores) <strong class="s3">R$</strong> 50.00</label><br><br>
+                                <input onclick="valorCAL('50')"   type="radio" name="calabresa" id="bresa3">
+                                <label for="bresa3">Grande (até 3 sabores) <strong class="s3">R$</strong> 50.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="calabresa" id="familia1">
-                                <label for="familia1">Família (até 4 sabores) <strong class="s4">R$</strong> 70.00</label><br><br>
+                                <input onclick="valorCAL('70')"   type="radio" name="calabresa" id="bresa4">
+                                <label for="bresa4">Família (até 4 sabores) <strong class="s4">R$</strong> 70.00</label><br><br>
                             </div>
                         </div>
     
@@ -195,36 +225,36 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="calabresa1" checked>
-                                <label for="calabresa1">Calabresa (principal)</label><br><br>
+                                <input onclick="receberCAL('CALABRESA,', 'calabresa1')"    type="checkbox" id="calabresa1">
+                                <label for="calabresa1">Calabresa ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
     
-                                <input class="pai3" type="checkbox" id="portuguesa1">
+                                <input onclick="receberCAL('PORTUGUESA,', 'portuguesa1')"   type="checkbox" id="portuguesa1">
                                 <label for="portuguesa1">Portuguesa</label>
-                                <p class="small_text">Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
+                                <p >Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
     
-                                <input class="pai3" type="checkbox" id="marguerita1">
+                                <input onclick="receberCAL('MARGUERITA,', 'marguerita1')"  type="checkbox" id="marguerita1">
                                 <label for="marguerita1">Marguerita</label>
-                                <p class="small_text">Queijo muçarela, pepperoni e orégano.</p><br>
+                                <p >Queijo muçarela, pepperoni e orégano.</p><br>
     
-                                <input class="pai3" type="checkbox" id="queijo1">
+                                <input onclick="receberCAL('QUATRO QUEIJO,', 'queijo1')"   type="checkbox" id="queijo1">
                                 <label for="queijo1">Quatro queijos</label>
-                                <p class="small_text">Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
+                                <p >Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
     
-                                <input class="pai3" type="checkbox" id="frango1">
+                                <input onclick="receberCAL('FRANGO COM CATUPIRY,', 'frango1')"   type="checkbox" id="frango1">
                                 <label for="frango1">Frango com catupiry</label>
-                                <p class="small_text">Queijo muçarela, frango desfiado e catupiry.</p><br>
+                                <p >Queijo muçarela, frango desfiado e catupiry.</p><br>
     
-                                <input class="pai3" type="checkbox" id="pepperoni1">
+                                <input onclick="receberCAL('PEPPERONI,', 'pepperoni1')"   type="checkbox" id="pepperoni1">
                                 <label for="pepperoni1">Pepperoni</label>
-                                <p class="small_text">Queijo muçarela, pepperoni e orégano.</p><br>
+                                <p >Queijo muçarela, pepperoni e orégano.</p><br>
     
-                                <input class="pai3" type="checkbox" id="atum1">
+                                <input onclick="receberCAL('ATUM,', 'atum1')"  type="checkbox" id="atum1">
                                 <label for="atum1">Atum</label>
-                                <p class="small_text">Queijo muçarela, atum, cebola e orégano.</p><br>
+                                <p >Queijo muçarela, atum, cebola e orégano.</p><br>
     
-                                <input class="pai3" type="checkbox" id="napolitana1">
+                                <input onclick="receberCAL('NAPOLITANA,', 'napolitana1')"  type="checkbox" id="napolitana1">
                                 <label for="napolitana1">Napolitana</label>
-                                <p class="small_text">Queijo muçarela, tomate, alho e orégano.</p><br>
+                                <p >Queijo muçarela, tomate, alho e orégano.</p><br>
                             </div>
                         </div>
                     </div>
@@ -232,21 +262,23 @@
                     <div class="centro">
                         <h3 class="h30">Alguma observação?</h3>
                         <p class="marg1">1/60</p>
-                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                        <textarea id="mensagem1" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                     </div>
     
                     <div class="contador">
                         <div class="brd1">
-                            <button class="bttm2" type="button" id="menos">–</button>
-                            <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                            <button class="bttm2" type="button" id="mais">+</button>
+                            <button onclick="menosCAL()"  class="bttm2" type="button" id="menos1"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" id="ccalabresa" class="quantidade" value="1" min="1" readonly>
+                            <button onclick="maisCAL()" class="bttm2" type="button" id="mais1"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="brd1 brd2">
-                            <button class="bttm2 brd2" type="button">
+                            <div onclick="irPedidosCAL()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                            </button>
+                                <div class="RS"><input type="number" id="ccalabresa2" class="quantidade brd2" value="30" min="30" readonly>
+                                <p><strong>R$</strong></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -271,21 +303,21 @@
                         <div class="filho1">
                             <div class="filho2">
                                 <div class="frango"></div>
-                                <p class="small_text mleft">Queijo muçarela, frango desfiado e catupiry.</p><br>
+                                <p class=" mleft">Queijo muçarela, frango desfiado e catupiry.</p><br>
                                 <h3 class="h3cor h32">Selecione um tamanho</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="radio" name="frango" id="pequena1">
-                                    <label for="pequena1">Pequena (até 2 sabores) <strong class="s1">R$</strong> 30.00</label><br><br>
+                                    <input onclick="valorFC('30')"   type="radio" name="frango" id="gro1">
+                                    <label for="gro1">Pequena (até 2 sabores) <strong class="s1">R$</strong> 30.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="frango" id="media1">
-                                    <label for="media1">Média (até 2 sabores) <strong class="s2">R$</strong> 40.00</label><br><br>
+                                    <input onclick="valorFC('40')"   type="radio" name="frango" id="gro2">
+                                    <label for="gro2">Média (até 2 sabores) <strong class="s2">R$</strong> 40.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="frango" id="grande1">
-                                    <label for="grande1">Grande (até 3 sabores) <strong class="s3">R$</strong> 50.00</label><br><br>
+                                    <input onclick="valorFC('50')"   type="radio" name="frango" id="gro3">
+                                    <label for="gro3">Grande (até 3 sabores) <strong class="s3">R$</strong> 50.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="frango" id="familia1">
-                                    <label for="familia1">Família (até 4 sabores) <strong class="s4">R$</strong> 70.00</label><br><br>
+                                    <input onclick="valorFC('70')"   type="radio" name="frango" id="gro4">
+                                    <label for="gro4">Família (até 4 sabores) <strong class="s4">R$</strong> 70.00</label><br><br>
                                 </div>
                             </div>
         
@@ -297,37 +329,37 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="checkbox" id="frango1" checked>
-                                    <label for="frango1">Frango (principal)</label><br><br>
+                                    <input onclick="receberFC('FRANGO COM CATUPIRY,', 'frango2')"  type="checkbox" id="frango2" >
+                                    <label for="frango2">Frango ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
         
-                                    <input class="pai3" type="checkbox" id="portuguesa1">
-                                    <label for="portuguesa1">Portuguesa</label>
-                                    <p class="small_text">Queijo muçarela, presunto, ovo cozido,cebola,ervilha,azeitona e orégano.</p><br>
+                                    <input onclick="receberFC('PORTUGUESA,', 'portuguesa2')"  type="checkbox" id="portuguesa2">
+                                    <label for="portuguesa2">Portuguesa</label>
+                                    <p >Queijo muçarela, presunto, ovo cozido,cebola,ervilha,azeitona e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="marguerita1">
-                                    <label for="marguerita1">Marguerita</label>
-                                    <p class="small_text">Queijo muçarela, pepperoni e orégano.</p><br>
+                                    <input onclick="receberFC('MARGUERITA,', 'marguerita2')"  type="checkbox" id="marguerita2">
+                                    <label for="marguerita2">Marguerita</label>
+                                    <p >Queijo muçarela, pepperoni e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="queijo1">
-                                    <label for="queijo1">Quatro queijos</label>
-                                    <p class="small_text">Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
+                                    <input onclick="receberFC('QUATRO QUEIJO,', 'queijo2')"  type="checkbox" id="queijo2">
+                                    <label for="queijo2">Quatro queijos</label>
+                                    <p >Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="calabresa">
-                                    <label for="calabresa">Calabresa</label>
-                                    <p class="small_text">Queijo muçarela, calabresa em rodelas, cebola</p>
-                                    <p class="small_text">Tomate, molho e orégano.</p>
+                                    <input onclick="receberFC('CALABRESA,', 'calabresa2')"  type="checkbox" id="calabresa2">
+                                    <label for="calabresa2">Calabresa</label>
+                                    <p >Queijo muçarela, calabresa em rodelas, cebola</p>
+                                    <p >Tomate, molho e orégano.</p>
         
-                                    <input class="pai3" type="checkbox" id="pepperoni1">
-                                    <label for="pepperoni1">Pepperoni</label>
-                                    <p class="small_text">Queijo muçarela, pepperoni e orégano.</p><br>
+                                    <input onclick="receberFC('PEPPERONI,', 'pepperoni2')"  type="checkbox" id="pepperoni2">
+                                    <label for="pepperoni2">Pepperoni</label>
+                                    <p >Queijo muçarela, pepperoni e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="atum1">
-                                    <label for="atum1">Atum</label>
-                                    <p class="small_text">Queijo muçarela, atum, cebola e orégano.</p><br>
+                                    <input onclick="receberFC('ATUM,', 'atum2')"  type="checkbox" id="atum2">
+                                    <label for="atum2">Atum</label>
+                                    <p >Queijo muçarela, atum, cebola e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="napolitana1">
-                                    <label for="napolitana1">Napolitana</label>
-                                    <p class="small_text">Queijo muçarela, tomate, alho e orégano.</p><br>
+                                    <input onclick="receberFC('NAPOLITANA,', 'napolitana2')"  type="checkbox" id="napolitana2">
+                                    <label for="napolitana2">Napolitana</label>
+                                    <p >Queijo muçarela, tomate, alho e orégano.</p><br>
                                 </div>
                             </div>
                         </div>
@@ -335,22 +367,24 @@
                         <div class="centro">
                             <h3 class="h30">Alguma observação?</h3>
                             <p class="marg1">1/60</p>
-                            <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                            <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                            <textarea id="mensagem2" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                            <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                         </div>
         
                         <div class="contador">
                             <div class="brd1">
-                                <button class="bttm2" type="button" id="menos">–</button>
-                                <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                <button class="bttm2" type="button" id="mais">+</button>
+                                <button onclick="menosFC()"  class="bttm2" type="button" id="menos2"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="ffrango" class="quantidade" value="1" min="1" readonly>
+                                <button onclick="maisFC()" class="bttm2" type="button" id="mais2"><i class="fa-solid fa-plus"></i></button>
                             </div>
         
                             <div class="brd1 brd2">
-                                <button class="bttm2 brd2" type="button">
+                                <div onclick="irPedidosFC()"  class="bttm2 brd2">
                                     <p>Adicionar</p>
-                                    <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                </button>
+                                    <div class="RS"><input type="number" id="ffrango2" class="quantidade brd2" value="30" min="30" readonly>
+                                    <p><strong>R$</strong></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -379,22 +413,22 @@
                         <div class="filho1">
                             <div class="filho2">
                                 <div class="portuguesa"></div>
-                                <p class="small_text mleft">Queijo muçarela, presunto, ovo cozido,</p>
-                                <p class="small_text mleft">cebola, ervilha, azeitona e orégano.</p><br>
+                                <p class=" mleft">Queijo muçarela, presunto, ovo cozido,
+                                cebola, ervilha, azeitona e orégano.</p><br>
                                 <h3 class="h3cor h32">Selecione um tamanho</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="radio" name="portuguesa" id="pequena1">
-                                    <label for="pequena1">Pequena (até 2 sabores) <strong class="s1">R$</strong> 30.00</label><br><br>
+                                    <input onclick="valorPT('30')"   type="radio" name="portuguesa" id="guesa1">
+                                    <label for="guesa1">Pequena (até 2 sabores) <strong class="s1">R$</strong> 30.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="portuguesa" id="media1">
-                                    <label for="media1">Média (até 2 sabores) <strong class="s2">R$</strong> 40.00</label><br><br>
+                                    <input onclick="valorPT('40')"   type="radio" name="portuguesa" id="guesa2">
+                                    <label for="guesa2">Média (até 2 sabores) <strong class="s2">R$</strong> 40.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="portuguesa" id="grande1">
-                                    <label for="grande1">Grande (até 3 sabores) <strong class="s3">R$</strong> 50.00</label><br><br>
+                                    <input onclick="valorPT('50')"   type="radio" name="portuguesa" id="guesa3">
+                                    <label for="guesa3">Grande (até 3 sabores) <strong class="s3">R$</strong> 50.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="portuguesa" id="familia1">
-                                    <label for="familia1">Família (até 4 sabores) <strong class="s4">R$</strong> 70.00</label><br><br>
+                                    <input onclick="valorPT('70')"   type="radio" name="portuguesa" id="guesa4">
+                                    <label for="guesa4">Família (até 4 sabores) <strong class="s4">R$</strong> 70.00</label><br><br>
                                 </div>
                             </div>
         
@@ -406,36 +440,36 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="checkbox" id="portuguesa1" checked>
-                                    <label for="portuguesa1">Portuguesa (principal)</label><br><br>
+                                    <input onclick="receberPT('PORTUGUESA,', 'portuguesa3')"  type="checkbox" id="portuguesa3" >
+                                    <label for="portuguesa1">Portuguesa ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
         
-                                    <input class="pai3" type="checkbox" id="calabresa1">
+                                    <input onclick="receberPT('CALABRESA,', 'calabresa3')"  type="checkbox" id="calabresa3">
                                     <label for="calabresa1">Calabresa</label>
-                                    <p class="small_text">Queijo muçarela, calabresa em rodelas, cebola, tomate, molho e orégano.</p><br>
+                                    <p >Queijo muçarela, calabresa em rodelas, cebola, tomate, molho e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="marguerita1">
-                                    <label for="marguerita1">Marguerita</label>
-                                    <p class="small_text">Queijo muçarela, tomate, manjericão e orégano.</p><br>
+                                    <input onclick="receberPT('MARGUERITA,', 'marguerita3')"  type="checkbox" id="marguerita3">
+                                    <label for="marguerita3">Marguerita</label>
+                                    <p >Queijo muçarela, tomate, manjericão e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="queijo1">
-                                    <label for="queijo1">Quatro queijos</label>
-                                    <p class="small_text">Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
+                                    <input onclick="receberPT('QUATRO QUEIJO,', 'queijo3')"  type="checkbox" id="queijo3">
+                                    <label for="queijo3">Quatro queijos</label>
+                                    <p >Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="frango1">
-                                    <label for="frango1">Frango com catupiry</label>
-                                    <p class="small_text">Queijo muçarela, frango desfiado e catupiry.</p><br>
+                                    <input onclick="receberPT('FRANGO COM CATUPIRY,', 'frango3')"  type="checkbox" id="frango3">
+                                    <label for="frango3">Frango com catupiry</label>
+                                    <p >Queijo muçarela, frango desfiado e catupiry.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="pepperoni1">
-                                    <label for="pepperoni1">Pepperoni</label>
-                                    <p class="small_text">Queijo muçarela, pepperoni e orégano.</p><br>
+                                    <input onclick="receberPT('PEPPERONI,', 'pepperoni3')"  type="checkbox" id="pepperoni3">
+                                    <label for="pepperoni3">Pepperoni</label>
+                                    <p >Queijo muçarela, pepperoni e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="atum1">
-                                    <label for="atum1">Atum</label>
-                                    <p class="small_text">Queijo muçarela, atum, cebola e orégano.</p><br>
+                                    <input onclick="receberPT('ATUM,', 'atum3')"  type="checkbox" id="atum3">
+                                    <label for="atum3">Atum</label>
+                                    <p >Queijo muçarela, atum, cebola e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="napolitana1">
-                                    <label for="napolitana1">Napolitana</label>
-                                    <p class="small_text">Queijo muçarela, tomate, alho e orégano.</p><br>
+                                    <input onclick="receberPT('NAPOLITANA,', 'napolitana3')"  type="checkbox" id="napolitana3">
+                                    <label for="napolitana3">Napolitana</label>
+                                    <p >Queijo muçarela, tomate, alho e orégano.</p><br>
                                 </div>
                             </div>
                         </div>
@@ -443,22 +477,24 @@
                         <div class="centro">
                             <h3 class="h30">Alguma observação?</h3>
                             <p class="marg1">1/60</p>
-                            <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                            <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                            <textarea id="mensagem3" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                            <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                         </div>
         
                         <div class="contador">
                             <div class="brd1">
-                                <button class="bttm2" type="button" id="menos">–</button>
-                                <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                <button class="bttm2" type="button" id="mais">+</button>
+                                <button onclick="menosPT()"  class="bttm2" type="button" id="menos3"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="pportu" class="quantidade" value="1" min="1" readonly>
+                                <button onclick="maisPT()" class="bttm2" type="button" id="mais3"><i class="fa-solid fa-plus"></i></button>
                             </div>
         
                             <div class="brd1 brd2">
-                                <button class="bttm2 brd2" type="button">
+                                <div onclick="irPedidosPT()"  class="bttm2 brd2">
                                     <p>Adicionar</p>
-                                    <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                </button>
+                                    <div class="RS"><input type="number" id="pportu2" class="quantidade brd2" value="30" min="30" readonly>
+                                    <p><strong>R$</strong></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -487,21 +523,21 @@
                         <div class="filho1">
                             <div class="filho2">
                                 <div class="pepperoni"></div>
-                                <p class="small_text mleft">Queijo muçarela, pepperoni e orégano.</p><br>
+                                <p class=" mleft">Queijo muçarela, pepperoni e orégano.</p><br>
                                 <h3 class="h3cor h32">Selecione um tamanho</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="radio" name="pepperoni" id="pequena1">
-                                    <label for="pequena1">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 30.00 </label><br><br>
+                                    <input onclick="valorPP('30')"   type="radio" name="pepperoni" id="rone1">
+                                    <label for="rone1">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 30.00 </label><br><br>
         
-                                    <input class="pai3" type="radio" name="pepperoni" id="media1">
-                                    <label for="media1">Média (até 2 sabores) <strong class="s2"> R$</strong> 40.00</label><br><br>
+                                    <input onclick="valorPP('40')"   type="radio" name="pepperoni" id="rone2">
+                                    <label for="rone2">Média (até 2 sabores) <strong class="s2"> R$</strong> 40.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="pepperoni" id="grande1">
-                                    <label for="grande1">Grande (até 3 sabores) <strong class="s3"> R$</strong> 50.00</label><br><br>
+                                    <input onclick="valorPP('50')"   type="radio" name="pepperoni" id="rone3">
+                                    <label for="rone3">Grande (até 3 sabores) <strong class="s3"> R$</strong> 50.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="pepperoni" id="familia1">
-                                    <label for="familia1">Família (até 4 sabores) <strong class="s4"> R$</strong> 70.00</label><br><br>
+                                    <input onclick="valorPP('70')"   type="radio" name="pepperoni" id="rone4">
+                                    <label for="rone4">Família (até 4 sabores) <strong class="s4"> R$</strong> 70.00</label><br><br>
                                 </div>
                             </div>
         
@@ -513,36 +549,36 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="checkbox" id="calabresa1" checked>
-                                    <label for="calabresa1">Pepperoni (principal)</label><br><br>
+                                    <input onclick="receberPP('PEPPERONI,', 'pepperoni4')"  type="checkbox" id="pepperoni4" >
+                                    <label for="pepperoni4">Pepperoni ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
         
-                                    <input class="pai3" type="checkbox" id="portuguesa1">
-                                    <label for="portuguesa1">Portuguesa</label>
-                                    <p class="small_text">Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
+                                    <input onclick="receberPP('PORTUGUESA,', 'portuguesa4')"  type="checkbox" id="portuguesa4">
+                                    <label for="portuguesa4">Portuguesa</label>
+                                    <p >Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="marguerita1">
-                                    <label for="marguerita1">Marguerita</label>
-                                    <p class="small_text">Queijo muçarela, tomate, manjericão e orégano.</p><br>
+                                    <input onclick="receberPP('MARGUERITA,', 'marguerita4')"  type="checkbox" id="marguerita4">
+                                    <label for="marguerita4">Marguerita</label>
+                                    <p >Queijo muçarela, tomate, manjericão e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="queijo1">
-                                    <label for="queijo1">Quatro queijos</label>
-                                    <p class="small_text">Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
+                                    <input onclick="receberPP('QUATRO QUEIJO,', 'queijo4')"  type="checkbox" id="queijo4">
+                                    <label for="queijo4">Quatro queijos</label>
+                                    <p >Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="frango1">
-                                    <label for="frango1">Frango com catupiry</label>
-                                    <p class="small_text">Queijo muçarela, frango desfiado e catupiry.</p><br>
+                                    <input onclick="receberPP('FRANGO COM CATUPIRY,', 'franfo4')"  type="checkbox" id="frango4">
+                                    <label for="frango4">Frango com catupiry</label>
+                                    <p >Queijo muçarela, frango desfiado e catupiry.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="calabresa2">
-                                    <label for="calabresa2">Calabresa</label>
-                                    <p class="small_text">Queijo muçarela, calabresa em rodelas, cebola, tomate, molho e orégano.</p><br>
+                                    <input onclick="receberPP('CALABRESA,', 'calabresa4')"  type="checkbox" id="calabresa4">
+                                    <label for="calabresa4">Calabresa</label>
+                                    <p >Queijo muçarela, calabresa em rodelas, cebola, tomate, molho e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="atum1">
-                                    <label for="atum1">Atum</label>
-                                    <p class="small_text">Queijo muçarela, atum, cebola e orégano.</p><br>
+                                    <input onclick="receberPP('ATUM,', 'atum4')"  type="checkbox" id="atum4">
+                                    <label for="atum4">Atum</label>
+                                    <p >Queijo muçarela, atum, cebola e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="napolitana1">
-                                    <label for="napolitana1">Napolitana</label>
-                                    <p class="small_text">Queijo muçarela, tomate, alho e orégano.</p><br>
+                                    <input onclick="receberPP('NAPOLITANA,', 'napolitana4')"  type="checkbox" id="napolitana4">
+                                    <label for="napolitana4">Napolitana</label>
+                                    <p >Queijo muçarela, tomate, alho e orégano.</p><br>
                                 </div>
                             </div>
                         </div>
@@ -550,21 +586,23 @@
                         <div class="centro">
                             <h3 class="h30">Alguma observação?</h3>
                             <p class="marg1">1/60</p>
-                            <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                            <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                            <textarea id="mensagem4" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                            <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                         </div>
         
                         <div class="contador">
                             <div class="brd1">
-                                <button class="bttm2" type="button" id="menos">–</button>
-                                <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                <button class="bttm2" type="button" id="mais">+</button>
+                                <button onclick="menosPP()"  class="bttm2" type="button" id="menos4"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="ppepe" class="quantidade" value="1" min="1" readonly>
+                                <button onclick="maisPP()" class="bttm2" type="button" id="mais4"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div class="brd1 brd2">
-                                <button class="bttm2 brd2" type="button">
+                                <div onclick="irPedidosPP()"  class="bttm2 brd2">
                                     <p>Adicionar</p>
-                                    <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                </button>
+                                    <div class="RS"></div><input type="number" id="ppepe2" class="quantidade brd2" value="30" min="30" readonly>
+                                    <p><strong>R$</strong></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -594,21 +632,21 @@
                     <div class="filho1">
                         <div class="filho2">
                             <div class="marguerita"></div>
-                            <p class="small_text mleft">Queijo muçarela, tomate, manjericão e orégano.</p>
+                            <p class=" mleft">Queijo muçarela, tomate, manjericão e orégano.</p>
                             <h3 class="h3cor h32">Selecione um tamanho</h3>
         
                             <div class="filho3">
-                                <input class="pai3" type="radio" name="marguerita" id="pequena1">
-                                <label for="pequena1">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 30.00 </label><br><br>
+                                <input onclick="valorMG('30')"  type="radio" name="marguerita" id="rita1">
+                                <label for="rita1">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 30.00 </label><br><br>
         
-                                <input class="pai3" type="radio" name="marguerita" id="media1">
-                                <label for="media1">Média (até 2 sabores) <strong class="s2"> R$</strong> 40.00</label><br><br>
+                                <input onclick="valorMG('40')"  type="radio" name="marguerita" id="rita2">
+                                <label for="rita2">Média (até 2 sabores) <strong class="s2"> R$</strong> 40.00</label><br><br>
         
-                                <input class="pai3" type="radio" name="marguerita" id="grande1">
-                                <label for="grande1">Grande (até 3 sabores) <strong class="s3"> R$</strong> 50.00</label><br><br>
+                                <input onclick="valorMG('50')"  type="radio" name="marguerita" id="rita3">
+                                <label for="rita3">Grande (até 3 sabores) <strong class="s3"> R$</strong> 50.00</label><br><br>
         
-                                <input class="pai3" type="radio" name="marguerita" id="familia1">
-                                <label for="familia1">Família (até 4 sabores) <strong class="s4"> R$</strong> 70.00</label><br><br>
+                                <input onclick="valorMG('70')"  type="radio" name="marguerita" id="rita4">
+                                <label for="rita4">Família (até 4 sabores) <strong class="s4"> R$</strong> 70.00</label><br><br>
                             </div>
                         </div>
         
@@ -620,36 +658,36 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="calabresa1" checked>
-                                <label for="calabresa1">Marguerita (principal)</label><br><br>
+                                <input onclick="receberMG('MARGUERITA,', 'marguerita5')"  type="checkbox" id="marguerita5" >
+                                <label for="marguerita5">Marguerita ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="portuguesa1">
-                                <label for="portuguesa1">Portuguesa</label>
-                                <p class="small_text">Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
+                                <input onclick="receberMG('PORTUGUESA,', 'portuguesa5')"  type="checkbox" id="portuguesa5">
+                                <label for="portuguesa5">Portuguesa</label>
+                                <p >Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
         
-                                <input class="pai3" type="checkbox" id="calabresa2">
-                                <label for="calabresa2">Calabresa</label>
-                                <p class="small_text">Queijo muçarela, calabresa em rodelas, cebola, tomate, molho e orégano.</p><br>
+                                <input onclick="receberMG('CALABRESA,', 'calabresa5')"  type="checkbox" id="calabresa5">
+                                <label for="calabresa5">Calabresa</label>
+                                <p >Queijo muçarela, calabresa em rodelas, cebola, tomate, molho e orégano.</p><br>
         
-                                <input class="pai3" type="checkbox" id="queijo1">
-                                <label for="queijo1">Quatro queijos</label>
-                                <p class="small_text">Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
+                                <input onclick="receberMG('QUATRO QUEIJO,', 'queijo5')"  type="checkbox" id="queijo5">
+                                <label for="queijo5">Quatro queijos</label>
+                                <p >Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
         
-                                <input class="pai3" type="checkbox" id="frango1">
-                                <label for="frango1">Frango com catupiry</label>
-                                <p class="small_text">Queijo muçarela, frango desfiado e catupiry.</p><br>
+                                <input onclick="receberMG('FRANGO COM CATUPIRY,', 'frango5')"  type="checkbox" id="frango5">
+                                <label for="frango5">Frango com catupiry</label>
+                                <p >Queijo muçarela, frango desfiado e catupiry.</p><br>
         
-                                <input class="pai3" type="checkbox" id="pepperoni1">
-                                <label for="pepperoni1">Pepperoni</label>
-                                <p class="small_text">Queijo muçarela, pepperoni e orégano.</p><br>
+                                <input onclick="receberMG('PEPPERONI,', 'pepperoni5')"  type="checkbox" id="pepperoni5">
+                                <label for="pepperoni5">Pepperoni</label>
+                                <p >Queijo muçarela, pepperoni e orégano.</p><br>
         
-                                <input class="pai3" type="checkbox" id="atum1">
-                                <label for="atum1">Atum</label>
-                                <p class="small_text">Queijo muçarela, atum, cebola e orégano.</p><br>
+                                <input onclick="receberMG('ATUM,', 'atum5')"  type="checkbox" id="atum5">
+                                <label for="atum5">Atum</label>
+                                <p >Queijo muçarela, atum, cebola e orégano.</p><br>
         
-                                <input class="pai3" type="checkbox" id="napolitana1">
-                                <label for="napolitana1">Napolitana</label>
-                                <p class="small_text">Queijo muçarela, tomate, alho e orégano.</p><br>
+                                <input onclick="receberMG('NAPOLITANA,', 'napolitana5')"  type="checkbox" id="napolitana5">
+                                <label for="napolitana5">Napolitana</label>
+                                <p >Queijo muçarela, tomate, alho e orégano.</p><br>
                             </div>
                         </div>
                     </div>
@@ -657,21 +695,23 @@
                     <div class="centro">
                         <h3 class="h30">Alguma observação?</h3>
                         <p class="marg1">1/60</p>
-                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                        <textarea id="mensagem5" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                     </div>
         
                     <div class="contador">
                         <div class="brd1">
-                            <button class="bttm2" type="button" id="menos">–</button>
-                            <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                            <button class="bttm2" type="button" id="mais">+</button>
+                            <button onclick="menosMG()" class="bttm2" type="button" id="menos5"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" id="mmarguerita" class="quantidade" value="1" min="1" readonly>
+                            <button onclick="maisMG()" class="bttm2" type="button" id="mais5"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="brd1 brd2">
-                            <button class="bttm2 brd2" type="button">
+                            <div onclick="irPedidosMG()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                            </button>
+                                <div class="RS"><input type="number" id="mmarguerita2" class="quantidade brd2" value="30" min="30" readonly>
+                                <p><strong>R$</strong></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -697,21 +737,21 @@
                         <div class="filho1">
                             <div class="filho2">
                                 <div class="atum"></div>
-                                <p class="small_text mleft">Queijo muçarela, atum, cebola e orégano.</p><br>
+                                <p class=" mleft">Queijo muçarela, atum, cebola e orégano.</p><br>
                                 <h3 class="h3cor h32">Selecione um tamanho</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="radio" name="atum" id="pequena1">
-                                    <label for="pequena1">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 30.00 </label><br><br>
+                                    <input onclick="valorAT('30')"   type="radio" name="atum" id="tum1">
+                                    <label for="tum1">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 30.00 </label><br><br>
         
-                                    <input class="pai3" type="radio" name="atum" id="media1">
-                                    <label for="media1">Média (até 2 sabores) <strong class="s2"> R$</strong> 40.00</label><br><br>
+                                    <input onclick="valorAT('40')"   type="radio" name="atum" id="tum2">
+                                    <label for="tum2">Média (até 2 sabores) <strong class="s2"> R$</strong> 40.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="atum" id="grande1">
-                                    <label for="grande1">Grande (até 3 sabores) <strong class="s3"> R$</strong> 50.00</label><br><br>
+                                    <input onclick="valorAT('50')"   type="radio" name="atum" id="tum3">
+                                    <label for="tum3">Grande (até 3 sabores) <strong class="s3"> R$</strong> 50.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="atum" id="familia1">
-                                    <label for="familia1">Família (até 4 sabores) <strong class="s4"> R$</strong> 70.00</label><br><br>
+                                    <input onclick="valorAT('70')"   type="radio" name="atum" id="tum4">
+                                    <label for="tum4">Família (até 4 sabores) <strong class="s4"> R$</strong> 70.00</label><br><br>
                                 </div>
                             </div>
         
@@ -723,36 +763,36 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="checkbox" id="atum1" checked>
-                                    <label for="calabresa1">Atum (principal)</label><br><br>
+                                    <input onclick="receberAT('ATUM,', 'atum6')" type="checkbox" id="atum6" >
+                                    <label for="atum6">Atum ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
         
-                                    <input class="pai3" type="checkbox" id="portuguesa1">
-                                    <label for="portuguesa1">Portuguesa</label>
-                                    <p class="small_text">Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
+                                    <input onclick="receberAT('POSTUGUESA,', 'portuguesa6')"  type="checkbox" id="portuguesa6">
+                                    <label for="portuguesa6">Portuguesa</label>
+                                    <p >Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="marguerita1">
-                                    <label for="marguerita1">Marguerita</label>
-                                    <p class="small_text">Queijo muçarela, tomate, manjericão e orégano.</p><br>
+                                    <input onclick="receberAT('MARGUERITA,', 'marguerita6')"  type="checkbox" id="marguerita6">
+                                    <label for="marguerita6">Marguerita</label>
+                                    <p >Queijo muçarela, tomate, manjericão e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="queijo1">
-                                    <label for="queijo1">Quatro queijos</label>
-                                    <p class="small_text">Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
+                                    <input onclick="receberAT('QUATRO QUEIJO,', 'queijo6')"  type="checkbox" id="queijo6">
+                                    <label for="queijo6">Quatro queijos</label>
+                                    <p >Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="frango1">
-                                    <label for="frango1">Frango com catupiry</label>
-                                    <p class="small_text">Queijo muçarela, frango desfiado e catupiry.</p><br>
+                                    <input onclick="receberAT('FRANAGO COM CATUPIRY,', 'frango6')"  type="checkbox" id="frango6">
+                                    <label for="frango6">Frango com catupiry</label>
+                                    <p >Queijo muçarela, frango desfiado e catupiry.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="pepperoni1">
-                                    <label for="pepperoni1">Pepperoni</label>
-                                    <p class="small_text">Queijo muçarela, pepperoni e orégano.</p><br>
+                                    <input onclick="receberAT('PEPPERONI,', 'pepperoni6')"  type="checkbox" id="pepperoni6">
+                                    <label for="pepperoni6">Pepperoni</label>
+                                    <p >Queijo muçarela, pepperoni e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="calabresa1">
-                                    <label for="calabresa1">Calabresa</label>
-                                    <p class="small_text">Queijo muçarela, calabresa em rodelas, cebola, tomate, molho e orégano.</p><br>
+                                    <input onclick="receberAT('CALABRESA,', 'calabresa6')"  type="checkbox" id="calabresa6">
+                                    <label for="calabresa6">Calabresa</label>
+                                    <p >Queijo muçarela, calabresa em rodelas, cebola, tomate, molho e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="napolitana1">
-                                    <label for="napolitana1">Napolitana</label>
-                                    <p class="small_text">Queijo muçarela, tomate, alho e orégano.</p><br>
+                                    <input onclick="receberAT('NAPOLITANA,', 'napolitana6')"  type="checkbox" id="napolitana6">
+                                    <label for="napolitana6">Napolitana</label>
+                                    <p >Queijo muçarela, tomate, alho e orégano.</p><br>
                                 </div>
                             </div>
                         </div>
@@ -760,21 +800,23 @@
                         <div class="centro">
                             <h3 class="h30">Alguma observação?</h3>
                             <p class="marg1">1/60</p>
-                            <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                            <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                            <textarea id="mensagem6" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                            <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                         </div>
         
                         <div class="contador">
                             <div class="brd1">
-                                <button class="bttm2" type="button" id="menos">–</button>
-                                <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                <button class="bttm2" type="button" id="mais">+</button>
+                                <button onclick="menosAT()"  class="bttm2" type="button" id="menos6"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="aatum" class="quantidade" value="1" min="1" readonly>
+                                <button onclick="maisAT()" class="bttm2" type="button" id="mais6"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div class="brd1 brd2">
-                                <button class="bttm2 brd2" type="button">
+                                <div onclick="irPedidosAT()" class="bttm2 brd2">
                                     <p>Adicionar</p>
-                                    <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                </button>
+                                    <div class="RS"><input type="number" id="aatum2" class="quantidade brd2" value="30" min="30" readonly>
+                                    <p><strong>R$</strong></p>
+                                   </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -802,21 +844,21 @@
                         <div class="filho1">
                             <div class="filho2">
                                 <div class="queijo"></div>
-                                <p class="small_text mleft">Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
+                                <p class=" mleft">Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
                                 <h3 class="h3cor h32">Selecione um tamanho</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="radio" name="quatroq" id="pequena1">
-                                    <label for="pequena1">Pequena (até 2 sabores) <strong class="s1">R$</strong> 30.00</label><br><br>
+                                    <input onclick="valorQQ('30')"  type="radio" name="quatroqu" id="qqq1">
+                                    <label for="qqq1">Pequena (até 2 sabores) <strong class="s1">R$</strong> 30.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="quatroq" id="media1">
-                                    <label for="media1">Média (até 2 sabores) <strong class="s2">R$</strong> 40.00</label><br><br>
+                                    <input onclick="valorQQ('40')"  type="radio" name="quatroqu" id="qqq2">
+                                    <label for="qqq2">Média (até 2 sabores) <strong class="s2">R$</strong> 40.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="quatroq" id="grande1">
-                                    <label for="grande1">Grande (até 3 sabores) <strong class="s3">R$</strong> 50.00</label><br><br>
+                                    <input onclick="valorQQ('50')"  type="radio" name="quatroqu" id="qqq3">
+                                    <label for="qqq3">Grande (até 3 sabores) <strong class="s3">R$</strong> 50.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="quatroq" id="familia1">
-                                    <label for="familia1">Família (até 4 sabores) <strong class="s4">R$</strong> 70.00</label><br><br>
+                                    <input onclick="valorQQ('70')"  type="radio" name="quatroqu" id="qqq4">
+                                    <label for="qqq4">Família (até 4 sabores) <strong class="s4">R$</strong> 70.00</label><br><br>
                                 </div>
                             </div>
         
@@ -828,36 +870,36 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="checkbox" id="quatroq1" checked>
-                                    <label for="quatroq1">Quatro queijos (principal)</label><br><br>
+                                    <input onclick="receberQQ('QUATRO QUEIJO,', 'quatroq7')"  type="checkbox" id="quatroq7" >
+                                    <label for="quatroq7">Quatro queijos ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
         
-                                    <input class="pai3" type="checkbox" id="portuguesa1">
-                                    <label for="portuguesa1">Portuguesa</label>
-                                    <p class="small_text">Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
+                                    <input onclick="receberQQ('PORTUGUESA,', 'portuguesa7')"  type="checkbox" id="portuguesa7">
+                                    <label for="portuguesa7">Portuguesa</label>
+                                    <p >Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="marguerita1">
-                                    <label for="marguerita1">Marguerita</label>
-                                    <p class="small_text">Queijo muçarela, tomate, manjericão e orégano.</p><br>
+                                    <input onclick="receberQQ('MARGUERITA,', 'marguerita7')"  type="checkbox" id="marguerita7">
+                                    <label for="marguerita7">Marguerita</label>
+                                    <p >Queijo muçarela, tomate, manjericão e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="calabresa1">
-                                    <label for="calabresa1">Calabresa</label>
-                                    <p class="small_text">Queijo muçarela, calabresa em rodelas, cebola, tomate, molho e orégano.</p><br>
+                                    <input onclick="receberQQ('CALABRESA,', 'calabresa7')"  type="checkbox" id="calabresa7">
+                                    <label for="calabresa7">Calabresa</label>
+                                    <p >Queijo muçarela, calabresa em rodelas, cebola, tomate, molho e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="frango1">
-                                    <label for="frango1">Frango com catupiry</label>
-                                    <p class="small_text">Queijo muçarela, frango desfiado e catupiry.</p><br>
+                                    <input onclick="receberQQ('FRANGO,', 'frango7')"  type="checkbox" id="frango7">
+                                    <label for="frango7">Frango com catupiry</label>
+                                    <p >Queijo muçarela, frango desfiado e catupiry.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="pepperoni1">
-                                    <label for="pepperoni1">Pepperoni</label>
-                                    <p class="small_text">Queijo muçarela, pepperoni e orégano.</p><br>
+                                    <input onclick="receberQQ('PEPPERONI,', 'pepperoni7')"   type="checkbox" id="pepperoni7">
+                                    <label for="pepperoni7">Pepperoni</label>
+                                    <p >Queijo muçarela, pepperoni e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="atum1">
-                                    <label for="atum1">Atum</label>
-                                    <p class="small_text">Queijo muçarela, atum, cebola e orégano.</p><br>
+                                    <input onclick="receberQQ('ATUM,', 'atum7')"  type="checkbox" id="atum7">
+                                    <label for="atum7">Atum</label>
+                                    <p >Queijo muçarela, atum, cebola e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="napolitana1">
-                                    <label for="napolitana1">Napolitana</label>
-                                    <p class="small_text">Queijo muçarela, tomate, alho e orégano.</p><br>
+                                    <input onclick="receberQQ('NAPOLITANA,', 'napolitana7')"  type="checkbox" id="napolitana7">
+                                    <label for="napolitana7">Napolitana</label>
+                                    <p >Queijo muçarela, tomate, alho e orégano.</p><br>
                                 </div>
                             </div>
                         </div>
@@ -865,28 +907,29 @@
                         <div class="centro">
                             <h3 class="h30">Alguma observação?</h3>
                             <p class="marg1">1/60</p>
-                            <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                            <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                            <textarea id="mensagem7" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                            <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                         </div>
         
                         <div class="contador">
                             <div class="brd1">
-                                <button class="bttm2" type="button" id="menos">–</button>
-                                <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                <button class="bttm2" type="button" id="mais">+</button>
+                                <button onclick="menosQQ()"  class="bttm2" type="button" id="menos7"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="qqueijo" class="quantidade" value="1" min="1" readonly>
+                                <button onclick="maisQQ()" class="bttm2" type="button" id="mais7"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div class="brd1 brd2">
-                                <button class="bttm2 brd2" type="button">
+                                <div onclick="irPedidosQQ()" class="bttm2 brd2">
                                     <p>Adicionar</p>
-                                    <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                </button>
+                                    <div class="RS"><input type="number" id="qqueijo2" class="quantidade brd2" value="30" min="30" readonly>
+                                         <p><strong>R$</strong></p>                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-        
         
         <!--FIM PIZZA QUATRO QUEIJO-->
 
@@ -907,21 +950,21 @@
                         <div class="filho1">
                             <div class="filho2">
                                 <div class="napolitana"></div>
-                                <p class="small_text mleft">Queijo muçarela, tomate, alho e orégano.</p><br>
+                                <p class=" mleft">Queijo muçarela, tomate, alho e orégano.</p><br>
                                 <h3 class="h3cor h32">Selecione um tamanho</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="radio" name="napolitana" id="pequena1">
-                                    <label for="pequena1">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 30.00</label><br><br>
+                                    <input onclick="valorNP('30')"   type="radio" name="napolitana" id="tana1">
+                                    <label for="tana1">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 30.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="napolitana" id="media1">
-                                    <label for="media1">Média (até 2 sabores) <strong class="s2"> R$</strong> 40.00</label><br><br>
+                                    <input onclick="valorNP('40')"   type="radio" name="napolitana" id="tana2">
+                                    <label for="tana2">Média (até 2 sabores) <strong class="s2"> R$</strong> 40.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="napolitana" id="grande1">
-                                    <label for="grande1">Grande (até 3 sabores) <strong class="s3"> R$</strong> 50.00</label><br><br>
+                                    <input onclick="valorNP('50')"   type="radio" name="napolitana" id="tana3">
+                                    <label for="tana3">Grande (até 3 sabores) <strong class="s3"> R$</strong> 50.00</label><br><br>
         
-                                    <input class="pai3" type="radio" name="napolitana" id="familia1">
-                                    <label for="familia1">Família (até 4 sabores) <strong class="s4"> R$</strong> 70.00</label><br><br>
+                                    <input onclick="valorNP('70')"   type="radio" name="napolitana" id="tana4">
+                                    <label for="tana4">Família (até 4 sabores) <strong class="s4"> R$</strong> 70.00</label><br><br>
                                 </div>
                             </div>
         
@@ -934,37 +977,37 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input class="pai3" type="checkbox" id="calabresa1" checked>
-                                    <label for="calabresa1">Calabresa (principal)</label><br><br>
+                                    <input onclick="receberNP('NAPOLITANA,', 'napolitana8')"  type="checkbox" id="napolitana8" >
+                                    <label for="napolitana8">Napolitana ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
         
-                                    <input class="pai3" type="checkbox" id="portuguesa1">
-                                    <label for="portuguesa1">Portuguesa</label>
-                                    <p class="small_text">Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
+                                    <input onclick="receberNP('PORTUGUESA,', 'portuguesa8')"  type="checkbox" id="portuguesa8">
+                                    <label for="portuguesa8">Portuguesa</label>
+                                    <p >Queijo muçarela, presunto, ovo cozido, cebola, ervilha, azeitona e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="marguerita1">
-                                    <label for="marguerita1">Marguerita</label>
-                                    <p class="small_text">Queijo muçarela, tomate, manjericão e orégano.</p><br>
+                                    <input onclick="receberNP('MARGUERITA,', 'marguerita8')" type="checkbox" id="marguerita8">
+                                    <label for="marguerita8">Marguerita</label>
+                                    <p >Queijo muçarela, tomate, manjericão e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="queijo1">
-                                    <label for="queijo1">Quatro queijos</label>
-                                    <p class="small_text">Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
+                                    <input onclick="receberNP('QUATRO QUEIJO,', 'queijo8')"  type="checkbox" id="queijo8">
+                                    <label for="queijo8">Quatro queijos</label>
+                                    <p >Queijo muçarela, gorgonzola, parmesão e catupiry.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="frango1">
-                                    <label for="frango1">Frango com catupiry</label>
-                                    <p class="small_text">Queijo muçarela, frango desfiado e catupiry.</p><br>
+                                    <input onclick="receberNP('FRANGO COM CATUPIRY,', 'frango8')"  type="checkbox" id="frango8">
+                                    <label for="frango8">Frango com catupiry</label>
+                                    <p >Queijo muçarela, frango desfiado e catupiry.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="pepperoni1">
-                                    <label for="pepperoni1">Pepperoni</label>
-                                    <p class="small_text">Queijo muçarela, pepperoni e orégano.</p><br>
+                                    <input onclick="receberNP('PEPPERONI,', 'pepperoni8')"  type="checkbox" id="pepperoni8">
+                                    <label for="pepperoni8">Pepperoni</label>
+                                    <p >Queijo muçarela, pepperoni e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="atum1">
-                                    <label for="atum1">Atum</label>
-                                    <p class="small_text">Queijo muçarela, atum, cebola e orégano.</p><br>
+                                    <input onclick="receberNP('ATUM,', 'atum8')"  type="checkbox" id="atum8">
+                                    <label for="atum8">Atum</label>
+                                    <p >Queijo muçarela, atum, cebola e orégano.</p><br>
         
-                                    <input class="pai3" type="checkbox" id="calabresa2">
-                                    <label for="calabresa2">Calabresa</label>
-                                    <p class="small_text">Queijo muçarela, calabresa em rodelas, cebola</p>
-                                    <p class="small_text">Tomate, molho e orégano.</p>
+                                    <input onclick="receberNP('CALABRESA,', 'calabresa8')"  type="checkbox" id="calabresa8">
+                                    <label for="calabresa8">Calabresa</label>
+                                    <p >Queijo muçarela, calabresa em rodelas, cebola</p>
+                                    <p >Tomate, molho e orégano.</p>
                                 </div>
                             </div>
                         </div>
@@ -972,22 +1015,24 @@
                         <div class="centro">
                             <h3 class="h30">Alguma observação?</h3>
                             <p class="marg1">1/60</p>
-                            <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                            <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                            <textarea id="mensagem8" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                            <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                         </div>
         
                         <div class="contador">
                             <div class="brd1">
-                                <button class="bttm2" type="button" id="menos">–</button>
-                                <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                <button class="bttm2" type="button" id="mais">+</button>
+                                <button onclick="menosNP()"  class="bttm2" type="button" id="menos8"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="nnapo" class="quantidade" value="1" min="1" readonly>
+                                <button onclick="maisNP()" class="bttm2" type="button" id="mais8"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div class="brd1 brd2">
-                                <button class="bttm2 brd2" type="button">
+                                <div onclick="irPedidosNP()"  class="bttm2 brd2">
                                     <p>Adicionar</p>
-                                    <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                </button>
-                            </div>
+                                    <div class="RS"><input type="number" id="nnapo2" class="quantidade brd2" value="30" min="30" readonly>
+                                    <p><strong>R$</strong></p>
+                                    </div>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </form>
@@ -1007,49 +1052,136 @@
                         <p> <i onclick="document.getElementById('endr').style.display='none'" class="fa-solid fa-xmark close"></i> </p>
                     </div>
                     <p class="pdd2"> Entregar em</p>
-                    <div class="ngr">
-                        <input class="ipt" type="text" id="search" name="query" placeholder="Informe o CEP" required>
-                        <button class="bt" type="submit">Buscar</button>
-                    </div>
-                    <p id="pdd">Não sei meu CEP</p>
+                    <p id="pdd">Insira seu nome, endereço, rua/avenida, numero, bairro...</p>
+                    <form class="ngr">
+                        <textarea name="enderecoo" id="inserirE"></textarea>
+                    </form>
+
+                    <button id="irPagamento" type="button"> IR PARA PAGAMENTO </button>
+                    
                     <P class="pdd2">Vou até o local</P>
                     <div class="cons">
-                        <div class="ret"> <i class=" cdd fa-solid fa-bag-shopping"></i>Retirar</div>
-                        <div class="ret"> <i class=" cdd fa-solid fa-utensils"></i>Consumir</div>
+                        <div id="Retirar" class="ret"> <i class=" cdd fa-solid fa-bag-shopping"></i>Retirar</div>
+                        <div id="Consumir" class="ret"> <i class=" cdd fa-solid fa-utensils"></i>Consumir</div>
                     </div>
                     <p class="pdd2">Possui endereço cadrastado?</p>
-                    <p  onclick="document.getElementById('entrarC').style.display='block'" class="pdd2" style="color:#21C3D9; cursor: pointer;"> Entrar</p>
+                    <p  onclick="document.getElementById('entrarC').style.display='block', document.getElementById('endr').style.display='none' " class="pdd2" style="color:#21C3D9; cursor: pointer;"> Entrar</p>
                 </div>
            </div>
         </div>
+
+        <!--FIM ENDERECO-->
 
         <!--ENTRAR-->
 
         <div id="entrarC">
             <div class="cont_entrarC">
                 <div style="display: flex; justify-content: center;">
-                    <img src="imagem/logoen.png">
+                    <img src="imagem/logoen.png" alt="">
                     <p onclick="document.getElementById('entrarC').style.display='none'" style="position: absolute; right: 10px; top: 0;"> <i class="fa-solid fa-xmark close"></i></p>
                 </div>
                 <form>
                     <label for="email"></label><br>
-                    <input class="larg" type="text" id="user" name="user" value="usuário" required><br><br>
+                    <input class="larg" type="email" id="email" name="email" value="email" required><br><br>
 
                     <label for="senha"></label><br>
                     <input class="larg"  type="password" id="senha" name="senha" value="senha" required><br><br>
 
-                    <input class="larg corr"  type="submit" value="Entrar"><br><br>
-                    <button class="larg" ><i class="fa-brands fa-google"></i> entrar com a conta do google</button>
+                    <input class="larg corr cursor"  type="submit" value="Entrar"><br><br>
+                    <button class="larg cursor" ><i class="fa-brands fa-google"></i> entrar com a conta do google</button>
                 </form>
             </div>
         </div>
-            
+
+        <!--INICIO PEDIDO EM ANDAMENTO-->
+
+        <div id="pedid" class="pedid">
+            <div class="cont_pedid">
+                
+                <div class="cont_1">
+                    <h4>Pedido em andamento...</h4>
+                    <p class="cursor" id="fecharP"><i class="fa-solid fa-xmark close"></i> </p>
+                </div>
+                
+               
+                <div class="cont_2">
+                    
+                    <div class="pedidos">
+                        <p id="pedidos">Pedido vazio!</p>
+                        <p id="obs"></p>
+                        <button id="irEnde">ADICIONAR ENDEREÇO PARA ENTREGA</button>
+                    </div>
+                    
+                    <div id="btEeC" class="btEeC">
+                        <button id="conf" class="conf">CONFIRMAR PEDIDO</button>
+                        <button id="excl" class="excl">EXCLUIR PEDIDO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--FIM  PEDIDO EM ANDAMENTO-->   
+
+        <!--INICIO PEDIDOS-->
+
+        <div id="regPedid" class="regPedid">
+            <div class="regPedido">
+            <div>
+            <span class="cursor"><i onclick="document.getElementById('regPedid').style.display= 'none'" class="fa-solid fa-xmark"></i></span>
+            <p>Detalhe do pedido:</p><br>
+            <p id="sabor_valor">Sem pedidos!</p><br>
+            <p id="entreg"></p><br>
+            <p id="pag"></p>
+            </div>
+            </div>
+        </div>
+
+          <!--FIM PEDIDOS-->
+
+          <!--INICIO PAGAMENTO-->
+
+        <div id="pagamento" class="pagamento">
+            <form class="paga_content">
+                <p>Forma de pagamento</p>
+                <input  type="radio" name="pagamento" id="cartao">
+                <label for="cartao">CARTÃO</label><br><br>
+                <input  type="radio" name="pagamento" id="dinheiro">
+                <label for="dinheiro">DINHEIRO</label><br><br>
+                <p>Troco?</p>
+                <textarea name="troco" id="troco"></textarea>
+                <div>
+                <button id="fimm"> FINALIZAR PEDIDO </button>
+                <img src="imagem/logoen.png" alt="">
+                </div>
+                
+            </form>
+        </div>
+
+        <!--FIM PAGAMENTO-->
+
+        <!--INICIO IDENTIFICAÇÃO-->
+
+        <div id="nc" class="nc">
+            <form>
+                <p>Adicione seu nome completo para o registro de seu pedido</p>
+                <textarea name="nomeC" id="nomeC"></textarea>
+                <div>
+                <button id="fimm2"> FINALIZAR PEDIDO </button>
+                <img src="imagem/logoen.png" alt="">
+                </div>
+            </form>
+        </div>
+
+        <!--FIM IDENTIFICAÇÃO-->
+
+        
+
         <footer>
             <p> Desenvolvido por MenúdoSabor</p>
                 <p>© 2024 Pizzaria chama e sabor. Todos os direitos reservados.
                 </p>
                 
         </footer>
-        <script src="js/scritp.js"></script>
+        <script src="java.js"></script>
     </body>
 </html>

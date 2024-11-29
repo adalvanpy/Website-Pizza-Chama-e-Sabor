@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -9,177 +9,171 @@
     </head>
     <body>
         <div class="cabeca">
-            <button class="corB" onclick="document.getElementById('menuu').style.display='block'" > <div class="menu"><i class="fa-solid fa-bars"></i></div></button>
+            <button class="corB" onclick="document.getElementById('menuu').style.display='block'" > <span class="menu"><i class="fa-solid fa-bars"></i></span></button>
             <button class="a0 b0" onclick="document.getElementById('endr').style.display='block'" >Opcão de entrega</button>
-            <p class="a1 b0">Clique aqui para inserir o seu endereço</p>
-            <button class="corB"><div class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></div></button>
+            <p class="b0">Clique aqui para inserir o seu endereço</p>
+            <div id="busca" class="cont_busca">
+                <form>
+                    <input type="search" placeholder="O que esta pensando?">
+                </form>
+            </div>
+            <button id="lupa" class="corB"><span class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></span></button>
         </div>
 
         <div class="logo">
 
                 <div class="logo2"></div>
-                <h3 class="cor1">PIZZARIA CHAMA E SABOR</h3>
-                <h3 class="cor1">Avenida Pedro Alvares Cabral,25,</h3>
-                <h3 class="cor1">Bulmenau - SP</h3>
-                <h3 class="cor1">HORÁRIO DE FUNCIONAMENTO:</h3>
-                <h3 class="cor1">Segunda a Domingo</h3>
-                <h3 class="cor1">18:00 ÁS 00:00</h3>
+                <h3>PIZZARIA CHAMA E SABOR</h3>
+                <h3>Avenida Pedro Alvares Cabral,25,</h3>
+                <h3>Bulmenau - SP</h3>
+                <h3>HORÁRIO DE FUNCIONAMENTO:</h3>
+                <h3>Segunda a Domingo</h3>
+                <h3>18:00 ÁS 00:00</h3>
 
 
         </div>
         <nav>
             <ul>
-                <li class="al1"><a href="index.html" >Pizzas tradicionais</a></li>
-                <li class="al1"><a href="pizzadoce.html">Pizzas doce</a></li>
-                <li class="al1"><a href="bebidas.html">Bebidas</a></li>
+                <li><a href="index.html" >Pizzas tradicionais</a></li>
+                <li><a href="pizzadoce.html">Pizzas doce</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
             </ul>
             </nav>
-            <div class="bbd"><h3>REFRIGERANTES</h3></div>
+            <h3 class="bbd">REFRIGERANTES</h3>
 
             <div class="bebidas">
-              <button class="bbb" onclick="document.getElementById('refr1l').style.display='block'" >
+              <div class="bbb" onclick="document.getElementById('refr1l').style.display='block'" >
                 <div class="fei">
-                      <div>
-                        <p class="top11">REFRI 1 LITRO</p>
-                        <p class="top12"><strong>R$</strong> 10.00</p>
-                      </div>
+                        <p>REFRI 1 LITRO<br>
+                          <strong>R$</strong> 10.00
+                        </p>
                       <div class="ref1l"></div>
                 </div>
-              </button>
+              </div>
     
-              <button class="bbb" onclick="document.getElementById('refr2l').style.display='block'" >
+              <div class="bbb" onclick="document.getElementById('refr2l').style.display='block'" >
                 <div class="fei">
-                    <div>
-                        <p class="top11">REFRI 2 LITROS</p>
-                        <p class="top12"> <strong>R$</strong> 20.00</p>
-                      </div>
+                    
+                        <p>REFRI 2 LITROS<br>
+                          <strong>R$</strong> 20.00
+                        </p>
+                    
                       <div class="refri2l"></div>
                 </div>
-              </button>
+              </div>
             </div>
 
 
             <div class="bebidas">
-              <button class="bbb" onclick="document.getElementById('redb').style.display='block'" >
-                <div class="fei">
-                      <div>
-                        <p class="top1">ENERGETICO RED BULL ORIGINAL</p>
-                        <p class="top2"><strong>R$</strong> 15.00</p>
-                      </div>
-                      <div class="red1"></div>
+                <div class="bbb" onclick="document.getElementById('redb').style.display='block'" >
+                   <div class="fei">
+                         <p>ENERGETICO RED BULL ORIGINAL<br>
+                            <strong>R$</strong> 15.00
+                        </p>
+                        <div class="red1"></div>
+                   </div>
                 </div>
-              </button>
      
-              <button class="bbb" onclick="document.getElementById('lata').style.display='block'" >
-                <div class="fei">
-                    <div>
-                        <p class="top11">REFRI LATA</p>
-                        <p class="top12"><strong>R$</strong>  6.00</p>
-                      </div>
-                      <div class="lata1"></div>
+                <div class="bbb" onclick="document.getElementById('lata').style.display='block'" >
+                  <div class="fei">
+                        <p>REFRI LATA<br>
+                           <strong>R$</strong>  6.00
+                        </p>
+                        <div class="lata1"></div>
+                  </div>
                 </div>
-               </button>
             </div>
 
 
             <h3 class="bbd">SUCOS</h3>
 
             <div class="bebidas">
-              <button class="bbb" onclick="document.getElementById('laranja').style.display='block'" >
-                <div class="fei">
-                      <div>
-                        <p class="top6 top7">SUCO DE LARANJA</p>
-                        <p class="top6"> 500 ML <strong>R$</strong>  10.00</p>
-                        <p class="top6"> 300 ML <strong>R$</strong>   6.00</p>
-                      </div>
-                      <div class="lar1"></div>
+                <div class="bbb" onclick="document.getElementById('laranja').style.display='block'" >
+                    <div class="fei">
+                        <p>SUCO DE LARANJA<br>
+                           500 ML <strong>R$</strong>  10.00<br>
+                           300 ML <strong>R$</strong>   6.00
+                        </p>
+                        <div class="lar1"></div>
+                    </div>
                 </div>
-              </button>
               
-              <button class="bbb" onclick="document.getElementById('maracuja').style.display='block'" >
-                <div class="fei">
-                    <div>
-                        <p class="top6 top7">SUCO DE MARACUJÁ</p>
-                        <p class="top6"> 500 ML <strong>R$</strong>  10.00</p>
-                        <p class="top6"> 300 ML <strong>R$</strong>   6.00</p>
-                      </div>
-                      <div class="cuja1"></div>
-                </div>
-              </button>
+                <div class="bbb" onclick="document.getElementById('maracuja').style.display='block'" >
+                   <div class="fei">
+                        <p>SUCO DE MARACUJÁ<br>
+                           500 ML <strong>R$</strong>  10.00<br>
+                           300 ML <strong>R$</strong>   6.00
+                        </p>
+                        <div class="cuja1"></div>
+                   </div>
+                </div>  
             </div>
 
 
             <div class="bebidas">
-              <button class="bbb" onclick="document.getElementById('abacaxi').style.display='block'" >
-                <div class="fei">
-                      <div>
-                        <p class="top6 top7">SUCO DE ABACAXI COM ORTELÃ</p>
-                        <p class="top6"> 500 ML <strong>R$</strong> 10.00</p>
-                        <p  class="top6"> 300 ML <strong>R$</strong> 6.00</p>
-                      </div>
-                      <div class="baca"></div>
-                </div>
-              </button>
+              <div class="bbb" onclick="document.getElementById('abacaxi').style.display='block'" >
+                  <div class="fei">
+                        <p>SUCO DE ABACAXI COM ORTELÃ<br>
+                           500 ML <strong>R$</strong> 10.00<br>
+                           300 ML <strong>R$</strong> 6.00
+                        </p>
+                        <div class="baca"></div>
+                  </div>
+              </div>
               
-              <button class="bbb" onclick="document.getElementById('limaoo').style.display='block'" >
-                <div class="fei">
-                    <div>
-                        <p class="top6 top7">SUCO DE LIMÃO</p>
-                        <p class="top6"> 500 ML <strong>R$</strong> 10.00</p>
-                        <p class="top6"> 300 ML <strong>R$</strong>  6.00</p>
-                      </div>
-                      <div class="lim1"></div>
-                </div>
-              </button>
+              <div class="bbb" onclick="document.getElementById('limaoo').style.display='block'" >
+                   <div class="fei">
+                        <p>SUCO DE LIMÃO<br>
+                           500 ML <strong>R$</strong> 10.00<br>
+                           300 ML <strong>R$</strong>  6.00
+                        </p>
+                        <div class="lim1"></div>
+                   </div>
+               </div>
             </div>
 
 
             <h3 class="bbd">CERVEJAS</h3>
 
             <div class="bebidas">
-             <button class="bbb" onclick="document.getElementById('litrinho').style.display='block'" >
-                <div class="fei">
-                      <div>
-                        <p CLass="top6 top7">CERVEJA LITRINHO</p>
-                        <p class="top6"> SKOL BRHAMA KAISHER</p>
-                        <p class="top6"> <strong>R$</strong>  6.00</p>
-                      </div>
-                      <div class="litr1"></div>
-                </div>
-             </button>
+               <div class="bbb" onclick="document.getElementById('litrinho').style.display='block'" >
+                   <div class="fei">
+                        <p>CERVEJA LITRINHO<br>
+                           <strong>R$</strong>  6.00
+                        </p>
+                        <div class="litr1"></div>
+                   </div>
+               </div>
              
-             <button class="bbb" onclick="document.getElementById('heineckenn').style.display='block'" >
-                <div class="fei">
-                    <div>
-                        <p class="top11">HEINECKEN - LONG NECK</p>
-                        <p class="top12"><strong>R$</strong>  12.00</p>
-                      </div>
-                      <div class="hein1"></div>
-                </div>
-             </button>
+               <div class="bbb" onclick="document.getElementById('heineckenn').style.display='block'" >
+                   <div class="fei">
+                        <p>HEINECKEN - LONG NECK<br>
+                           <strong>R$</strong>  12.00
+                        </p>
+                        <div class="hein1"></div>
+                   </div>
+               </div>
             </div>
 
 
             <div class="bebidas">
-            <button class="bbb" onclick="document.getElementById('budwiserr').style.display='block'" >
-                <div class="fei">
-                      <div>
-                        <p class="top11">BUDWISER - LONG NECK</p>
-                        <p class="top12"><strong>R$</strong>  11.00</p>
-                      </div>
-                      <div class="bud1"></div>
+                <div class="bbb" onclick="document.getElementById('budwiserr').style.display='block'" >
+                   <div class="fei">
+                        <p>BUDWISER - LONG NECK<br>
+                          <strong>R$</strong>  11.00
+                        </p>
+                        <div class="bud1"></div>
+                   </div>
                 </div>
-            </button>
             
-            <button class="bbb" onclick="document.getElementById('coronaa').style.display='block'" >
-                <div class="fei">
-                    <div>
-                        <p class="top11">CORONA - LONG NECK</p>
-                        <p class="top12"><strong>R$</strong>  11.00</p>
-                      </div>
-                      <div class="coro1"></div>
+                <div class="bbb" onclick="document.getElementById('coronaa').style.display='block'" >
+                   <div class="fei">
+                        <p>CORONA - LONG NECK<br>
+                           <strong>R$</strong>  11.00
+                        </p>
+                        <div class="coro1"></div>
+                   </div>
                 </div>
-            </button>
             </div>
 
             <!--INICIO REFRI 1 L-->
@@ -189,7 +183,7 @@
                   <form>
                       <div class="pai1">
                           <div class="pai4">
-                              <button onclick="document.getElementById('refr1l').style.display='none'"  class="bttm" type="button">
+                              <button onclick="document.getElementById('refr1l').style.display='none'"  class="voltarPizza">
                                 <i class="fa-solid fa-angle-left close"></i></button>
                               <h2 class="h21">REFRI 1 L</h2>
                           </div>
@@ -198,34 +192,36 @@
                               <div class="foto4"></div>
                               <h3 class="h3cor h32">Outras opções</h3>
                               <div class="filho3">
-                                  <input class="pai3" type="checkbox" id="refri2l">
-                                  <label for="refri2l">REFRI 2 LITROS <strong> R$</strong> 20.00</label><br><br>
+                                  <input onclick="receber1L('20','REFRI 2 LITROS ','refri2lR1')"    type="checkbox" id="refri2lR1">
+                                  <label for="refri2lR1">REFRI 2 LITROS <strong> R$</strong> 20.00</label><br><br>
           
-                                  <input class="pai3" type="checkbox" id="refrilata">
-                                  <label for="refrilata">REFRI LATA <strong> R$</strong> 6.00</label><br><br>
+                                  <input onclick="receber1L('6','REFRI LATA ','refrilataR1')"   type="checkbox" id="refrilataR1">
+                                  <label for="refrilataR1">REFRI LATA <strong> R$</strong> 6.00</label><br><br>
           
-                                  <input class="pai3" type="checkbox" id="redbull">
-                                  <label for="redbull">ENERGÉTICO RED BULL <strong> R$</strong> 15.00</label><br><br>
+                                  <input onclick="receber1L('15','ENERGÉTICO RED BULL ','redbullR1')"    type="checkbox" id="redbullR1">
+                                  <label for="redbullR1">ENERGÉTICO RED BULL <strong> R$</strong> 15.00</label><br><br>
                               </div>    
           
                               <div class="centro1">
                                   <h3 class="h30">Alguma observação?</h3>
                                   <p class="marg1">1/60</p>
-                                  <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                                  <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                                  <textarea class="text2" id="mensagem1l" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                                  <h5><small>* Serão acatadas apenas as que não alteram o valor</small></h5>
                               </div>
           
                               <div class="contador1">
                                   <div class="brd1">
-                                      <button class="bttm2" type="button" id="menos"><i class="fa-solid fa-minus"></i></button>
-                                      <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                      <button class="bttm2" type="button" id="mais"><i class="fa-solid fa-plus"></i></button>
+                                      <button onclick="menos1L()" class="bttm2" type="button" id="menos1l"><i class="fa-solid fa-minus"></i></button>
+                                      <input type="number" id="quantidade1l" class="quantidade" value="1" min="1" readonly>
+                                      <button onclick="maiss1L()" class="bttm2" type="button" id="mais1l"><i class="fa-solid fa-plus"></i></button>
                                   </div>
                                   <div class="brd1 brd2">
-                                      <button class="bttm2 brd2" type="button">
+                                      <div onclick="irpedidos1L()" class="bttm2 brd2">
                                           <p>Adicionar</p>
-                                          <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                      </button>
+                                          <div class="RS"><input type="number" id="quantidade1L" class="quantidade brd2" value="10" min="10" readonly>
+                                          <p><strong>R$</strong></p>
+                                          </div>
+                                      </div>
                                   </div>
                               </div>
                           </div>
@@ -237,12 +233,12 @@
 
             <!-- INICIO REDUBLL-->
 
-            <div id="redb" class="redb">
-              <div class="cont_redb">
+            <div id="redb" class="refr1l">
+              <div class="cont_refr1l">
                 <div class= "pai1">
                   <form>
                       <div class="pai4">
-                          <button class="close" onclick="document.getElementById('redb').style.display='none'"  class="voltarPizza" type="button">
+                          <button onclick="document.getElementById('redb').style.display='none'"class=" close voltarPizza">
                             <i class="fa-solid fa-angle-left"></i></button>
                           <h2 class="h21">REDBULL</h2>
                       </div>
@@ -251,40 +247,42 @@
                           <div class="redbul"></div>
                           <h3 class="h3cor h32">Outras opções</h3>
                           <div class="filho3">
-                          <input class="pai3" type="checkbox" id="refri2l">
-                          <label for="refri2l">REFRI 2 LITROS <strong > R$</strong> 20.00</label><br><br>
+                          <input onclick="receberRB('20','REFRI 2 LITROS  ','refri2lRD')"   type="checkbox" id="refri2lRD">
+                          <label for="refri2lRD">REFRI 2 LITROS <strong > R$</strong> 20.00</label><br><br>
           
-                          <input class="pai3" type="checkbox" id="refrilata">
-                          <label for="refrilata">REFRI LATA <strong> R$</strong> 6.00</label><br><br>
+                          <input onclick="receberRB('6','REFRI LATA  ','refrilataRD')"    type="checkbox" id="refrilataRD">
+                          <label for="refrilataRD">REFRI LATA <strong> R$</strong> 6.00</label><br><br>
           
-                          <input class="pai3" type="checkbox" id="refri1l">
-                          <label for="refri1l">REFRI 1 LITRO <strong> R$</strong> 10.00</label><br><br>
+                          <input onclick="receberRB('10','REFRI 1 LITRO  ','refri1lRD')"   type="checkbox" id="refri1lRD">
+                          <label for="refri1lRD">REFRI 1 LITRO <strong> R$</strong> 10.00</label><br><br>
                           </div>    
           
                         <div class="centro1">
                           <h3 class="h30">Alguma observação?</h3>
                           <p class="marg1">1/60</p>
-                          <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                          <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                          <textarea class="text2" id="mensagemRD" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                          <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                         </div>
                         <div class="contador1">
                            <div class="brd1">
-                              <button class="bttm2" type="button" id="menos"><i class="fa-solid fa-minus"></i></button>
-                              <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                              <button class="bttm2" type="button" id="mais"><i class="fa-solid fa-plus"></i></button>
+                              <button onclick="menosRB()" class="bttm2" type="button" id="menosRD"><i class="fa-solid fa-minus"></i></button>
+                              <input type="number" id="quantidadeRD" class="quantidade" value="1" min="1" readonly>
+                              <button onclick="maisRB()" class="bttm2" type="button" id="maisRD"><i class="fa-solid fa-plus"></i></button>
                            </div>
                           <div class="brd1 brd2">
-                              <button class="bttm2 brd2" type="button">
+                              <div onclick="irpedidosRB()" class="bttm2 brd2">
                                   <p>Adicionar</p>
-                                  <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                              </button>
+                                  <div class="RS"><input type="number" id="quantidadeRd" class="quantidade brd2" value="15" min="15" readonly>
+                                  <p><strong>R$</strong></p>
+                                  </div>
+                              </div>
                           </div>
                         </div>
                       </div>
                   </form>
+                </div>
               </div>
             </div>
-           </div>
            <!--FIM REDBULL-->
 
            <!--ABACAXI-->
@@ -294,52 +292,54 @@
                 <form>
                     <div class="pai1">
                         <div class="pai4">
-                            <button class="bttm" type="button" onclick="document.getElementById('abacaxi').style.display='none'" >
-                                <i class="fa-solid fa-angle-left close"></i></button>
-                            <h2>SUCO DE ABACAXI C/ HORTELÃ</h2>
+                            <button onclick="document.getElementById('abacaxi').style.display='none'" class="voltarPizza close" >
+                                <i class="fa-solid fa-angle-left"></i></button>
+                            <h2>SUCO DE ABACAXI C/ HORTELÃ</h2> 
                         </div>
         
                         <div class="colun">
                             <div class="abacaxi1"></div>
         
                             <div class="filho3 bordatop">
-                                <input class="pai3" type="radio" name="abacaxi" id="300ml">
-                                <label for="300ml">300 ML <strong class="L1"> R$</strong> 6.00</label><br><br>
+                                <input onclick="mlAB('6','300',this )"  type="radio" name="abacaxi" id="300mlA">
+                                <label for="300mlA">300 ML <strong class="L1"> R$</strong> 6.00</label><br><br>
         
-                                <input class="pai3" type="radio" name="abacaxi" id="600ml">
-                                <label for="600ml">600 ML <strong class="L2"> R$</strong> 10.00</label><br><br>
+                                <input onclick="mlAB('10','600',this )"   type="radio" name="abacaxi" id="600mlA">
+                                <label for="600mlA">600 ML <strong class="L2"> R$</strong> 10.00</label><br><br>
                             </div>
         
                             <h3 class="h3cor h32">Outras opções</h3>
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="limao1">
-                                <label for="limao1">SUCO DE LIMÃO 300 ML <strong class="m1"> R$</strong> 6.00</label><br><br>
+                                <input onclick="receberAB('6','SUCO DE LIMÃO 300 ML ','limaoA')"    type="checkbox" id="limaoA">
+                                <label for="limaoA">SUCO DE LIMÃO 300 ML <strong class="m1"> R$</strong> 6.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="laranja2">
-                                <label for="laranja2">SUCO DE LARANJA 500 ML <strong class="m2"> R$</strong> 10.00</label><br><br>
+                                <input onclick="receberAB('10','SUCO DE LARANJA 500 ML ','laranjaA')"    type="checkbox" id="laranjaA">
+                                <label for="laranjaA">SUCO DE LARANJA 500 ML <strong class="m2"> R$</strong> 10.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="maracuja1">
-                                <label for="maracuja1">SUCO DE MARACUJÁ <strong class="m3"> R$</strong> 6.00</label><br><br>
+                                <input onclick="receberAB('6','SUCO DE MARACUJÁ 300 ML ','maracujaA')"   type="checkbox" id="maracujaA">
+                                <label for="maracujaA">SUCO DE MARACUJÁ 300 ML <strong class="m3"> R$</strong> 6.00</label><br><br>
                             </div>    
         
                             <div class="centro1">
                                 <h3 class="h30">Alguma observação?</h3>
                                 <p class="marg1">1/60</p>
-                                <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                                <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                                <textarea class="text2" id="mensagemA" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                                <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                             </div>
         
                             <div class="contador1">
                                 <div class="brd1">
-                                    <button class="bttm2" type="button" id="menos"><i class="fa-solid fa-minus"></i></button>
-                                    <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                    <button class="bttm2" type="button" id="mais"><i class="fa-solid fa-plus"></i></button>
+                                    <button onclick="menosAB()" class="bttm2" type="button" id="menosA"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="number" id="quantidadeA" class="quantidade" value="1" min="1" readonly>
+                                    <button  onclick="maisAB()"  class="bttm2" type="button" id="maisA"><i class="fa-solid fa-plus"></i></button>
                                 </div>
                                 <div class="brd1 brd2">
-                                    <button class="bttm2 brd2" type="button">
+                                    <div onclick="irpedidosAB()" class="bttm2 brd2">
                                         <p>Adicionar</p>
-                                        <input type="number" id="quantidade-adicionar" class="quantidade brd2" value="30" min="30">
-                                    </button>
+                                        <div class="RS"><input type="number" id="quantidadeA1" class="quantidade brd2" value="6" min="6" readonly>
+                                        <p><strong>R$</strong></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -348,6 +348,8 @@
             </div>
         </div>
 
+        <!--FIM ABACAXI-->
+
         <!-- INICIO REFRI 2 L-->
 
         <div id="refr2l" class="refr1l">
@@ -355,7 +357,7 @@
                 <form>
                     <div class="pai1">
                         <div class="pai4">
-                            <button onclick="document.getElementById('refr2l').style.display='none'" class="bttm" type="button">
+                            <button onclick="document.getElementById('refr2l').style.display='none'" class="voltarPizza">
                                 <i class="fa-solid fa-angle-left close"></i>
                             </button>
                             <h2>REFRI 2 LITROS</h2>
@@ -365,35 +367,37 @@
                             <div class="refri2"></div>
                             <h3 class="h3cor h32">Outras opções</h3>
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="refri1l">
-                                <label for="refri1l">REFRI 1 LITRO <strong> R$</strong> 20.00</label><br><br>
+                                <input onclick="receber2LT('10','REFRI 1 LITRO ','refri1lR2')"   type="checkbox" id="refri1lR2">
+                                <label for="refri1lR2">REFRI 1 LITRO <strong> R$</strong> 10.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="refrilata">
-                                <label for="refrilata">REFRI LATA <strong> R$</strong> 6.00</label><br><br>
+                                <input onclick="receber2LT('6','REFRI LATA ','refrilataR2')"    type="checkbox" id="refrilataR2">
+                                <label for="refrilataR2">REFRI LATA <strong> R$</strong> 6.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="redbull">
-                                <label for="redbull">ENERGÉTICO RED BULL <strong> R$</strong> 15.00</label><br><br>
+                                <input onclick="receber2LT('15','ENERGÉTICO RED BULL ','redbullR2')"    type="checkbox" id="redbullR2">
+                                <label for="redbullR2">ENERGÉTICO RED BULL <strong> R$</strong> 15.00</label><br><br>
                             </div>
                         </div>
         
                         <div class="centro1">
                             <h3 class="h30">Alguma observação?</h3>
                             <p class="marg1">1/60</p>
-                            <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                            <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                            <textarea class="text2" id="mensagemR2" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                            <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                         </div>
         
                         <div class="contador1">
                             <div class="brd1">
-                                <button class="bttm2" type="button" id="menos">–</button>
-                                <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                <button class="bttm2" type="button" id="mais">+</button>
+                                <button onclick="menos2LT()" class="bttm2" type="button" id="menosR2"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="quantidadeR2" class="quantidade" value="1" min="1" readonly>
+                                <button onclick="mais2LT()"  class="bttm2" type="button" id="maisR2"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div class="brd1 brd2">
-                                <button class="bttm2 brd2" type="button">
+                                <div onclick="irpedidos2LT()" class="bttm2 brd2">
                                     <p>Adicionar</p>
-                                    <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                </button>
+                                    <div class="RS"><input type="number" id="quantidade2R" class="quantidade brd2" value="20" min="20" readonly>
+                                    <p><strong>R$</strong></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -410,7 +414,7 @@
                 <form>
                     <div class="pai1">
                         <div class="pai4">
-                            <button class="close" onclick="document.getElementById('lata').style.display='none'" type="button">
+                            <button onclick="document.getElementById('lata').style.display='none'" class="voltarPizza close" type="button">
                                 <i class="fa-solid fa-angle-left"></i>
                             </button>
                             <h2>REFRI LATA</h2>
@@ -420,35 +424,37 @@
                             <div class="lata"></div>
                             <h3 class="h3cor h32">Outras opções</h3>
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="refri2l">
-                                <label for="refri2l">REFRI 2 LITROS <strong> R$ 20.00</strong></label><br><br>
+                                <input onclick="receberLTA('20','REFRI 2 LITRO ','refri2lLA')"    type="checkbox" id="refri2lLA">
+                                <label for="refri2lLA">REFRI 2 LITROS <strong> R$ 20.00</strong></label><br><br>
         
-                                <input class="pai3" type="checkbox" id="refri1l">
-                                <label for="refri1l">REFRI 1 LITRO <strong> R$ 10.00</strong></label><br><br>
+                                <input onclick="receberLTA('10','REFRI 1 LITRO ','refri1lLA')"   type="checkbox" id="refri1lLA">
+                                <label for="refri1lLA">REFRI 1 LITRO <strong> R$ 10.00</strong></label><br><br>
         
-                                <input class="pai3" type="checkbox" id="redbull">
-                                <label for="redbull">ENERGÉTICO RED BULL <strong> R$ 15.00</strong></label><br><br>
+                                <input onclick="receberLTA('15','ENERGÉTICO RED BULL ','redbullLA')"   type="checkbox" id="redbullLA">
+                                <label for="redbullLA">ENERGÉTICO RED BULL <strong> R$ 15.00</strong></label><br><br>
                             </div>    
         
                             <div class="centro1">
                                 <h3 class="h30">Alguma observação?</h3>
                                 <p class="marg1">1/60</p>
-                                <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                                <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                                <textarea class="text2" id="mensagemLA" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                                <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                             </div>
         
                             <div class="contador1">
                                 <div class="brd1">
-                                    <button class="bttm2" type="button" id="menos">–</button>
-                                    <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                    <button class="bttm2" type="button" id="mais">+</button>
+                                    <button onclick="menosLTA()"  class="bttm2" type="button" id="menosLA"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="number" id="quantidadeLA" class="quantidade" value="1" min="1" readonly>
+                                    <button onclick="maisLTA()"  class="bttm2" type="button" id="maisLA"><i class="fa-solid fa-plus"></i></button>
                                 </div>
         
                                 <div class="brd1 brd2">
-                                    <button class="bttm2 brd2" type="button">
+                                    <div onclick="irpedidosLTA()" class="bttm2 brd2">
                                         <p>Adicionar</p>
-                                        <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                    </button>
+                                        <div class="RS"><input type="number" id="quantidadeAL" class="quantidade brd2" value="6" min="6" readonly>
+                                        <p><strong>R$</strong></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -466,7 +472,7 @@
                 <form>
                     <div class="pai1">
                         <div class="pai4">
-                            <button class="bttm" type="button" onclick="document.getElementById('maracuja').style.display='none'">
+                            <button type="button" onclick="document.getElementById('maracuja').style.display='none'" class="voltarPizza">
                                 <i class="fa-solid fa-angle-left close"></i>
                             </button>
                             <h2>SUCO DE MARACUJÁ</h2>
@@ -476,44 +482,46 @@
                             <div class="maracuja1"></div>
         
                             <div class="filho3 bordatop">
-                                <input class="pai3" type="radio" name="maracuja1" id="300ml">
-                                <label for="300ml">300 ML <strong> R$</strong> 6.00</label><br><br>
+                                <input onclick="mlMR('6','300',this )"   type="radio" name="maracuja1" id="300mlM">
+                                <label for="300mlM">300 ML <strong> R$</strong> 6.00</label><br><br>
         
-                                <input class="pai3" type="radio" name="maracuja2" id="600ml">
-                                <label for="600ml">600 ML <strong> R$</strong> 10.00</label><br><br>
+                                <input onclick="mlMR('10','600',this )"   type="radio" name="maracuja1" id="600mlM">
+                                <label for="600mlM">600 ML <strong> R$</strong> 10.00</label><br><br>
                             </div>
         
                             <h3 class="h3cor h32">Outras opções</h3>
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="limao1">
-                                <label for="limao1">SUCO DE LIMÃO 300 ML <strong> R$</strong> 6.00</label><br><br>
+                                <input onclick="receberMR('6','SUCO DE LIMÃO 300 ML','limao1M')"   type="checkbox" id="limao1M">
+                                <label for="limao1M">SUCO DE LIMÃO 300 ML <strong> R$</strong> 6.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="abacaxi2">
-                                <label for="abacaxi2">SUCO DE ABACAXI 500 ML <strong> R$</strong> 10.00</label><br><br>
+                                <input onclick="receberMR('10','SUCO DE ABACAXI 500 ML','abacaxi2M')"   type="checkbox" id="abacaxi2M">
+                                <label for="abacaxi2M">SUCO DE ABACAXI 500 ML <strong> R$</strong> 10.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="laranja1">
-                                <label for="laranja1">SUCO DE LARANJA <strong> R$</strong> 6.00</label><br><br>
+                                <input onclick="receberMR('6','SUCO DE LARANJA 300 ML ','laranja1M')"   type="checkbox" id="laranja1M">
+                                <label for="laranja1M">SUCO DE LARANJA <strong> R$</strong> 6.00</label><br><br>
                             </div>    
         
                             <div class="centro1">
                                 <h3 class="h30">Alguma observação?</h3>
                                 <p class="marg1">1/60</p>
-                                <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                                <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                                <textarea class="text2" id="mensagemM" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                                <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                             </div>
         
                             <div class="contador1">
                                 <div class="brd1">
-                                    <button class="bttm2" type="button" id="menos">–</button>
-                                    <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                    <button class="bttm2" type="button" id="mais">+</button>
+                                    <button onclick="menosMR()" class="bttm2" type="button" id="menosM"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="number" id="quantidadeM" class="quantidade" value="1" min="1" readonly>
+                                    <button onclick="maisMR()" class="bttm2" type="button" id="maisM"><i class="fa-solid fa-plus"></i></button>
                                 </div>
         
                                 <div class="brd1 brd2">
-                                    <button class="bttm2 brd2" type="button">
+                                    <div onclick="irpedidosMR()" class="bttm2 brd2">
                                         <p>Adicionar</p>
-                                        <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                    </button>
+                                        <div class="RS"><input type="number" id="quantidadeM1" class="quantidade brd2" value="0" min="0" readonly>
+                                        <p><strong>R$</strong></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -532,7 +540,7 @@
         
                     <div class="pai1">
                         <div class="pai4">
-                            <button class="bttm" type="button" onclick="document.getElementById('laranja').style.display='none'">
+                            <button onclick="document.getElementById('laranja').style.display='none'" type="button" class="voltarPizza">
                                 <i class="fa-solid fa-angle-left close"></i>
                             </button>
                             <h2>SUCO DE LARANJA</h2>
@@ -541,43 +549,45 @@
                         <div class="colun">
                             <div class="laranja1"></div>
                             <div class="filho3 bordatop">
-                                <input class="pai3" type="radio" name="laranja" id="300ml">
-                                <label for="300ml">300 ML <strong class="L1"> R$</strong> 6.00</label><br><br>
+                                <input onclick="mlLA('6','300',this)"  type="radio" name="laranja" id="300mlLa">
+                                <label for="300mlLa">300 ML <strong class="L1"> R$</strong> 6.00</label><br><br>
         
-                                <input class="pai3" type="radio" name="laranja" id="600ml">
-                                <label for="600ml">600 ML <strong class="L2"> R$</strong> 10.00</label><br><br>
+                                <input onclick="mlLA('10','600',this)"   type="radio" name="laranja" id="600mlLa">
+                                <label for="600mlLa">600 ML <strong class="L2"> R$</strong> 10.00</label><br><br>
                             </div>
         
                             <h3 class="h3cor h32">Outras opções</h3>
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="limao">
-                                <label for="limao">SUCO DE LIMÃO 300 ML <strong class="m1"> R$</strong> 6.00</label><br><br>
+                                <input onclick="receberLA('6','SUCO DE LIMÃO 300 ML ','limaoLA')"   type="checkbox" id="limaoLA">
+                                <label for="limaoLA">SUCO DE LIMÃO 300 ML <strong class="m1"> R$</strong> 6.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="abacaxi">
-                                <label for="abacaxi">SUCO DE ABACAXI 500 ML<strong class="m2"> R$</strong> 10.00</label><br><br>
+                                <input onclick="receberLA('10','SUCO DE ABACAXI 500 ML ','abacaxiLA')"  type="checkbox" id="abacaxiLA">
+                                <label for="abacaxiLA">SUCO DE ABACAXI 500 ML<strong class="m2"> R$</strong> 10.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="maracuja">
-                                <label for="maracuja">SUCO DE MARACUJÁ <strong class="m3"> R$</strong> 6.00</label><br><br>
+                                <input onclick="receberLA('6','SUCO DE MARACUJÁ 300 ML ','maracujaLA')"  type="checkbox" id="maracujaLA">
+                                <label for="maracujaLA">SUCO DE MARACUJÁ 300 ML <strong class="m3"> R$</strong> 6.00</label><br><br>
                             </div>
         
                             <div class="centro1">
                                 <h3 class="h30">Alguma observação?</h3>
                                 <p class="marg1">1/60</p>
-                                <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                                <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                                <textarea class="text2" id="mensagemLa" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                                <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                             </div>
         
                             <div class="contador1">
                                 <div class="brd1">
-                                    <button class="bttm2" type="button" id="menos">–</button>
-                                    <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                    <button class="bttm2" type="button" id="mais">+</button>
+                                    <button onclick="menosLA()"  class="bttm2" type="button" id="menosLa"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="number" id="quantidadeLa" class="quantidade" value="1" min="1" readonly>
+                                    <button onclick="maisLA()" class="bttm2" type="button" id="maisLa"><i class="fa-solid fa-plus"></i></button>
                                 </div>
                                 <div class="brd1 brd2">
-                                    <button class="bttm2 brd2" type="button">
+                                    <div onclick="irpedidosLA()" class="bttm2 brd2">
                                         <p>Adicionar</p>
-                                        <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                    </button>
+                                        <div class="RS"><input type="number" id="quantidadeLa1" class="quantidade brd2" value="0" min="0" readonly>
+                                        <p><strong>R$</strong></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -596,53 +606,55 @@
                 <form>
                     <div class="pai1">
                         <div class="pai4">
-                            <button class="bttm" type="button" onclick="document.getElementById('limaoo').style.display='none'">
+                            <button class="voltarPizza" onclick="document.getElementById('limaoo').style.display='none'" type="button">
                                 <i class="fa-solid fa-angle-left close"></i>
                             </button>
-                            <h2>SUCO DE LARANJA</h2>
+                            <h2>SUCO DE LIMÃO</h2>
                         </div>
         
                         <div class="colun">
                             <div class="limao1"></div>
                             <div class="filho3 bordatop">
-                                <input class="pai3" type="radio" name="limao1" id="300ml">
-                                <label for="300ml">300 ML <strong class="L1"> R$</strong> 6.00 </label><br><br>
+                                <input onclick="mlLM('6','300',this)"   type="radio" name="limao1" id="300mlLI">
+                                <label for="300mlLI">300 ML <strong class="L1"> R$</strong> 6.00 </label><br><br>
         
-                                <input class="pai3" type="radio" name="limao2" id="600ml">
-                                <label for="600ml">600 ML <strong class="L2"> R$</strong> 10.00</label><br><br>
+                                <input onclick="mlLM('10','600',this)"    type="radio" name="limao1" id="600mlLI">
+                                <label for="600mlLI">600 ML <strong class="L2"> R$</strong> 10.00</label><br><br>
                             </div>
         
                             <h3 class="h3cor h32">Outras opções</h3>
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="laranja1">
-                                <label for="laranja1">SUCO DE LARANJA 300 ML <strong class="m1"> R$</strong> 6.00</label><br><br>
+                                <input onclick="receberLM('6','SUCO DE LARANJA 300 ML','laranja1LI')"   type="checkbox" id="laranja1LI">
+                                <label for="laranja1LI">SUCO DE LARANJA 300 ML <strong class="m1"> R$</strong> 6.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="abacaxi2">
-                                <label for="abacaxi2">SUCO DE ABACAXI 500 ML<strong class="m2"> R$</strong> 10.00</label><br><br>
+                                <input onclick="receberLM('10','SUCO DE ABACAXI 500 ML','abacaxi2LI')"    type="checkbox" id="abacaxi2LI">
+                                <label for="abacaxi2LI">SUCO DE ABACAXI 500 ML<strong class="m2"> R$</strong> 10.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="maracuja1">
-                                <label for="maracuja1">SUCO DE MARACUJÁ <strong class="m3"> R$</strong> 6.00</label><br><br>
+                                <input onclick="receberLM('6','SUCO DE MARACUJÁ 300 ML ','maracuja1LI')"    type="checkbox" id="maracuja1LI">
+                                <label for="maracuja1LI">SUCO DE MARACUJÁ 300 ML <strong class="m3"> R$</strong> 6.00</label><br><br>
                             </div>    
         
                             <div class="centro1">
                                 <h3 class="h30">Alguma observação?</h3>
                                 <p class="marg1">1/60</p>
-                                <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                                <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                                <textarea class="text2" id="mensagemLI" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                                <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                             </div>
         
                             <div class="contador1">
                                 <div class="brd1">
-                                    <button class="bttm2" type="button" id="menos">–</button>
-                                    <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                    <button class="bttm2" type="button" id="mais">+</button>
+                                    <button onclick="menosLM()"  class="bttm2" type="button" id="menosLI"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="number" id="quantidadeLI" class="quantidade" value="1" min="1" readonly>
+                                    <button onclick="maisLM()"  class="bttm2" type="button" id="maisLI"><i class="fa-solid fa-plus"></i></button>
                                 </div>
         
                                 <div class="brd1 brd2">
-                                    <button class="bttm2 brd2" type="button">
+                                    <div onclick="irpedidosLM()" class="bttm2 brd2">
                                         <p>Adicionar</p>
-                                        <input type="number" id="quantidade" class="quantidade brd2" value="30" min="30">
-                                    </button>
+                                        <div class="RS"><input type="number" id="quantidadeLI1" class="quantidade brd2" value="0" min="0" readonly>
+                                        <p><strong>R$</strong></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -660,7 +672,7 @@
                 <form>
                     <div class="pai1">
                         <div class="pai4">
-                            <button class="bttm" type="button" onclick="document.getElementById('litrinho').style.display='none'">
+                            <button type="button" onclick="document.getElementById('litrinho').style.display='none'" class="voltarPizza">
                                 <i class="fa-solid fa-angle-left close"></i>
                             </button>
                             <h2>CERVEJA LITRINHO</h2>
@@ -670,35 +682,37 @@
                             <div class="litrinho1"></div>
                             <h3 class="h32 h3cor">Outras opções</h3>
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="heinecken">
-                                <label for="heinecken">HEINECKEN LONG-NECK <strong>R$</strong> 12.00</label><br><br>
+                                <input onclick="receberCL('12','HEINECKEN LONG-NECK','heineckenCL')"    type="checkbox" id="heineckenCL">
+                                <label for="heineckenCL">HEINECKEN LONG-NECK <strong>R$</strong> 12.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="corona">
-                                <label for="corona">CORONA LONG-NECK <strong>R$</strong> 11.00</label><br><br>
+                                <input onclick="receberCL('11','CORONA LONG-NECK','coronaCL')"   type="checkbox" id="coronaCL">
+                                <label for="coronaCL">CORONA LONG-NECK <strong>R$</strong> 11.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="budwiser">
-                                <label for="budwiser">BUDWISER LONG-NECK <strong>R$</strong> 11.00</label><br><br>
+                                <input onclick="receberCL('11','BUDWISER LONG-NECK','budwiserCL')"    type="checkbox" id="budwiserCL">
+                                <label for="budwiserCL">BUDWISER LONG-NECK <strong>R$</strong> 11.00</label><br><br>
                             </div>    
         
                             <div class="centro1">
                                 <h3 class="h30">Alguma observação?</h3>
                                 <p class="marg1">1/60</p>
-                                <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                                <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                                <textarea class="text2" id="mensagemCL" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                                <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                             </div>
         
                             <div class="contador1">
                                 <div class="brd1">
-                                    <button class="bttm2" type="button" id="menos">–</button>
-                                    <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                    <button class="bttm2" type="button" id="mais">+</button>
+                                    <button onclick="menosCL()"  class="bttm2" type="button" id="menosLI"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="number" id="quantidadeCL" class="quantidade" value="1" min="1" readonly>
+                                    <button onclick="maisCL()"  class="bttm2" type="button" id="maisLI"><i class="fa-solid fa-plus"></i></button>
                                 </div>
         
                                 <div class="brd1 brd2">
-                                    <button class="bttm2 brd2" type="button">
+                                    <div onclick="irpedidosCL()" class="bttm2 brd2">
                                         <p>Adicionar</p>
-                                        <input type="number" id="quantidade" class="quantidade brd2" value="6" min="6">
-                                    </button>
+                                        <div class="RS"><input type="number" id="quantidadeCL1" class="quantidade brd2" value="6" min="6" readonly>
+                                        <p><strong>R$</strong></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -716,7 +730,7 @@
                 <form>
                     <div class="pai1">
                         <div class="pai4">
-                            <button class="bttm" type="button" onclick="document.getElementById('heineckenn').style.display='none'">
+                            <button type="button" onclick="document.getElementById('heineckenn').style.display='none'" class="voltarPizza">
                                 <i class="fa-solid fa-angle-left close"></i>
                             </button>
                             <h2>HEINECKEN LONG-NECK</h2>
@@ -726,36 +740,38 @@
                             <div class="heinecken1"></div>
                             <h3 class="h3cor h32">Outras opções</h3>
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="litrinho">
-                                <label for="litrinho">CERVEJA LITRINHO <strong> R$</strong> 6.00</label><br><br>
+                                <input onclick="receberHY('6','CERVEJA LITRINHO','litrinhoH')"   type="checkbox" id="litrinhoH">
+                                <label for="litrinhoH">CERVEJA LITRINHO <strong> R$</strong> 6.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="corona">
-                                <label for="corona">CORONA LONG-NECK <strong> R$</strong> 11.00</label><br><br>
+                                <input onclick="receberHY('11','CORONA LONG-NECK','coronaH')"  type="checkbox" id="coronaH">
+                                <label for="coronaH">CORONA LONG-NECK <strong> R$</strong> 11.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="budwiser">
-                                <label for="budwiser">BUDWISER LONG-NECK <strong> R$</strong> 11.00</label><br><br>
+                                <input onclick="receberHY('11','BUDWISER LONG-NECK','budwiserH')"   type="checkbox" id="budwiserH">
+                                <label for="budwiserH">BUDWISER LONG-NECK <strong> R$</strong> 11.00</label><br><br>
                             </div>
                         </div>
         
                         <div class="centro1">
                             <h3 class="h30">Alguma observação?</h3>
                             <p class="marg1">1/60</p>
-                            <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                            <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                            <textarea class="text2" id="mensagemH" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                            <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                         </div>
         
                         <div class="contador1">
                             <div class="brd1">
-                                <button class="bttm2" type="button" id="menos">–</button>
-                                <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                <button class="bttm2" type="button" id="mais">+</button>
+                                <button onclick="menosHY()" class="bttm2" type="button" id="menosH"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="quantidadeH" class="quantidade" value="1" min="1" readonly>
+                                <button onclick="maisHY()" class="bttm2" type="button" id="maisH"><i class="fa-solid fa-plus"></i></button>
                             </div>
         
                             <div class="brd1 brd2">
-                                <button class="bttm2 brd2" type="button">
+                                <div onclick="irpedidosHY()"  class="bttm2 brd2">
                                     <p>Adicionar</p>
-                                    <input type="number" id="quantidade" class="quantidade brd2" value="12" min="12">
-                                </button>
+                                    <div class="RS"><input type="number" id="quantidadeH1" class="quantidade brd2" value="12" min="12" readonly>
+                                    <p><strong>R$</strong></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -772,7 +788,7 @@
                 <form>
                     <div class="pai1">
                         <div class="pai4">
-                            <button class="bttm" type="button" onclick="document.getElementById('budwiserr').style.display='none'">
+                            <button class="voltarPizza" type="button" onclick="document.getElementById('budwiserr').style.display='none'" >
                                 <i class="fa-solid fa-angle-left close"></i>
                             </button>
                             <h2 class="h21">BUDWISER LONG-NECK</h2>
@@ -784,35 +800,37 @@
                             <h3 class="h3cor h32">Outras opções</h3>
         
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="litrinho">
-                                <label for="litrinho">CERVEJA LITRINHO <strong> R$</strong> 6.00</label><br><br>
+                                <input onclick="receberBW('6','CERVEJA LITRINHO','litrinhoB')"  type="checkbox" id="litrinhoB">
+                                <label for="litrinhoB">CERVEJA LITRINHO <strong> R$</strong> 6.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="corona">
-                                <label for="corona">CORONA LONG-NECK <strong> R$</strong> 11.00</label><br><br>
+                                <input onclick="receberBW('11','CORONA LONG-NECK','coronaB')"  type="checkbox" id="coronaB">
+                                <label for="coronaB">CORONA LONG-NECK <strong> R$</strong> 11.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="heinecken">
-                                <label for="heinecken">HEINECKEN LONG-NECK <strong> R$</strong> 12.00</label><br><br>
+                                <input onclick="receberBW('12','HEINECKEN LONG-NECK','heineckenB')"  type="checkbox" id="heineckenB">
+                                <label for="heineckenB">HEINECKEN LONG-NECK <strong> R$</strong> 12.00</label><br><br>
                             </div>
                         </div>
         
                         <div class="centro1">
                             <h3 class="h30">Alguma observação?</h3>
                             <p class="marg1">1/60</p>
-                            <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                            <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                            <textarea class="text2" id="mensagemB" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                            <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                         </div>
         
                         <div class="contador1">
                             <div class="brd1">
-                                <button class="bttm2" type="button" id="menos">–</button>
-                                <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                <button class="bttm2" type="button" id="mais">+</button>
+                                <button onclick="menosBW()" class="bttm2" type="button" id="menosB"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="quantidadeB" class="quantidade" value="1" min="1" readonly>
+                                <button onclick="maisBW()" class="bttm2" type="button" id="maisB"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div class="brd1 brd2">
-                                <button class="bttm2 brd2" type="button">
+                                <div onclick="irpedidosBW()" class="bttm2 brd2">
                                     <p>Adicionar</p>
-                                    <input type="number" id="quantidade" class="quantidade brd2" value="11" min="11">
-                                </button>
+                                    <div class="RS"><input type="number" id="quantidadeB1" class="quantidade brd2" value="11" min="11" readonly>
+                                    <p><strong>R$</strong></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -829,7 +847,7 @@
                 <form>
                     <div class="pai1">
                         <div class="pai4">
-                            <button class="bttm" type="button" onclick="document.getElementById('coronaa').style.display='none'">
+                            <button class="voltarPizza" type="button" onclick="document.getElementById('coronaa').style.display='none'" >
                                 <i class="fa-solid fa-angle-left close"></i>
                             </button>
                             <h2 class="h21">CORONA LONG-NECK</h2>
@@ -839,35 +857,37 @@
                             <div class="corona1"></div>
                             <h3 class="h3cor h32">Outras opções</h3>
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="litrinho">
-                                <label for="litrinho">CERVEJA LITRINHO <strong> R$</strong> 6.00</label><br><br>
+                                <input onclick="receberC('6','CERVEJA LITRINHO', 'litrinhoC')"  type="checkbox" id="litrinhoC">
+                                <label for="litrinhoC">CERVEJA LITRINHO <strong> R$</strong> 6.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="heinecken">
-                                <label for="heinecken">HEINECKEN LONG-NECK <strong> R$</strong> 12.00</label><br><br>
+                                <input onclick="receberC('12','HEINECKEN LONG-NECK','heineckenC')"  type="checkbox" id="heineckenC">
+                                <label for="heineckenC">HEINECKEN LONG-NECK <strong> R$</strong> 12.00</label><br><br>
         
-                                <input class="pai3" type="checkbox" id="budwiser">
-                                <label for="budwiser">BUDWISER LONG-NECK <strong> R$</strong> 11.00</label><br><br>
+                                <input onclick="receberC('11','BUDWISER LONG-NECK', 'budwiserC')"  type="checkbox" id="budwiserC">
+                                <label for="budwiserC">BUDWISER LONG-NECK <strong> R$</strong> 11.00</label><br><br>
                             </div>
                         </div>
         
                         <div class="centro1">
                             <h3 class="h30">Alguma observação?</h3>
                             <p class="marg1">1/60</p>
-                            <textarea class="text2" id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                            <h5 class="small_text2">* Serão acatadas apenas as que não alteram o valor</h5>
+                            <textarea class="text2" id="mensagemC" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                            <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                         </div>
         
                         <div class="contador1">
                             <div class="brd1">
-                                <button class="bttm2" type="button" id="menos">–</button>
-                                <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                                <button class="bttm2" type="button" id="mais">+</button>
+                                <button onclick="menosCR()" class="bttm2" type="button" id="menosC"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="ccorona" class="quantidade" value="1" min="1" readonly>     
+                                <button onclick="maisCR()" class="bttm2" type="button" id="maisC"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div class="brd1 brd2">
-                                <button class="bttm2 brd2" type="button">
+                                <div onclick="irpedidosCR()"  class="bttm2 brd2">
                                     <p>Adicionar</p>
-                                    <input type="number" id="quantidade" class="quantidade brd2" value="11" min="11">
-                                </button>
+                                    <div class="RS"><input type="number" id="ccorona2" class="quantidade brd2" value="11" min="11" readonly>
+                                    <p><strong>R$</strong></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -878,71 +898,157 @@
         <!--FIM CERVEJA CORONA--> 
         
 
+ <!-- inicio pagina do menu -->
+ <div class="menuu" id="menuu">
+    <div class="menu1">
+        <div class="transparente"></div>
+        <div class="menu1_cont">
+            <span onclick="document.getElementById('menuu').style.display='none'"><i class="fa-solid fa-left-long"></i></span>
+            <p>Menu</p>
+        </div>
+        <div class="menu2_cont">
+            <div class="cursor"><i class="fa-solid fa-utensils"></i> <a href="index.html" >Cardapio</a></div>
+            <div class="cursor"  id="ctt"> <i class="fa-brands fa-whatsapp"></i> Contato</div>
+            <div id="wapp"> 77 99993333 </div>
+            <div class="cursor" onclick="document.getElementById('regPedid').style.display= 'block'"> <i class="fa-solid fa-book"></i>Meus pedidos</div>
+            <div class="cursor" > <i class="fa-regular fa-star"></i>Avaliações</div>
+            <div class="azul" onclick="document.getElementById('entrarC').style.display='block'" id="entrar">Entrar</div>
+        </div>
+    </div>
+</div>
 
-        <!-- inicio pagina do menu -->
-        <div class="menuu" id="menuu">
-          <div class="menu1">
-              <div class="transparente"></div>
-              <div class="menu1_cont">
-                  <span onclick="document.getElementById('menuu').style.display='none'" ><i class="fa-solid fa-left-long"></i></span>
-                  <p>Menu</p>
-              </div>
-              <div class="menu2_cont">
-                  <div class="menu3"> <i class="fa-solid fa-utensils"></i> Cardapio</div>
-                  <div class="menu3" id="ctt"> <i class="fa-brands fa-whatsapp"></i> Contato</div>
-                  <div class="menu3"> <i class="fa-regular fa-star"></i>Avaliações</div>
-                  <div onclick="document.getElementById('entrarC').style.display='block'" id="entrar">Entrar</div>
-              </div>
-          </div>
-      </div>
-      <!-- fim da pagina do menu -->
+        <!--ENDERECO-->
 
-       <!--Endereco-->
+        <div class="endr" id="endr">
+            <div class="cont_endr">
+                <div class="cent">
+                    <div class="escol" >
+                        <p>Escolha a sua opção</p>
+                        <p> <i onclick="document.getElementById('endr').style.display='none'" class="fa-solid fa-xmark close"></i> </p>
+                    </div>
+                    <p class="pdd2"> Entregar em</p>
+                    <p id="pdd">Insira seu nome, endereço, rua/avenida, numero, bairro...</p>
+                    <form class="ngr">
+                        <textarea name="enderecoo" id="inserirE"></textarea>
+                    </form>
 
-    <div class="endr" id="endr">
-      <div class="cont_endr">
-          <div class="cent">
-              <div class="escol" >
-                  <p>Escolha a sua opção</p>
-                  <p> <i onclick="document.getElementById('endr').style.display='none'" class="fa-solid fa-xmark close"></i> </p>
-              </div>
-              <p class="pdd2"> Entregar em</p>
-              <div class="ngr">
-                  <input class="ipt" type="text" id="search" name="query" placeholder="Informe o CEP" required>
-                  <button class="bt" type="submit">Buscar</button>
-              </div>
-              <p id="pdd">Não sei meu CEP</p>
-              <P class="pdd2">Vou até o local</P>
-              <div class="cons">
-                  <div class="ret"> <i class=" cdd fa-solid fa-bag-shopping"></i>Retirar</div>
-                  <div class="ret"> <i class=" cdd fa-solid fa-utensils"></i>Consumir</div>
-              </div>
-              <p class="pdd2">Possui endereço cadrastado?</p>
-              <p onclick="document.getElementById('entrarC').style.display='block'" class="pdd2" style="color:#21C3D9; cursor: pointer;"> Entrar</p>
-          </div>
-     </div>
-  </div>
+                    <button id="irPagamento" type="button"> IR PARA PAGAMENTO </button>
+                    
+                    <P class="pdd2">Vou até o local</P>
+                    <div class="cons">
+                        <div id="Retirar" class="ret"> <i class=" cdd fa-solid fa-bag-shopping"></i>Retirar</div>
+                        <div id="Consumir" class="ret"> <i class=" cdd fa-solid fa-utensils"></i>Consumir</div>
+                    </div>
+                    <p class="pdd2">Possui endereço cadrastado?</p>
+                    <p  onclick="document.getElementById('entrarC').style.display='block'" class="pdd2" style="color:#21C3D9; cursor: pointer;"> Entrar</p>
+                </div>
+           </div>
+        </div>
+
+        <!--FIM ENDERECO-->
 
    <!--ENTRAR-->
 
    <div id="entrarC">
     <div class="cont_entrarC">
         <div style="display: flex; justify-content: center;">
-            <img src="imagem/logoen.png">
+            <img src="imagem/logoen.png" alt="">
             <p onclick="document.getElementById('entrarC').style.display='none'" style="position: absolute; right: 10px; top: 0;"> <i class="fa-solid fa-xmark close"></i></p>
         </div>
         <form>
             <label for="email"></label><br>
-            <input class="larg" type="text" id="user" name="user" value="usuário" required><br><br>
+            <input class="larg" type="email" id="email" name="email" value="email" required><br><br>
 
             <label for="senha"></label><br>
             <input class="larg"  type="password" id="senha" name="senha" value="senha" required><br><br>
 
-            <input class="larg corr"  type="submit" value="Entrar"><br><br>
-            <button class="larg" ><i class="fa-brands fa-google"></i> entrar com a conta do google</button>
+            <input class="larg corr cursor"  type="submit" value="Entrar"><br><br>
+            <button class="larg cursor" ><i class="fa-brands fa-google"></i> entrar com a conta do google</button>
         </form>
     </div>
 </div>
+
+  <!--INICIO PEDIDO EM ANDAMENTO-->
+
+  <div id="pedid" class="pedid">
+    <div class="cont_pedid">
+        
+        <div class="cont_1">
+            <h4>Pedido em andamento...</h4>
+            <p class="cursor" id="fecharP"><i class="fa-solid fa-xmark close"></i> </p>
+        </div>
+        
+       
+        <div class="cont_2">
+            
+            <div class="pedidos">
+                <p id="pedidos">Pedido vazio!</p>
+                <p id="obs"></p>
+                <button id="irEnde">ADICIONAR ENDEREÇO PARA ENTREGA</button>
+            </div>
+            
+            <div id="btEeC" class="btEeC">
+                <button id="conf" class="conf">CONFIRMAR PEDIDO</button>
+                <button id="excl" class="excl">EXCLUIR PEDIDO</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--FIM  PEDIDO EM ANDAMENTO-->   
+
+ <!--INICIO PEDIDOS-->
+
+ <div id="regPedid" class="regPedid">
+    <div class="regPedido">
+    <div>
+    <span class="cursor"><i onclick="document.getElementById('regPedid').style.display= 'none'" class="fa-solid fa-xmark"></i></span>
+    <p>Detalhe do pedido:</p><br>
+    <p id="sabor_valor">Sem pedidos!</p><br>
+    <p id="entreg"></p><br>
+    <p id="pag"></p>
+    </div>
+    </div>
+</div>
+
+  <!--FIM PEDIDOS-->
+
+          <!--INICIO PAGAMENTO-->
+
+        <div id="pagamento" class="pagamento">
+            <form class="paga_content">
+                <p>Forma de pagamento</p>
+                <input  type="radio" name="pagamento" id="cartao">
+                <label for="cartao">CARTÃO</label><br><br>
+                <input  type="radio" name="pagamento" id="dinheiro">
+                <label for="dinheiro">DINHEIRO</label><br><br>
+                <p>Troco?</p>
+                <textarea name="troco" id="troco"></textarea>
+                <div>
+                <button id="fimm"> FINALIZAR PEDIDO </button>
+                <img src="imagem/logoen.png" alt="">
+                </div>
+                
+            </form>
+        </div>
+
+        <!--FIM PAGAMENTO-->
+
+         <!--INICIO IDENTIFICAÇÃO-->
+
+         <div id="nc" class="nc">
+            <form>
+                <p>Adicione seu nome completo para o registro de seu pedido</p>
+                <textarea name="nomeC" id="nomeC"></textarea>
+                <div>
+                <button id="fimm2"> FINALIZAR PEDIDO </button>
+                <img src="imagem/logoen.png" alt="">
+                </div>
+            </form>
+        </div>
+
+        <!--FIM IDENTIFICAÇÃO-->
+
 
 
             <footer>
@@ -951,7 +1057,6 @@
                     </p>
                     
             </footer>
-            <script src="js/scritp.js"></script>
-            <script src="js/bebidas.js"></script>
+            <script src="java.js"></script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -9,121 +9,137 @@
     </head>
     <body>
         <div class="cabeca">
-            <button class="corB" onclick="document.getElementById('menuu').style.display='block'" > <div class="menu"><i class="fa-solid fa-bars"></i></div></button>
+            <button class="corB" onclick="document.getElementById('menuu').style.display='block'" > <span class="menu"><i class="fa-solid fa-bars"></i></span></button>
             <button class="a0 b0" onclick="document.getElementById('endr').style.display='block'" >Opcão de entrega</button>
-            <p class="a1 b0">Clique aqui para inserir o seu endereço</p>
-            <button class="corB"><div class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></div></button>
+            <p class="b0">Clique aqui para inserir o seu endereço</p>
+            <div id="busca" class="cont_busca">
+                <form>
+                    <input type="search" placeholder="O que esta pensando?">
+                </form>
+            </div>
+            <button id="lupa" class="corB"><span class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></span></button>
         </div>
 
         <div class="logo">
 
                 <div class="logo2"></div>
-                <h3 class="cor1">PIZZARIA CHAMA E SABOR</h3>
-                <h3 class="cor1">Avenida Pedro Alvares Cabral,25,</h3>
-                <h3 class="cor1">Bulmenau - SP</h3>
-                <h3 class="cor1">HORÁRIO DE FUNCIONAMENTO:</h3>
-                <h3 class="cor1">Segunda a Domingo</h3>
-                <h3 class="cor1">18:00 ÁS 00:00</h3>
+                <h3 >PIZZARIA CHAMA E SABOR</h3>
+                <h3 >Avenida Pedro Alvares Cabral,25,</h3>
+                <h3 >Bulmenau - SP</h3>
+                <h3 >HORÁRIO DE FUNCIONAMENTO:</h3>
+                <h3 >Segunda a Domingo</h3>
+                <h3 >18:00 ÁS 00:00</h3>
 
 
         </div>
         <nav>
             <ul>
-                <li class="al1"><a href="index.html" >Pizzas tradicionais</a></li>
-                <li class="al1"><a href="pizzadoce.html">Pizzas doce</a></li>
-                <li class="al1"><a href="bebidas.html">Bebidas</a></li>
+                <li><a href="index.html" >Pizzas tradicionais</a></li>
+                <li><a href="pizzadoce.html">Pizzas doce</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
             </ul>
             </nav>
 
             <div class="pzatra">
-              <button class="bbb" onclick="document.getElementById('chocolate').style.display='block'" >
+              <div class="bbb" onclick="document.getElementById('chocolate').style.display='block'" >
                 <div class="fei">
-                      <div>
-                        <p class="top6 top7">PIZZA CHOCOLATE</p>
-                        <p class="top6">Chocolate derretido e granulado.</p>
-                        <p class="top6"><strong>R$</strong> 35.00 A <strong>R$</strong>  75.00</p>
-                      </div>
+                      
+                        <p>PIZZA CHOCOLATE<br>
+                            <small>Chocolate derretido e granulado.</small><br>
+                           <strong>R$</strong> 35.00 A <strong>R$</strong>  75.00
+                        </p>
+                      
                       <div class="cho1"></div>
                 </div>
-              </button>
+            </div>
               
-              <button class="bbb" onclick="document.getElementById('romeuej').style.display='block'" >
+              <div class="bbb" onclick="document.getElementById('romeuej').style.display='block'" >
                 <div class="fei">
-                    <div>
-                        <p class="top6 top7">PIZZA ROMEU E JULIETA</p>
-                        <p class="top6">Queijo e Goiabada.</p>
-                        <p class="top6"><strong>R$</strong>  35.00 A <strong>R$</strong>  75.00</p>
-                      </div>
+                    
+                        <p>PIZZA ROMEU E JULIETA<br>
+                            <small>Queijo e Goiabada.</small><br>
+                           <strong>R$</strong>  35.00 A <strong>R$</strong>  75.00
+                        </p>
+                      
                       <div class="rej1"></div>
                 </div>
-              </button>
+            </div>
             </div>
               
             <div class="pzatra">
-              <button class="bbb" onclick="document.getElementById('bananac').style.display='block'" >
+              <div class="bbb" onclick="document.getElementById('bananac').style.display='block'" >
                 <div class="fei">
-                      <div>
-                        <p class="top6 top7">PIZZA BANANA COM CANELA</p>
-                        <p class="top6">Banana, açúcar e canela.</p>
-                        <p class="top6"><strong>R$</strong>  35.00 A <strong>R$</strong>  75.00</p>
-                      </div>
+                      
+                        <p>PIZZA BANANA COM CANELA<br>
+                            <small>Banana, açúcar e canela.</small><br>
+                           <strong>R$</strong>  35.00 A <strong>R$</strong>  75.00
+                        </p>
+                    
                       <div class="ban1"></div>
                 </div>
-              </button>
+            </div>
               
-              <button class="bbb" onclick="document.getElementById('brigadeiro').style.display='block'" >
+              <div class="bbb" onclick="document.getElementById('brigadeiro').style.display='block'" >
                 <div class="fei">
-                    <div>
-                        <p class="top6 top7">PIZZA BRIGADEIRO</p>
-                        <p class="top6">Brigadeiro e granulado.</p>
-                        <p class="top6"><strong>R$</strong>  35.00 A <strong>R$</strong>  75.00</p>
-                      </div>
+                    
+                        <p>PIZZA BRIGADEIRO<br>
+                            <small>Brigadeiro e granulado.</small><br>
+                           <strong>R$</strong>  35.00 A <strong>R$</strong>  75.00
+                        </p>
+                      
                       <div class="bri1"></div>
                 </div>
-              </button>
+            </div>
             </div>
     
             <div class="pzatra">
-              <button class="bbb" onclick="document.getElementById('morangoc').style.display='block'" >
-                <div class="fei">
-                      <div>
-                        <p class="top6 top7">PIZZA MORANGO COM CHOCOLATE</p>
-                        <p class="top6">Morango e chocolate derretido.</p>
-                        <p class="top6"><strong>R$</strong>  35.00 A <strong>R$</strong>  75.00</p>
-                      </div>
-                      <div class="mor1"></div>
-                </div>
-              </button>
+              <div class="bbb" onclick="document.getElementById('morangoc').style.display='block'" >
+                 <div class="fei">
+                    
+                           <p>PIZZA MORANGO COM CHOCOLATE<br>
+                              <small>Morango e chocolate derretido.</small><br>
+                              <strong>R$</strong>  35.00 A <strong>R$</strong>  75.00
+                           </p>
+                      
+                          <div class="mor1"></div>
+                 </div>
+              </div>
               
-              <button class="bbb" onclick="document.getElementById('cubana').style.display='block'" >
-                <div class="fei">
-                    <div>
-                        <p class="top6 top8">PIZZA CUBANA</p>
-                        <p class="top6">Banana, leite condensado, creme de leite,</p>
-                        <p class="top6">muçarela e canela.</p>
-                        <p class="top6"><strong>R$</strong>  35.00 A <strong>R$</strong>  75.00</p>
-                      </div>
-                      <div class="cub1"></div>
-                </div>
-              </button>
+              <div class="bbb" onclick="document.getElementById('cubana').style.display='block'" >
+                 <div class="fei">
+                    
+                        <p>PIZZA CUBANA<br>
+                            <small>Banana, leite condensado, creme de leite,
+                                muçarela e canela.</small><br>
+                           <strong>R$</strong>  35.00 A <strong>R$</strong>  75.00
+                        </p>
+                      
+                        <div class="cub1"></div>
+                 </div>
+              </div>
             </div>
 
+       
         <!-- inicio pagina do menu -->
         <div class="menuu" id="menuu">
             <div class="menu1">
                 <div class="transparente"></div>
                 <div class="menu1_cont">
-                    <span onclick="document.getElementById('menuu').style.display='none'" ><i class="fa-solid fa-left-long"></i></span>
+                    <span onclick="document.getElementById('menuu').style.display='none'"><i class="fa-solid fa-left-long"></i></span>
                     <p>Menu</p>
                 </div>
                 <div class="menu2_cont">
-                    <div class="menu3"> <i class="fa-solid fa-utensils"></i> Cardapio</div>
-                    <div class="menu3" id="ctt"> <i class="fa-brands fa-whatsapp"></i> Contato</div>
-                    <div class="menu3"> <i class="fa-regular fa-star"></i>Avaliações</div>
-                    <div onclick="document.getElementById('entrarC').style.display='block'" id="entrar">Entrar</div>
+                    <div class="cursor">  <i class="fa-solid fa-utensils"></i> <a href="index.html" >Cardapio</a></div>
+                    <div class="cursor"  id="ctt"> <i class="fa-brands fa-whatsapp"></i> Contato</div>
+                    <div id="wapp"> 77 99993333 </div>
+                    <div class="cursor" onclick="document.getElementById('regPedid').style.display= 'block'"> <i class="fa-solid fa-book"></i>Meus pedidos</div>
+                    <div class="cursor" > <i class="fa-regular fa-star"></i>Avaliações</div>
+                    <div class="azul" onclick="document.getElementById('entrarC').style.display='block'" id="entrar">Entrar</div>
                 </div>
             </div>
         </div>
+
+        
         <!-- fim da pagina do menu -->
 
         <!--Inicio pizza chocolate-->
@@ -133,28 +149,28 @@
             <form>
                 <div class="pai1">
                     <div class="pai2">
-                        <button onclick="document.getElementById('chocolate').style.display='none'"  class="voltarPizza" type="button"><i class="fa-solid fa-angle-left close"></i> </button>
+                        <button onclick="document.getElementById('chocolate').style.display='none'"  class="voltarPizza close" type="button"><i class="fa-solid fa-angle-left"></i> </button>
                         <h2>Pizza CHOCOLATE</h2>
                     </div>
     
                     <div class="filho1">
                         <div class="filho2">
                             <div class="foto3"></div>
-                            <p class="small_text mleft">Chocolate derretido e granulado</p>
+                            <p class="mleft">Chocolate derretido e granulado</p>
                             <h3 class="h3cor h32">Selecione um tamanho</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="radio" name="chocolate" id="pequena2">
-                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1">R$</strong> 35.00</label><br><br>
+                                <input onclick="valorCH('35')"  type="radio" name="chocolate" id="pequenaCH">
+                                <label for="pequenaCH">Pequena (até 2 sabores) <strong class="s1">R$</strong> 35.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="chocolate" id="media2">
-                                <label for="media2">Média (até 2 sabores) <strong class="s2">R$</strong> 45.00</label><br><br>
+                                <input  onclick="valorCH('45')"   type="radio" name="chocolate" id="mediaCH">
+                                <label for="mediaCH">Média (até 2 sabores) <strong class="s2">R$</strong> 45.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="chocolate" id="grande2">
-                                <label for="grande2">Grande (até 3 sabores) <strong class="s3">R$</strong> 55.00</label><br><br>
+                                <input  onclick="valorCH('55')"   type="radio" name="chocolate" id="grandeCH">
+                                <label for="grandeCH">Grande (até 3 sabores) <strong class="s3">R$</strong> 55.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="chocolate" id="familia2">
-                                <label for="familia2">Família (até 4 sabores) <strong class="s4">R$</strong> 75.00</label><br><br>
+                                <input  onclick="valorCH('75')"   type="radio" name="chocolate" id="familiaCH">
+                                <label for="familiaCH">Família (até 4 sabores) <strong class="s4">R$</strong> 75.00</label><br><br>
                             </div>
                         </div>
     
@@ -166,28 +182,28 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="chocolate1" checked>
-                                <label for="chocolate1">Chocolate (principal)</label><br><br>
+                                <input onclick="receberCH('CHOCOLATE,', 'chocolateCH')" type="checkbox" id="chocolateCH" >
+                                <label for="chocolateCH">Chocolate ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
     
-                                <input class="pai3" type="checkbox" id="banana1">
-                                <label for="banana1">Banana com canela</label>
-                                <p class="small_text">Banana, açúcar e canela.</p><br>
+                                <input onclick="receberCH('BANANA COM CANELA,', 'bananaCH')"  type="checkbox" id="bananaCH">
+                                <label for="bananaCH">Banana com canela</label>
+                                <p>Banana, açúcar e canela.</p><br>
     
-                                <input class="pai3" type="checkbox" id="morango1">
-                                <label for="morango1">Morango com chocolate</label>
-                                <p class="small_text">Morango e chocolate derretido.</p><br>
+                                <input onclick="receberCH('MORANGO COM CHOCOLATE,', 'morangoCH')"  type="checkbox" id="morangoCH">
+                                <label for="morangoCH">Morango com chocolate</label>
+                                <p>Morango e chocolate derretido.</p><br>
     
-                                <input class="pai3" type="checkbox" id="rej1">
-                                <label for="rej1">Romeu e Julieta</label>
-                                <p class="small_text">Queijo e goiabada.</p><br>
+                                <input onclick="receberCH('ROMEU E JULIETA,', 'rejCH')"  type="checkbox" id="rejCH">
+                                <label for="rejCH">Romeu e Julieta</label>
+                                <p>Queijo e goiabada.</p><br>
     
-                                <input class="pai3" type="checkbox" id="brigadeiro1">
-                                <label for="brigadeiro1">Brigadeiro</label>
-                                <p class="small_text">Brigadeiro e granulado.</p><br>
+                                <input onclick="receberCH('BRIGADEIRO,', 'brigadeiroCH')"  type="checkbox" id="brigadeiroCH">
+                                <label for="brigadeiroCH">Brigadeiro</label>
+                                <p>Brigadeiro e granulado.</p><br>
     
-                                <input class="pai3" type="checkbox" id="cubana1">
-                                <label for="cubana1">Cubana</label>
-                                <p class="small_text">Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
+                                <input onclick="receberCH('CUBANA,', 'cubanaCH')"  type="checkbox" id="cubanaCH">
+                                <label for="cubanaCH">Cubana</label>
+                                <p>Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
                             </div>
                         </div>
                     </div>
@@ -195,21 +211,23 @@
                     <div class="centro">
                         <h3 class="h30">Alguma observação?</h3>
                         <p class="marg1">1/60</p>
-                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                        <textarea id="mensagemCH" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                     </div>
     
                     <div class="contador">
                         <div class="brd1">
-                            <button class="bttm2" type="button" id="menos">–</button>
-                            <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                            <button class="bttm2" type="button" id="mais">+</button>
+                            <button onclick="menosCH()"  class="bttm2" type="button" id="menosCH"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" id="cchoco" class="quantidade" value="1" min="1" readonly>
+                            <button onclick="maisCH()"  class="bttm2" type="button" id="maisCH"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="brd1 brd2">
-                            <button class="bttm2 brd2" type="button">
+                            <div onclick="irPedidosCH()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <input type="number" id="quantidade" class="quantidade brd2" value="35" min="35">
-                            </button>
+                                <div class="RS"></div><input type="number" id="cchoco2" class="quantidade brd2" value="35" min="35" readonly>
+                                <p><strong>R$</strong></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -226,28 +244,28 @@
             <form>
                 <div class="pai1">
                     <div class="pai2">
-                        <button onclick="document.getElementById('romeuej').style.display='none'"  class="voltarPizza" type="button"><i class="fa-solid fa-angle-left close"></i> </button>
+                        <button onclick="document.getElementById('romeuej').style.display='none'"  class="voltarPizza close" type="button"><i class="fa-solid fa-angle-left"></i> </button>
                         <h2>Pizza ROMEU E JULIETA</h2>
                     </div>
     
                     <div class="filho1">
                         <div class="filho2">
                             <div class="romeu"></div>
-                            <p class="small_text mleft">Queijo e goiabada</p>
+                            <p class="mleft">Queijo e goiabada</p>
                             <h3 class="h3cor h32">Selecione um tamanho</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="radio" name="romeu" id="pequena2">
-                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 35.00</label><br><br>
+                                <input  onclick="valorRJ('35')"   type="radio" name="romeu" id="pequenaRJ">
+                                <label for="pequenaRJ">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 35.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="romeu" id="media2">
-                                <label for="media2">Média (até 2 sabores) <strong class="s2"> R$</strong> 45.00</label><br><br>
+                                <input  onclick="valorRJ('45')"   type="radio" name="romeu" id="mediaRJ">
+                                <label for="mediaRJ">Média (até 2 sabores) <strong class="s2"> R$</strong> 45.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="romeu" id="grande2">
-                                <label for="grande2">Grande (até 3 sabores) <strong class="s3"> R$</strong> 55.00</label><br><br>
+                                <input  onclick="valorRJ('55')"   type="radio" name="romeu" id="grandeRJ">
+                                <label for="grandeRJ">Grande (até 3 sabores) <strong class="s3"> R$</strong> 55.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="romeu" id="familia2">
-                                <label for="familia2">Família (até 4 sabores) <strong class="s4"> R$</strong> 75.00</label><br><br>
+                                <input  onclick="valorRJ('75')"   type="radio" name="romeu" id="familiaRJ">
+                                <label for="familiaRJ">Família (até 4 sabores) <strong class="s4"> R$</strong> 75.00</label><br><br>
                             </div>
                         </div>
     
@@ -259,28 +277,28 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="rej1" checked>
-                                <label for="rej1">Romeu e Julieta (principal)</label><br><br>
+                                <input onclick="receberRJ('ROMEU E JULIETA,', 'rejRJ')"  type="checkbox" id="rejRJ" >
+                                <label for="rejRJ">Romeu e Julieta ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
     
-                                <input class="pai3" type="checkbox" id="banana1">
-                                <label for="banana1">Banana com canela</label>
-                                <p class="small_text">Banana, açúcar e canela.</p><br>
+                                <input onclick="receberRJ('BANANA COM CANELA,', 'bananaRJ')"  type="checkbox" id="bananaRJ">
+                                <label for="bananaRJ">Banana com canela</label>
+                                <p>Banana, açúcar e canela.</p><br>
     
-                                <input class="pai3" type="checkbox" id="morango1">
-                                <label for="morango1">Morango com chocolate</label>
-                                <p class="small_text">Morango e chocolate derretido.</p><br>
+                                <input onclick="receberRJ('MORANGO COM CHOCOLATE,', 'morangoRJ')"  type="checkbox" id="morangoRJ">
+                                <label for="morangoRJ">Morango com chocolate</label>
+                                <p>Morango e chocolate derretido.</p><br>
     
-                                <input class="pai3" type="checkbox" id="chocolate1">
-                                <label for="chocolate1">Chocolate</label>
-                                <p class="small_text">Chocolate derretido e granulado.</p><br>
+                                <input onclick="receberRJ('CHOCOLATE,', 'chocolateRJ')"  type="checkbox" id="chocolateRJ">
+                                <label for="chocolateRJ">Chocolate</label>
+                                <p>Chocolate derretido e granulado.</p><br>
     
-                                <input class="pai3" type="checkbox" id="brigadeiro1">
-                                <label for="brigadeiro1">Brigadeiro</label>
-                                <p class="small_text">Brigadeiro e granulado.</p><br>
+                                <input onclick="receberRJ('BRIGADEIRO,', 'brigadeiroRJ')"  type="checkbox" id="brigadeiroRJ">
+                                <label for="brigadeiroRJ">Brigadeiro</label>
+                                <p>Brigadeiro e granulado.</p><br>
     
-                                <input class="pai3" type="checkbox" id="cubana1">
-                                <label for="cubana1">Cubana</label>
-                                <p class="small_text">Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
+                                <input onclick="receberRJ('CUBANA,', 'cubanaRJ')"  type="checkbox" id="cubanaRJ">
+                                <label for="cubanaRJ">Cubana</label>
+                                <p>Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
                             </div>
                         </div>
                     </div>
@@ -288,21 +306,23 @@
                     <div class="centro">
                         <h3 class="h30">Alguma observação?</h3>
                         <p class="marg1">1/60</p>
-                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                        <textarea id="mensagemRJ" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                     </div>
     
                     <div class="contador">
                         <div class="brd1">
-                            <button class="bttm2" type="button" id="menos">–</button>
-                            <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                            <button class="bttm2" type="button" id="mais">+</button>
+                            <button onclick="menosRJ()"  class="bttm2" type="button" id="menosRJ"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" id="rrej" class="quantidade" value="1" min="1" readonly>
+                            <button onclick="maisRJ()"  class="bttm2" type="button" id="maisRJ"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="brd1 brd2">
-                            <button class="bttm2 brd2" type="button">
+                            <div onclick="irPedidosRJ()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <input type="number" id="quantidade" class="quantidade brd2" value="35" min="35">
-                            </button>
+                                <div class="RS"><input type="number" id="rrej2" class="quantidade brd2" value="35" min="35" readonly>
+                                <p><strong>R$</strong></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -320,28 +340,28 @@
 
                 <div class="pai1">
                     <div class="pai2">
-                        <button onclick="document.getElementById('bananac').style.display='none'"  class="voltarPizza" type="button"><i class="fa-solid fa-angle-left close"></i></button>
+                        <button onclick="document.getElementById('bananac').style.display='none'"  class="voltarPizza close" type="button"><i class="fa-solid fa-angle-left"></i></button>
                         <h2>Pizza BANANA</h2>
                     </div>
     
                     <div class="filho1">
                         <div class="filho2">
                             <div class="banana"></div>
-                            <p class="small_text mleft">Banana, açúcar e canela.</p>
+                            <p class="mleft">Banana, açúcar e canela.</p>
                             <h3 class="h3cor h32">Selecione um tamanho</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="radio" name="banana" id="pequena2">
-                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1">R$</strong> 35.00</label><br><br>
+                                <input  onclick="valorBC('35')"   type="radio" name="banana" id="pequenaBC">
+                                <label for="pequenaBC">Pequena (até 2 sabores) <strong class="s1">R$</strong> 35.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="banana" id="media2">
-                                <label for="media2">Média (até 2 sabores) <strong class="s2">R$</strong> 45.00</label><br><br>
+                                <input  onclick="valorBC('45')"   type="radio" name="banana" id="mediaBC">
+                                <label for="mediaBC">Média (até 2 sabores) <strong class="s2">R$</strong> 45.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="banana" id="grande2">
-                                <label for="grande2">Grande (até 3 sabores) <strong class="s3">R$</strong> 55.00</label><br><br>
+                                <input  onclick="valorBC('55')"   type="radio" name="banana" id="grandeBC">
+                                <label for="grandeBC">Grande (até 3 sabores) <strong class="s3">R$</strong> 55.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="banana" id="familia2">
-                                <label for="familia2">Família (até 4 sabores) <strong class="s4">R$</strong> 75.00</label><br><br>
+                                <input  onclick="valorBC('75')"   type="radio" name="banana" id="familiaBC">
+                                <label for="familiaBC">Família (até 4 sabores) <strong class="s4">R$</strong> 75.00</label><br><br>
                             </div>
                         </div>
     
@@ -353,28 +373,28 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="banana1" checked>
-                                <label for="banana1">Banana (principal)</label><br><br>
+                                <input onclick="receberBC('BANANA COM CANELA,', 'bananaBC')"  type="checkbox" id="bananaBC" >
+                                <label for="bananaBC">Banana com canela ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
     
-                                <input class="pai3" type="checkbox" id="chocolate1">
-                                <label for="chocolate1">Chocolate</label>
-                                <p class="small_text">Chocolate derretido e granulado</p><br>
+                                <input onclick="receberBC('CHOCOLATE,', 'chocolateBC')"  type="checkbox" id="chocolateBC">
+                                <label for="chocolateBC">Chocolate</label>
+                                <p>Chocolate derretido e granulado</p><br>
     
-                                <input class="pai3" type="checkbox" id="morango1">
-                                <label for="morango1">Morango com chocolate</label>
-                                <p class="small_text">Morango e chocolate derretido.</p><br>
+                                <input onclick="receberBC('MORANGO COM CHOCOLATE,', 'morangoBC')"  type="checkbox" id="morangoBC">
+                                <label for="morangoBC">Morango com chocolate</label>
+                                <p>Morango e chocolate derretido.</p><br>
     
-                                <input class="pai3" type="checkbox" id="rej1">
-                                <label for="rej1">Romeu e Julieta</label>
-                                <p class="small_text">Queijo e goiabada.</p><br>
+                                <input onclick="receberBC('ROMEU E JULIETA,', 'rejBC')"  type="checkbox" id="rejBC">
+                                <label for="rejBC">Romeu e Julieta</label>
+                                <p>Queijo e goiabada.</p><br>
     
-                                <input class="pai3" type="checkbox" id="brigadeiro1">
-                                <label for="brigadeiro1">Brigadeiro</label>
-                                <p class="small_text">Brigadeiro e granulado.</p><br>
+                                <input onclick="receberBC('BRIGADEIRO,', 'brigadeiroBC')"  type="checkbox" id="brigadeiroBC">
+                                <label for="brigadeiroBC">Brigadeiro</label>
+                                <p>Brigadeiro e granulado.</p><br>
     
-                                <input class="pai3" type="checkbox" id="cubana1">
-                                <label for="cubana1">Cubana</label>
-                                <p class="small_text">Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
+                                <input onclick="receberBC('CUBANA,', 'cubanaBC')"  type="checkbox" id="cubanaBC">
+                                <label for="cubanaBC">Cubana</label>
+                                <p>Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
                             </div>
                         </div>
                     </div>
@@ -382,22 +402,24 @@
                     <div class="centro">
                         <h3 class="h30">Alguma observação?</h3>
                         <p class="marg1">1/60</p>
-                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                        <textarea id="mensagemBC" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                     </div>
     
                     <div class="contador">
                         <div class="brd1">
-                            <button class="bttm2" type="button" id="menos">–</button>
-                            <input type="number" id="quantidade" class="quantidade" value="1" min="1" readonly>
-                            <button class="bttm2" type="button" id="mais">+</button>
+                            <button onclick="menosBC()"  class="bttm2" type="button" id="menosBC"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" id="bbanana" class="quantidade" value="1" min="1" readonly>
+                            <button onclick="maisBC()"  class="bttm2" type="button" id="maisBC"><i class="fa-solid fa-plus"></i></button>
                         </div>
     
                         <div class="brd1 brd2">
-                            <button class="bttm2 brd2" type="button">
+                            <div onclick="irPedidosBC()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <input type="number" id="quantidade" class="quantidade brd2" value="35" min="35">
-                            </button>
+                                <div class="RS"></div><input type="number" id="bbanana2" class="quantidade brd2" value="35" min="35" readonly>
+                                <p><strong>R$</strong></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -415,8 +437,8 @@
             <form>
                 <div class="pai1">
                     <div class="pai2">
-                        <button onclick="document.getElementById('brigadeiro').style.display='none'" class="voltarPizza" type="button">
-                            <i class="fa-solid fa-angle-left close"></i>
+                        <button onclick="document.getElementById('brigadeiro').style.display='none'" class="voltarPizza close" type="button">
+                            <i class="fa-solid fa-angle-left"></i>
                         </button>
                         <h2>Pizza BRIGADEIRO</h2>
                     </div>
@@ -424,21 +446,21 @@
                     <div class="filho1">
                         <div class="filho2">
                             <div class="brigadeiro"></div>
-                            <p class="small_text mleft">Brigadeiro e granulado</p>
+                            <p class="mleft">Brigadeiro e granulado</p>
                             <h3 class="h3cor h32">Selecione um tamanho</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="radio" name="brigadeiro" id="pequena2">
-                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1">R$ 35.00</strong></label><br><br>
+                                <input  onclick="valorBR('35')"   type="radio" name="brigadeiro" id="pequenaBG">
+                                <label for="pequenaBG">Pequena (até 2 sabores) <strong class="s1">R$ 35.00</strong></label><br><br>
     
-                                <input class="pai3" type="radio" name="brigadeiro" id="media2">
-                                <label for="media2">Média (até 2 sabores) <strong class="s2">R$ 45.00</strong></label><br><br>
+                                <input  onclick="valorBR('45')"   type="radio" name="brigadeiro" id="mediaBG">
+                                <label for="mediaBG">Média (até 2 sabores) <strong class="s2">R$ 45.00</strong></label><br><br>
     
-                                <input class="pai3" type="radio" name="brigadeiro" id="grande2">
-                                <label for="grande2">Grande (até 3 sabores) <strong class="s3">R$ 55.00</strong></label><br><br>
+                                <input  onclick="valorBR('55')"   type="radio" name="brigadeiro" id="grandeBG">
+                                <label for="grandeBG">Grande (até 3 sabores) <strong class="s3">R$ 55.00</strong></label><br><br>
     
-                                <input class="pai3" type="radio" name="brigadeiro" id="familia2">
-                                <label for="familia2">Família (até 4 sabores) <strong class="s4">R$ 75.00</strong></label><br><br>
+                                <input  onclick="valorBR('75')"   type="radio" name="brigadeiro" id="familiaBG">
+                                <label for="familiaBG">Família (até 4 sabores) <strong class="s4">R$ 75.00</strong></label><br><br>
                             </div>
                         </div>
     
@@ -450,28 +472,28 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="brigadeiro1" checked>
-                                <label for="brigadeiro1">Brigadeiro (principal)</label><br><br>
+                                <input onclick="receberBR('BRIGADEIRO,', 'brigadeiroBG')"    type="checkbox" id="brigadeiroBG" >
+                                <label for="brigadeiroBG">Brigadeiro ( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
     
-                                <input class="pai3" type="checkbox" id="banana1">
-                                <label for="banana1">Banana com canela</label>
-                                <p class="small_text">Banana, açúcar e canela.</p><br>
+                                <input onclick="receberBR('BANANA COM CANELA,', 'bananaBG')"     type="checkbox" id="bananaBG">
+                                <label for="bananaBG">Banana com canela</label>
+                                <p>Banana, açúcar e canela.</p><br>
     
-                                <input class="pai3" type="checkbox" id="morango1">
-                                <label for="morango1">Morango com chocolate</label>
-                                <p class="small_text">Morango e chocolate derretido.</p><br>
+                                <input onclick="receberBR('MORANGO COM CHOCOLATE,', 'morangoBG')"    type="checkbox" id="morangoBG">
+                                <label for="morangoBG">Morango com chocolate</label>
+                                <p>Morango e chocolate derretido.</p><br>
     
-                                <input class="pai3" type="checkbox" id="rej1">
-                                <label for="rej1">Romeu e Julieta</label>
-                                <p class="small_text">Queijo e goiabada.</p><br>
+                                <input onclick="receberBR('ROMEU E JULIETA,', 'rejBG')"    type="checkbox" id="rejBG">
+                                <label for="rejBG">Romeu e Julieta</label>
+                                <p>Queijo e goiabada.</p><br>
     
-                                <input class="pai3" type="checkbox" id="chocolate1">
-                                <label for="chocolate1">Chocolate</label>
-                                <p class="small_text">Chocolate derretido e granulado.</p><br>
+                                <input  onclick="receberBR('CHOCOLATE,', 'chocolateBG')"     type="checkbox" id="chocolateBG">
+                                <label for="chocolateBG">Chocolate</label>
+                                <p>Chocolate derretido e granulado.</p><br>
     
-                                <input class="pai3" type="checkbox" id="cubana1">
-                                <label for="cubana1">Cubana</label>
-                                <p class="small_text">Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
+                                <input onclick="receberBR('CUBANA,', 'cubanaBG')"     type="checkbox" id="cubanaBG">
+                                <label for="cubanaBG">Cubana</label>
+                                <p>Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
                             </div>
                         </div>
                     </div>
@@ -479,21 +501,23 @@
                     <div class="centro">
                         <h3 class="h30">Alguma observação?</h3>
                         <p class="marg1">1/60</p>
-                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                        <textarea id="mensagemBG" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                     </div>
     
                     <div class="contador">
                         <div class="brd1">
-                            <button class="bttm2" type="button" id="menos">–</button>
-                            <input type="number" id="quantidadeInput" class="quantidade" value="1" min="1" readonly>
-                            <button class="bttm2" type="button" id="mais">+</button>
+                            <button onclick="menosBR()"  class="bttm2" type="button" id="menosBG"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" id="bbriga" class="quantidade" value="1" min="1" readonly>
+                            <button onclick="maisBR()"  class="bttm2" type="button" id="maisBG"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="brd1 brd2">
-                            <button class="bttm2 brd2" type="button">
+                            <div onclick="irPedidosBR()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <input type="number" id="quantidadePrice" class="quantidade brd2" value="35" min="35">
-                            </button>
+                                <div class="RS"> <input type="number" id="bbriga2" class="quantidade brd2" value="35" min="35" readonly>
+                                <p><strong>R$</strong></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -511,8 +535,8 @@
             <form>
                 <div class="pai1">
                     <div class="pai2">
-                        <button onclick="document.getElementById('morangoc').style.display='none'" class="voltarPizza" type="button">
-                            <i class="fa-solid fa-angle-left close"></i>
+                        <button onclick="document.getElementById('morangoc').style.display='none'" class="voltarPizza close" type="button">
+                            <i class="fa-solid fa-angle-left"></i>
                         </button>
                         <h2 class="h21">Pizza MORANGO COM CHOCOLATE</h2>
                     </div>
@@ -520,21 +544,21 @@
                     <div class="filho1">
                         <div class="filho2">
                             <div class="morango"></div>
-                            <p class="small_text mleft">Morango e chocolate derretido.</p>
+                            <p class="mleft">Morango e chocolate derretido.</p>
                             <h3 class="h3cor h32">Selecione um tamanho</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="radio" name="morango" id="pequena2">
-                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 35.00 </label><br><br>
+                                <input  onclick="valorMC('35')"   type="radio" name="morango" id="pequenaMC">
+                                <label for="pequenaMC">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 35.00 </label><br><br>
     
-                                <input class="pai3" type="radio" name="morango" id="media2">
-                                <label for="media2">Média (até 2 sabores) <strong class="s2"> R$</strong> 45.00</label><br><br>
+                                <input  onclick="valorMC('45')"   type="radio" name="morango" id="mediaMC">
+                                <label for="mediaMC">Média (até 2 sabores) <strong class="s2"> R$</strong> 45.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="morango" id="grande2">
-                                <label for="grande2">Grande (até 3 sabores) <strong class="s3"> R$</strong> 55.00</label><br><br>
+                                <input  onclick="valorMC('55')"   type="radio" name="morango" id="grandeMC">
+                                <label for="grandeMC">Grande (até 3 sabores) <strong class="s3"> R$</strong> 55.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="morango" id="familia2">
-                                <label for="familia2">Família (até 4 sabores) <strong class="s4"> R$</strong> 75.00</label><br><br>
+                                <input  onclick="valorMC('75')"   type="radio" name="morango" id="familiaMC">
+                                <label for="familiaMC">Família (até 4 sabores) <strong class="s4"> R$</strong> 75.00</label><br><br>
                             </div>
                         </div>
     
@@ -546,28 +570,28 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="morango1" checked>
-                                <label for="morango1">Morango (principal)</label><br><br>
+                                <input onclick="receberMC('NORANAGO COM CHOCOLATE,', 'morangoMC')"   type="checkbox" id="morangoMC" >
+                                <label for="morangoMC">Morango com chocolate( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
     
-                                <input class="pai3" type="checkbox" id="banana1">
-                                <label for="banana1">Banana com canela</label>
-                                <p class="small_text">Banana, açúcar e canela.</p><br>
+                                <input onclick="receberMC('BANANA COM CANELA,', 'bananaMC')"   type="checkbox" id="bananaMC">
+                                <label for="bananaMC">Banana com canela</label>
+                                <p>Banana, açúcar e canela.</p><br>
     
-                                <input class="pai3" type="checkbox" id="chocolate1">
-                                <label for="chocolate1">Chocolate</label>
-                                <p class="small_text">Chocolate derretido e granulado</p><br>
+                                <input onclick="receberMC('CHOCOLATE,', 'chocolateMC')"   type="checkbox" id="chocolateMC">
+                                <label for="chocolateMC">Chocolate</label>
+                                <p>Chocolate derretido e granulado</p><br>
     
-                                <input class="pai3" type="checkbox" id="rej1">
-                                <label for="rej1">Romeu e Julieta</label>
-                                <p class="small_text">Queijo e goiabada.</p><br>
+                                <input onclick="receberMC('ROMEU E JULIETA,', 'rejMC')"   type="checkbox" id="rejMC">
+                                <label for="rejMC">Romeu e Julieta</label>
+                                <p>Queijo e goiabada.</p><br>
     
-                                <input class="pai3" type="checkbox" id="brigadeiro1">
-                                <label for="brigadeiro1">Brigadeiro</label>
-                                <p class="small_text">Brigadeiro e granulado.</p><br>
+                                <input onclick="receberMC('BRIGADEIRO,', 'brigadeiroMC')"   type="checkbox" id="brigadeiroMC">
+                                <label for="brigadeiroMC">Brigadeiro</label>
+                                <p>Brigadeiro e granulado.</p><br>
     
-                                <input class="pai3" type="checkbox" id="cubana1">
-                                <label for="cubana1">Cubana</label>
-                                <p class="small_text">Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
+                                <input onclick="receberMC('CUBANA,', 'cubanaMC')"   type="checkbox" id="cubanaMC">
+                                <label for="cubanaMC">Cubana</label>
+                                <p>Banana, leite condensado, creme de leite, muçarela e canela.</p><br>
                             </div>
                         </div>
                     </div>
@@ -575,21 +599,23 @@
                     <div class="centro">
                         <h3 class="h30">Alguma observação?</h3>
                         <p class="marg1">1/60</p>
-                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                        <textarea id="mensagemMC" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                     </div>
     
                     <div class="contador">
                         <div class="brd1">
-                            <button class="bttm2" type="button" id="menos">–</button>
-                            <input type="number" id="quantidadeInput" class="quantidade" value="1" min="1" readonly>
-                            <button class="bttm2" type="button" id="mais">+</button>
+                            <button onclick="menosMC()"  class="bttm2" type="button" id="menosMC"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" id="mmorango" class="quantidade" value="1" min="1" readonly>
+                            <button onclick="maisMC()"  class="bttm2" type="button" id="maisMC"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="brd1 brd2">
-                            <button class="bttm2 brd2" type="button">
+                            <div onclick="irPedidosMC()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <input type="number" id="quantidadePrice" class="quantidade brd2" value="35" min="35">
-                            </button>
+                                <div class="RS"></div><input type="number" id="mmorango2" class="quantidade brd2" value="35" min="35" readonly>
+                                <p><strong>R$</strong></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -607,8 +633,8 @@
             <form>
                 <div class="pai1">
                     <div class="pai2">
-                        <button onclick="document.getElementById('cubana').style.display='none'" class="voltarPizza" type="button">
-                            <i class="fa-solid fa-angle-left close"></i>
+                        <button onclick="document.getElementById('cubana').style.display='none'" class="voltarPizza close" type="button">
+                            <i class="fa-solid fa-angle-left"></i>
                         </button>
                         <h2 class="h21">Pizza CUBANA</h2>
                     </div>
@@ -616,22 +642,22 @@
                     <div class="filho1">
                         <div class="filho2">
                             <div class="cubana"></div>
-                            <p class="small_text mleft">Banana, leite condensado, creme de leite</p>
-                            <p class="small_text mleft"> muçarela e canela.</p>
+                            <p class="mleft">Banana, leite condensado, creme de leite
+                             muçarela e canela.</p>
                             <h3 class="h3cor h32">Selecione um tamanho</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="radio" name="cubana" id="pequena2">
-                                <label for="pequena2">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 35.00 </label><br><br>
+                                <input  onclick="valorCB('35')"   type="radio" name="cubana" id="pequenaCB">
+                                <label for="pequenaCB">Pequena (até 2 sabores) <strong class="s1"> R$</strong> 35.00 </label><br><br>
     
-                                <input class="pai3" type="radio" name="cubana" id="media2">
-                                <label for="media2">Média (até 2 sabores) <strong class="s2"> R$</strong> 45.00</label><br><br>
+                                <input  onclick="valorCB('45')"   type="radio" name="cubana" id="mediaCB">
+                                <label for="mediaCB">Média (até 2 sabores) <strong class="s2"> R$</strong> 45.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="cubana" id="grande2">
-                                <label for="grande2">Grande (até 3 sabores) <strong class="s3"> R$</strong> 55.00</label><br><br>
+                                <input  onclick="valorCB('55')"   type="radio" name="cubana" id="grandeCB">
+                                <label for="grandeCB">Grande (até 3 sabores) <strong class="s3"> R$</strong> 55.00</label><br><br>
     
-                                <input class="pai3" type="radio" name="cubana" id="familia2">
-                                <label for="familia2">Família (até 4 sabores) <strong class="s4"> R$</strong> 75.00</label><br><br>
+                                <input  onclick="valorCB('75')"   type="radio" name="cubana" id="familiaCB">
+                                <label for="familiaCB">Família (até 4 sabores) <strong class="s4"> R$</strong> 75.00</label><br><br>
                             </div>
                         </div>
     
@@ -643,28 +669,28 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input class="pai3" type="checkbox" id="cubana1" checked>
-                                <label for="cubana1">Cubana (principal)</label><br><br>
+                                <input  onclick="receberCB('CUBANA,', 'cubanaCB')"   type="checkbox" id="cubanaCB" >
+                                <label for="cubanaCB">Cubana( <span class="vermelho">OBRIGATÓRIO</span>)</label><br><br>
     
-                                <input class="pai3" type="checkbox" id="banana1">
-                                <label for="banana1">Banana com canela</label>
-                                <p class="small_text">Banana, açúcar e canela.</p><br>
+                                <input onclick="receberCB('BANANA COM CANELA,', 'bananaCB')"   type="checkbox" id="bananaCB">
+                                <label for="bananaCB">Banana com canela</label>
+                                <p>Banana, açúcar e canela.</p><br>
     
-                                <input class="pai3" type="checkbox" id="morango1">
-                                <label for="morango1">Morango com chocolate</label>
-                                <p class="small_text">Morango e chocolate derretido.</p><br>
+                                <input onclick="receberCB('MORANGO COM CHOCOLATE,', 'morangoCB')"    type="checkbox" id="morangoCB">
+                                <label for="morangoCB">Morango com chocolate</label>
+                                <p>Morango e chocolate derretido.</p><br>
     
-                                <input class="pai3" type="checkbox" id="rej1">
-                                <label for="rej1">Romeu e Julieta</label>
-                                <p class="small_text">Queijo e goiabada.</p><br>
+                                <input onclick="receberCB('ROMEU E JULIETA,', 'rejCB')"   type="checkbox" id="rejCB">
+                                <label for="rejCB">Romeu e Julieta</label>
+                                <p>Queijo e goiabada.</p><br>
     
-                                <input class="pai3" type="checkbox" id="brigadeiro1">
-                                <label for="brigadeiro1">Brigadeiro</label>
-                                <p class="small_text">Brigadeiro e granulado.</p><br>
+                                <input onclick="receberCB('BRIGADEIRO,', 'brigadeiroCB')"   type="checkbox" id="brigadeiroCB">
+                                <label for="brigadeiroCB">Brigadeiro</label>
+                                <p>Brigadeiro e granulado.</p><br>
     
-                                <input class="pai3" type="checkbox" id="chocolate1">
-                                <label for="chocolate1">Chocolate</label>
-                                <p class="small_text" style="padding-right: 200px;">Chocolate derretido e granulado</p><br>
+                                <input onclick="receberCB('CHOCOLATE,', 'chocolateCB')"   type="checkbox" id="chocolateCB">
+                                <label for="chocolateCB">Chocolate</label>
+                                <p>Chocolate derretido e granulado</p><br>
                             </div>
                         </div>
                     </div>
@@ -672,21 +698,23 @@
                     <div class="centro">
                         <h3 class="h30">Alguma observação?</h3>
                         <p class="marg1">1/60</p>
-                        <textarea id="mensagem" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
-                        <h5 class="small_text">* Serão acatadas apenas as que não alteram o valor</h5>
+                        <textarea id="mensagemCB" name="mensagem" placeholder="Adicione a observação aqui..." rows="3" cols="60"></textarea>
+                        <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                     </div>
     
                     <div class="contador">
                         <div class="brd1">
-                            <button class="bttm2" type="button" id="menos">–</button>
-                            <input type="number" id="quantidadeInput" class="quantidade" value="1" min="1" readonly>
-                            <button class="bttm2" type="button" id="mais">+</button>
+                            <button onclick="menosCB()"  class="bttm2" type="button" id="menosCB"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" id="ccubana" class="quantidade" value="1" min="1" readonly>
+                            <button onclick="maisCB()"  class="bttm2" type="button" id="maisCB"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="brd1 brd2">
-                            <button class="bttm2 brd2" type="button">
+                            <div onclick="irPedidosCB()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <input type="number" id="quantidadePrice" class="quantidade brd2" value="35" min="35">
-                            </button>
+                                <div class="RS"></div><input type="number" id="ccubana2" class="quantidade brd2" value="35" min="35" readonly>
+                                <p><strong>R$</strong></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -697,9 +725,10 @@
 
     <!--FIM CUBANA-->
 
-    <!--Endereco-->
 
-    <div class="endr" id="endr">
+     <!--ENDERECO-->
+
+     <div class="endr" id="endr">
         <div class="cont_endr">
             <div class="cent">
                 <div class="escol" >
@@ -707,42 +736,128 @@
                     <p> <i onclick="document.getElementById('endr').style.display='none'" class="fa-solid fa-xmark close"></i> </p>
                 </div>
                 <p class="pdd2"> Entregar em</p>
-                <div class="ngr">
-                    <input class="ipt" type="text" id="search" name="query" placeholder="Informe o CEP" required>
-                    <button class="bt" type="submit">Buscar</button>
-                </div>
-                <p id="pdd">Não sei meu CEP</p>
+                <p id="pdd">Insira seu nome, endereço, rua/avenida, numero, bairro...</p>
+                <form class="ngr">
+                    <textarea name="enderecoo" id="inserirE"></textarea>
+                </form>
+
+                <button id="irPagamento" type="button"> IR PARA PAGAMENTO </button>
+                
                 <P class="pdd2">Vou até o local</P>
                 <div class="cons">
-                    <div class="ret"> <i class=" cdd fa-solid fa-bag-shopping"></i>Retirar</div>
-                    <div class="ret"> <i class=" cdd fa-solid fa-utensils"></i>Consumir</div>
+                    <div id="Retirar" class="ret"> <i class=" cdd fa-solid fa-bag-shopping"></i>Retirar</div>
+                    <div id="Consumir" class="ret"> <i class=" cdd fa-solid fa-utensils"></i>Consumir</div>
                 </div>
                 <p class="pdd2">Possui endereço cadrastado?</p>
-                <p onclick="document.getElementById('entrarC').style.display='block'" class="pdd2" style="color:#21C3D9; cursor: pointer;"> Entrar</p>
+                <p  onclick="document.getElementById('entrarC').style.display='block'" class="pdd2" style="color:#21C3D9; cursor: pointer;"> Entrar</p>
             </div>
        </div>
     </div>
+
+    <!--FIM ENDERECO-->
 
      <!--ENTRAR-->
 
      <div id="entrarC">
         <div class="cont_entrarC">
             <div style="display: flex; justify-content: center;">
-                <img src="imagem/logoen.png">
+                <img src="imagem/logoen.png" alt="">
                 <p onclick="document.getElementById('entrarC').style.display='none'" style="position: absolute; right: 10px; top: 0;"> <i class="fa-solid fa-xmark close"></i></p>
             </div>
             <form>
                 <label for="email"></label><br>
-                <input class="larg" type="text" id="user" name="user" value="usuário" required><br><br>
+                <input class="larg" type="email" id="email" name="email" value="email" required><br><br>
 
                 <label for="senha"></label><br>
                 <input class="larg"  type="password" id="senha" name="senha" value="senha" required><br><br>
 
-                <input class="larg corr"  type="submit" value="Entrar"><br><br>
-                <button class="larg" ><i class="fa-brands fa-google"></i> entrar com a conta do google</button>
+                <input class="larg corr cursor"  type="submit" value="Entrar"><br><br>
+                <button class="larg cursor" ><i class="fa-brands fa-google"></i> entrar com a conta do google</button>
             </form>
         </div>
     </div>
+
+     <!--INICIO PEDIDO EM ANDAMENTO-->
+
+     <div id="pedid" class="pedid">
+        <div class="cont_pedid">
+            
+            <div class="cont_1">
+                <h4>Pedido em andamento...</h4>
+                <p class="cursor" id="fecharP"><i class="fa-solid fa-xmark close"></i> </p>
+            </div>
+            
+           
+            <div class="cont_2">
+                
+                <div class="pedidos">
+                    <p id="pedidos">Pedido vazio!</p>
+                    <p id="obs"></p>
+                    <button id="irEnde">ADICIONAR ENDEREÇO PARA ENTREGA</button>
+                </div>
+                
+                <div id="btEeC" class="btEeC">
+                    <button id="conf" class="conf">CONFIRMAR PEDIDO</button>
+                    <button id="excl" class="excl">EXCLUIR PEDIDO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--FIM  PEDIDO EM ANDAMENTO-->   
+
+     <!--INICIO PEDIDOS-->
+
+     <div id="regPedid" class="regPedid">
+        <div class="regPedido">
+        <div>
+        <span class="cursor"><i onclick="document.getElementById('regPedid').style.display= 'none'" class="fa-solid fa-xmark"></i></span>
+        <p>Detalhe do pedido:</p><br>
+        <p id="sabor_valor">Sem pedidos!</p><br>
+        <p id="entreg"></p><br>
+        <p id="pag"></p>
+        </div>
+        </div>
+    </div>
+
+      <!--FIM PEDIDOS-->
+
+      <!--INICIO PAGAMENTO-->
+
+      <div id="pagamento" class="pagamento">
+        <form class="paga_content">
+            <p>Forma de pagamento</p>
+            <input  type="radio" name="pagamento" id="cartao">
+            <label for="cartao">CARTÃO</label><br><br>
+            <input  type="radio" name="pagamento" id="dinheiro">
+            <label for="dinheiro">DINHEIRO</label><br><br>
+            <p>Troco?</p>
+            <textarea name="troco" id="troco"></textarea>
+            <div>
+            <button id="fimm"> FINALIZAR PEDIDO </button>
+            <img src="imagem/logoen.png" alt="">
+            </div>
+            
+        </form>
+    </div>
+
+    <!--FIM PAGAMENTO-->
+
+      <!--INICIO IDENTIFICAÇÃO-->
+
+      <div id="nc" class="nc">
+        <form>
+            <p>Adicione seu nome completo para o registro de seu pedido</p>
+            <textarea name="nomeC" id="nomeC"></textarea>
+            <div>
+            <button id="fimm2"> FINALIZAR PEDIDO </button>
+            <img src="imagem/logoen.png" alt="">
+            </div>
+        </form>
+    </div>
+
+    <!--FIM IDENTIFICAÇÃO-->
+
 
 
             <footer>
@@ -751,7 +866,6 @@
                     </p>
                     
             </footer>
-            <script src="js/pizzadoce.js"></script>
-            <script src="js/scritp.js"></script>
+            <script src="java.js"></script>
     </body>
 </html>
