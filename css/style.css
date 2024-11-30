@@ -6,7 +6,8 @@
     box-sizing: border-box; 
 }
 body {
-    min-height: 100vh;
+    height:auto;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +16,6 @@ body {
 }
 .cabeca{
     display: flex;
-    flex-wrap: wrap;
     background-color: black;
     color: white;
     align-items: center;
@@ -42,23 +42,28 @@ body {
     
 }
 
-.a0{
-    position: absolute;
-    top:3%;
-    left:7%;
-    padding: 2px;
+.opcaoE{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 75%;
+    margin-top: 1%;
+    
+
+}
+
+.opcaoE button{
+    width: auto;
     border-radius: 5px;
     cursor: pointer;
-
 }
-.cabeca p{
-    position: absolute;
-    margin-left: 70px;
-    margin-top: 50px ;
-    margin-bottom: 20px;
+
+.opcaoE p{
     font-size: 10px;
-
+    width: auto;
 }
+
+
 .logo{
     display: flex;
     flex-direction: column;
@@ -1621,7 +1626,7 @@ input,textarea:focus{
         font-size: 30px;
     }
 
-    .b0, .lupa{
+    .opcaoE, .lupa{
         display:none;
     }
 
