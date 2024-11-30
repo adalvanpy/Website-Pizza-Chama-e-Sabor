@@ -35,7 +35,7 @@
         <nav>
             <ul>
                 <li><a href="index.html" >Pizzas tradicionais</a></li>
-                <li><a href="pizzadoce.html">Pizzas doce</a></li>
+                <li style="border: solid black 3px;"><a style = 'font-weight: bold;' href="pizzadoce.html">Pizzas doce</a></li>
                 <li><a href="bebidas.html">Bebidas</a></li>
             </ul>
             </nav>
@@ -132,7 +132,8 @@
                     <div class="cursor">  <i class="fa-solid fa-utensils"></i> <a href="index.html" >Cardapio</a></div>
                     <div class="cursor"  id="ctt"> <i class="fa-brands fa-whatsapp"></i> Contato</div>
                     <div id="wapp"> 77 99993333 </div>
-                    <div class="cursor" onclick="document.getElementById('regPedid').style.display= 'block'"> <i class="fa-solid fa-book"></i>Meus pedidos</div>
+                    <div class="cursor" onclick="document.getElementById('regPedid').style.display= 'block',
+                    document.getElementById('menuu').style.display = 'none'"> <i class="fa-solid fa-book"></i>Meus pedidos</div>
                     <div class="cursor" > <i class="fa-regular fa-star"></i><a href="Avaliações.html" >Avaliações</a></div>
                     <div class="azul" onclick="document.getElementById('entrarC').style.display='block'" id="entrar">Entrar</div>
                 </div>
@@ -217,14 +218,14 @@
     
                     <div class="contador">
                         <div class="brd1">
-                            <button onclick="menosCH()"  class="bttm2" type="button" id="menosCH"><i class="fa-solid fa-minus"></i></button>
+                            <button onclick="menosCH()"  class="bttm2" type="button" id="menosCh"><i class="fa-solid fa-minus"></i></button>
                             <input type="number" id="cchoco" class="quantidade" value="1" min="1" readonly>
-                            <button onclick="maisCH()"  class="bttm2" type="button" id="maisCH"><i class="fa-solid fa-plus"></i></button>
+                            <button onclick="maisCH()"  class="bttm2" type="button" id="maisCh"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="brd1 brd2">
                             <div onclick="irPedidosCH()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <div class="RS"></div><input type="number" id="cchoco2" class="quantidade brd2" value="35" min="35" readonly>
+                                <div class="RS"><input type="number" id="cchoco2" class="quantidade brd2" value="0" min="0" readonly>
                                 <p><strong>R$</strong></p>
                                 </div>
                             </div>
@@ -312,14 +313,14 @@
     
                     <div class="contador">
                         <div class="brd1">
-                            <button onclick="menosRJ()"  class="bttm2" type="button" id="menosRJ"><i class="fa-solid fa-minus"></i></button>
+                            <button onclick="menosRJ()"  class="bttm2" type="button" id="menosRj"><i class="fa-solid fa-minus"></i></button>
                             <input type="number" id="rrej" class="quantidade" value="1" min="1" readonly>
-                            <button onclick="maisRJ()"  class="bttm2" type="button" id="maisRJ"><i class="fa-solid fa-plus"></i></button>
+                            <button onclick="maisRJ()"  class="bttm2" type="button" id="maisRj"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="brd1 brd2">
                             <div onclick="irPedidosRJ()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <div class="RS"><input type="number" id="rrej2" class="quantidade brd2" value="35" min="35" readonly>
+                                <div class="RS"><input type="number" id="rrej2" class="quantidade brd2" value="0" min="0" readonly>
                                 <p><strong>R$</strong></p>
                                 </div>
                             </div>
@@ -408,15 +409,15 @@
     
                     <div class="contador">
                         <div class="brd1">
-                            <button onclick="menosBC()"  class="bttm2" type="button" id="menosBC"><i class="fa-solid fa-minus"></i></button>
+                            <button onclick="menosBC()"  class="bttm2" type="button" id="menosBc"><i class="fa-solid fa-minus"></i></button>
                             <input type="number" id="bbanana" class="quantidade" value="1" min="1" readonly>
-                            <button onclick="maisBC()"  class="bttm2" type="button" id="maisBC"><i class="fa-solid fa-plus"></i></button>
+                            <button onclick="maisBC()"  class="bttm2" type="button" id="maisBc"><i class="fa-solid fa-plus"></i></button>
                         </div>
     
                         <div class="brd1 brd2">
                             <div onclick="irPedidosBC()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <div class="RS"></div><input type="number" id="bbanana2" class="quantidade brd2" value="35" min="35" readonly>
+                                <div class="RS"><input type="number" id="bbanana2" class="quantidade brd2" value="0" min="0" readonly>
                                 <p><strong>R$</strong></p>
                                 </div>
                             </div>
@@ -514,7 +515,7 @@
                         <div class="brd1 brd2">
                             <div onclick="irPedidosBR()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <div class="RS"> <input type="number" id="bbriga2" class="quantidade brd2" value="35" min="35" readonly>
+                                <div class="RS"> <input type="number" id="bbriga2" class="quantidade brd2" value="0" min="0" readonly>
                                 <p><strong>R$</strong></p>
                                 </div>
                             </div>
@@ -605,14 +606,14 @@
     
                     <div class="contador">
                         <div class="brd1">
-                            <button onclick="menosMC()"  class="bttm2" type="button" id="menosMC"><i class="fa-solid fa-minus"></i></button>
+                            <button onclick="menosMC()"  class="bttm2" type="button" id="menosMc"><i class="fa-solid fa-minus"></i></button>
                             <input type="number" id="mmorango" class="quantidade" value="1" min="1" readonly>
-                            <button onclick="maisMC()"  class="bttm2" type="button" id="maisMC"><i class="fa-solid fa-plus"></i></button>
+                            <button onclick="maisMC()"  class="bttm2" type="button" id="maisMc"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="brd1 brd2">
                             <div onclick="irPedidosMC()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <div class="RS"></div><input type="number" id="mmorango2" class="quantidade brd2" value="35" min="35" readonly>
+                                <div class="RS"><input type="number" id="mmorango2" class="quantidade brd2" value="0" min="0" readonly>
                                 <p><strong>R$</strong></p>
                                 </div>
                             </div>
@@ -704,14 +705,14 @@
     
                     <div class="contador">
                         <div class="brd1">
-                            <button onclick="menosCB()"  class="bttm2" type="button" id="menosCB"><i class="fa-solid fa-minus"></i></button>
+                            <button onclick="menosCB()"  class="bttm2" type="button" id="menosCb"><i class="fa-solid fa-minus"></i></button>
                             <input type="number" id="ccubana" class="quantidade" value="1" min="1" readonly>
-                            <button onclick="maisCB()"  class="bttm2" type="button" id="maisCB"><i class="fa-solid fa-plus"></i></button>
+                            <button onclick="maisCB()"  class="bttm2" type="button" id="maisCb"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="brd1 brd2">
                             <div onclick="irPedidosCB()"  class="bttm2 brd2">
                                 <p>Adicionar</p>
-                                <div class="RS"></div><input type="number" id="ccubana2" class="quantidade brd2" value="35" min="35" readonly>
+                                <div class="RS"><input type="number" id="ccubana2" class="quantidade brd2" value="0" min="0" readonly>
                                 <p><strong>R$</strong></p>
                                 </div>
                             </div>
