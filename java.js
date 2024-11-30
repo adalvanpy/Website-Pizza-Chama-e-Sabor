@@ -70,10 +70,6 @@ function receberCH(valor, id){
         chocol = chocol.replace(valor + "<br>", "");
     }
 
-   
-    if(chocol === "NaN"){
-        chocol = "";
-    }
 
     let total = document.getElementById("cchoco2").value;
     if(total === '35' || total === '70'){
@@ -185,11 +181,6 @@ function receberRJ(valor, id){
         rEj = rEj.replace(valor + "<br>", "");
     }
 
-   
-    if(rEj === "NaN"){
-        rEj = "";
-    }
-
     let total = document.getElementById("rrej2").value;
     if(total === '35' || total === '70'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
@@ -299,10 +290,6 @@ function receberBC(valor, id){
         bEc = bEc.replace(valor + "<br>", "");
     }
 
-   
-    if(bEc === "NaN"){
-        bEc = "";
-    }
 
     let total = document.getElementById("bbanana2").value;
     if(total === '35' || total === '70'){
@@ -404,10 +391,6 @@ function receberBR(valor, id){
     }
     else{
         brig = brig.replace(valor + "<br>", "");
-    }
-
-    if(brig === "NaN"){
-        brig = "";
     }
 
     let total = document.getElementById("bbriga2").value;
@@ -512,10 +495,6 @@ function receberMC(valor, id){
         mEc = mEc.replace(valor + "<br>", "");
     }
 
-    if(mEc === "NaN"){
-        mEc = "";
-    }
-
     let total = document.getElementById("mmorango2").value;
     if(total === '35' || total === '70'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
@@ -618,10 +597,6 @@ function receberCB(valor, id){
         cub = cub.replace(valor + "<br>", "");
     }
 
-    if(cub === "NaN"){
-        cub = "";
-    }
-
     let total = document.getElementById("ccubana2").value;
     if(total === '35' || total === '70'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
@@ -719,15 +694,11 @@ function receberCAL(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
         if (!calb.includes(valor + "<br>")){
-            calb+= valor + "<br>";
+            calb += valor + "<br>";
         }
     }
     else{
-        calb = sabores.replace(valor + "<br>", "");
-    }
-
-    if(calb === "NaN"){
-        calb = "";
+        calb = calb.replace(valor + "<br>", "");
     }
 
     let total = document.getElementById("ccalabresa2").value;
@@ -832,10 +803,6 @@ function receberFC(valor, id){
         catpy = catpy.replace(valor + "<br>", "");
     }
 
-    if(catpy === "NaN"){
-        catpy= "";
-    }
-
     let total = document.getElementById("ffrango2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
@@ -936,10 +903,6 @@ function receberPT(valor, id){
     }
     else{
         port = port.replace(valor + "<br>", "");
-    }
-
-    if(port === "NaN"){
-        port = "";
     }
 
     let total = document.getElementById("pportu2").value;
@@ -1044,10 +1007,6 @@ function receberPP(valor, id){
         pepp = pepp.replace(valor + "<br>", "");
     }
 
-    if(pepp === "NaN"){
-        pepp = "";
-    }
-
     let total = document.getElementById("ppepe2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
@@ -1148,10 +1107,6 @@ function receberMG(valor, id){
     }
     else{
         marg  = marg.replace(valor + "<br>", "");
-    }
-
-    if(marg  === "NaN"){
-        marg  = "";
     }
 
     let total = document.getElementById("mmarguerita2").value;
@@ -1257,10 +1212,6 @@ function receberAT(valor, id){
         attum = attum.replace(valor + "<br>", "");
     }
 
-    if(attum === "NaN"){
-        attum = "";
-    }
-
     let total = document.getElementById("aatum2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
@@ -1364,10 +1315,6 @@ function receberQQ(valor, id){
         qque  = qque .replace(valor + "<br>", "");
     }
 
-    if(qque  === "NaN"){
-        qque  = "";
-    }
-
     let total = document.getElementById("qqueijo2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
@@ -1469,10 +1416,6 @@ function receberNP(valor, id){
     }
     else{
         napp  = napp .replace(valor + "<br>", "");
-    }
-
-    if(napp  === "NaN"){
-        napp  = "";
     }
 
     let total = document.getElementById("nnapo2").value;
@@ -2785,6 +2728,7 @@ function receberLTA(valor, item, checkb){
       } else {
           pedido.innerHTML = "Pedido vazio!";
           document.getElementById('obs').style.display = 'none';
+          document.getElementById('andamento').style.display = 'none';
       }
   };
   
@@ -2797,6 +2741,7 @@ function receberLTA(valor, item, checkb){
           meuspedidos.innerHTML = pedido.innerText + '<br>' + observ.innerText + '<br>';
           pedido.innerHTML = 'Pedido confirmado!';
           document.getElementById('btEeC').style.display = 'none';
+          document.getElementById('andamento').style.display = 'none';
 
 
           
