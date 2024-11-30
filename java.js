@@ -62,7 +62,9 @@ function maisCH(){
 function receberCH(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        chocol += valor + "<br>";
+        if (!chocol.includes(valor + "<br>")){
+            chocol += valor + "<br>";
+        }
     }
     else{
         chocol = chocol.replace(valor + "<br>", "");
@@ -175,7 +177,9 @@ let rEj = "";
 function receberRJ(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        rEj += valor + "<br>";
+        if (!rEj.includes(valor + "<br>")){
+            rEj += valor + "<br>";
+        }
     }
     else{
         rEj = rEj.replace(valor + "<br>", "");
@@ -287,7 +291,9 @@ let bEc = "";
 function receberBC(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        bEc += valor + "<br>";
+        if (!bEc.includes(valor + "<br>")){
+            bEc += valor + "<br>";
+        }
     }
     else{
         bEc = bEc.replace(valor + "<br>", "");
@@ -392,7 +398,9 @@ let brig = "";
 function receberBR(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        brig += valor + "<br>";
+        if (!brig.includes(valor + "<br>")){
+            brig += valor + "<br>";
+        }
     }
     else{
         brig = brig.replace(valor + "<br>", "");
@@ -496,7 +504,9 @@ let mEc = "";
 function receberMC(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        mEc += valor + "<br>";
+        if (!mEc.includes(valor + "<br>")){
+            mEc += valor + "<br>";
+        }
     }
     else{
         mEc = mEc.replace(valor + "<br>", "");
@@ -600,7 +610,9 @@ let cub = "";
 function receberCB(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        cub += valor + "<br>";
+        if (!cub.includes(valor + "<br>")){
+            cub+= valor + "<br>";
+        }
     }
     else{
         cub = cub.replace(valor + "<br>", "");
@@ -706,7 +718,9 @@ let calb = "";
 function receberCAL(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        calb += valor + "<br>";
+        if (!calb.includes(valor + "<br>")){
+            calb+= valor + "<br>";
+        }
     }
     else{
         calb = sabores.replace(valor + "<br>", "");
@@ -810,7 +824,9 @@ let catpy = "";
 function receberFC(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        catpy += valor + "<br>";
+        if (!catpy.includes(valor + "<br>")){
+            catpy+= valor + "<br>";
+        }
     }
     else{
         catpy = catpy.replace(valor + "<br>", "");
@@ -914,7 +930,9 @@ let port = "";
 function receberPT(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        port += valor + "<br>";
+        if (!port.includes(valor + "<br>")){
+            port+= valor + "<br>";
+        }
     }
     else{
         port = port.replace(valor + "<br>", "");
@@ -1018,7 +1036,9 @@ let pepp = "";
 function receberPP(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        pepp+= pepp+ "<br>";
+        if (!pepp.includes(valor + "<br>")){
+            pepp += valor + "<br>";
+        }
     }
     else{
         pepp = pepp.replace(valor + "<br>", "");
@@ -1122,7 +1142,9 @@ let marg = "";
 function receberMG(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        marg  += valor + "<br>";
+        if (!marg.includes(valor + "<br>")){
+            marg+= valor + "<br>";
+        }
     }
     else{
         marg  = marg.replace(valor + "<br>", "");
@@ -1227,7 +1249,9 @@ let attum = "";
 function receberAT(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        attum += valor + "<br>";
+        if (!attum.includes(valor + "<br>")){
+            attum += valor + "<br>";
+        }
     }
     else{
         attum = attum.replace(valor + "<br>", "");
@@ -1332,7 +1356,9 @@ let qque ="";
 function receberQQ(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        qque  += valor + "<br>";
+        if (!qque.includes(valor + "<br>")){
+            qque += valor + "<br>";
+        }
     }
     else{
         qque  = qque .replace(valor + "<br>", "");
@@ -1437,7 +1463,9 @@ let napp = "";
 function receberNP(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
-        napp  += valor + "<br>";
+        if (!napp.includes(valor + "<br>")){
+            napp += valor + "<br>";
+        }
     }
     else{
         napp  = napp .replace(valor + "<br>", "");
@@ -1872,7 +1900,7 @@ function receberLA(valor, item, checkb){
       var obs_MR = document.getElementById("mensagemM").value;
   
       document.getElementById("pedid").style.display = 'block';
-      document.getElementById('limaoo').style.display = 'none';
+      document.getElementById('maracuja').style.display = 'none';
   
       if(obs_MR!== ""){
           document.getElementById('obs').innerHTML = "Obs: " +  obs_MR; 
