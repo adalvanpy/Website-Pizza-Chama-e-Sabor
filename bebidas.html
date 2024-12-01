@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
         <meta charset = "UTF-8">
@@ -8,16 +9,21 @@
 
     </head>
     <body>
-        <div class="cabeca">
-            <button class="corB" onclick="document.getElementById('menuu').style.display='block'" > <span class="menu"><i class="fa-solid fa-bars"></i></span></button>
-            <h4 onclick="document.getElementById('endr').style.display='block'">Opcão de entrega</h4>
-            <div id="busca" class="cont_busca">
-                <form>
-                    <input type="search" placeholder="O que você esta pensando?">
-                </form>
-            </div>
-            <button id="lupa" class="corB"><span class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></span></button>
-        </div>
+        <div class="cabecapai">
+            <div class="cabeca">
+               <button class="corB" onclick="document.getElementById('menuu').style.display='block'"> <span class="menu"><i class="fa-solid fa-bars"></i></span></button>
+               <div class="opcaoE" >   
+                <button onclick="document.getElementById('endr').style.display='block'">Opcão de entrega</button>
+                <p>Clique aqui para inserir o seu endereço</p>
+               </div>
+           </div>
+           <div class="cabeca2">
+               <form  id="busca" class="cont_busca">
+                <input type="search" placeholder="O que você esta pensando?">
+               </form>
+               <button id="lupa" class="corB"><span class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></span></button>
+           </div>
+         </div>
 
         <div class="logo">
 

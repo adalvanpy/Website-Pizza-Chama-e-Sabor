@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
         <meta charset = "UTF-8">
@@ -8,15 +9,20 @@
 
     </head>
     <body>
-        <div class="cabeca">
-            <button class="corB" onclick="document.getElementById('menuu').style.display='block'"> <span class="menu"><i class="fa-solid fa-bars"></i></span></button>
-            <h4 onclick="document.getElementById('endr').style.display='block'">Opcão de entrega</h4>
-            <div id="busca" class="cont_busca">
-                <form>
-                    <input type="search" placeholder="O que você esta pensando?">
-                </form>
-            </div>
-            <button id="lupa" class="corB"><span class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></span></button>
+        <div class="cabecapai">
+           <div class="cabeca">
+              <button class="corB" onclick="document.getElementById('menuu').style.display='block'"> <span class="menu"><i class="fa-solid fa-bars"></i></span></button>
+              <div class="opcaoE" >   
+               <button onclick="document.getElementById('endr').style.display='block'">Opcão de entrega</button>
+               <p>Clique aqui para inserir o seu endereço</p>
+              </div>
+          </div>
+          <div class="cabeca2">
+              <form  id="busca" class="cont_busca">
+               <input type="search" placeholder="O que você esta pensando?">
+              </form>
+              <button id="lupa" class="corB"><span class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></span></button>
+          </div>
         </div>
 
             <div class="logo">
@@ -43,7 +49,7 @@
                    <p>PIZZA CALABRESA<br>
                      <small>
                         Muçarela, calabresa,
-                        cebola, tomate molho e orégano.<br>
+                        cebola, molho, orégano.<br>
                      </small>
                      <strong>R$</strong>30.00 A <strong>R$</strong>  70.00
                    </p>
@@ -56,7 +62,7 @@
                   <div>
                     <p>PIZZA FRANGO COM CATPIRY<br>
                       <small>
-                       Queijo muçarela, frango desfiado e catupiry<br>
+                       Muçarela, frango desfiado e catupiry<br>
                         </small>
                        <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
                     </p>
@@ -73,7 +79,7 @@
                     <p>PIZZA PORTUGUESA<br>
                         <small>
                        Muçarela, presunto, ovo, cebola,
-                       ervilha e oregano.<br>
+                       e oregano.<br>
                         </small>
                        <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
                     </p>
@@ -87,7 +93,7 @@
                   <div>
                     <p>PIZZA PEPPERONI<br>
                         <small>
-                       Queijo muçarela, peppernoi e oregano.<br>
+                       Muçarela, peppernoi e oregano.<br>
                         </small>
                        <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
                     </p>
@@ -103,7 +109,7 @@
                   <div>
                     <p>PIZZA MARGUERITA<br>
                         <small>
-                       Queijo muçarela, tomate, manjericão e oregano.<br>
+                       Muçarela, tomate, manjericão e oregano.<br>
                         </small>
                        <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
                     </p>
@@ -117,7 +123,7 @@
                   <div>
                     <p>PIZZA ATUM<br>
                     <small>
-                       Queijo muçarela, atum, cebola e oregano.<br>
+                       Muçarela, atum, cebola e oregano.<br>
                     </small>
                        <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
                     </p>
@@ -133,7 +139,7 @@
                   <div>
                     <p>PIZZA QUATRO QUEIJOS<br>
                         <small>
-                       Queijo muçarela, gorgonzola, permesão e catupiry.<br>
+                       Muçarela, gorgonzola, permesão e catupiry.<br>
                         </small>
                        <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
                     </p>
@@ -147,7 +153,7 @@
                   <div>
                     <p>PIZZA NAPOLITANA<br>
                         <small>
-                       Queijo muçarela, tomate, alho e oregano.<br>
+                       Muçarela, tomate, alho e oregano.<br>
                         </small>
                        <strong>R$</strong> 30.00 A <strong>R$</strong> 70.00
                     </p>
