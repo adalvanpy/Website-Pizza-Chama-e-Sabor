@@ -1787,7 +1787,9 @@ input,textarea:focus{
 @media (max-width: 768px) { 
 
     
-    
+    .quantidade, .bttm2, .brd2, .RS{
+        font-size: 20px;
+    }
     
     .cont_pedid{
         width: 100%;
