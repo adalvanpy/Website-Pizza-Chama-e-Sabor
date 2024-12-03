@@ -1585,6 +1585,13 @@ input,textarea:focus{
     color: #fff;
     font-size: 12px;}
 
+    .login{
+        display: flex;
+        justify-content: flex-end;
+        gap: 33%;
+        padding: 2%;
+    }
+
 @media (max-width: 1180px) {
 
     nav{
@@ -1609,6 +1616,12 @@ input,textarea:focus{
 
     }
 
+    .login{
+        display: flex;
+        justify-content: flex-end;
+        gap: 33%;
+        padding: 2%;
+    }
 
     .cont_endr{
 

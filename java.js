@@ -77,19 +77,19 @@ function irPedidosCH(){
 
     let total = document.getElementById("cchoco2").value;
     if(total === '35' || total === '70'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
         + 'CHOCOLATE, ' +  chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
         + 'CHOCOLATE, ' +   chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
         + 'CHOCOLATE, ' +  chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
         + 'CHOCOLATE, ' +   chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
    
@@ -189,19 +189,19 @@ function irPedidosRJ(){
      
     let total = document.getElementById("rrej2").value;
     if(total === '35' || total === '70'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
         + 'ROMEU E JULIETA, ' + rEj + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
         + 'ROMEU E JULIETA, ' +  rEj+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
         + 'ROMEU E JULIETA, ' +  rEj + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
         + 'ROMEU E JULIETA, ' +  rEj + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_rej = document.getElementById("mensagemRJ").value;
@@ -299,19 +299,19 @@ function irPedidosBC(){
 
     let total = document.getElementById("bbanana2").value;
     if(total === '35' || total === '70'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
         + 'BANANA COM CANELA, ' +  bEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
         + 'BANANA COM CANELA, ' +  bEc+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
         + 'BANANA COM CANELA, ' + bEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
         + 'BANANA COM CANELA, ' + bEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
       
@@ -401,19 +401,19 @@ function receberBR(valor, id){
 function irPedidosBR(){
     let total = document.getElementById("bbriga2").value;
     if(total === '35' || total === '70'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
         + 'BRIGADEIRO, ' + brig + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
         + 'BRIGADEIRO, ' + brig+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
         + 'BRIGADEIRO, ' + brig + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
         + 'BRIGADEIRO, ' + brig+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_bbriga = document.getElementById("mensagemBG").value;
@@ -502,19 +502,19 @@ function receberMC(valor, id){
 function irPedidosMC(){
     let total = document.getElementById("mmorango2").value;
     if(total === '35' || total === '70'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
         + 'MORANGO COM CHOCOLATE, ' + mEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
         + 'MORANGO COM CHOCOLATE, ' + mEc+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
         + 'MORANGO COM CHOCOLATE, ' + mEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
         + 'MORANGO COM CHOCOLATE, ' + mEc+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_mmorango = document.getElementById("mensagemMC").value;
@@ -606,19 +606,19 @@ function irPedidosCB(){
 
     let total = document.getElementById("ccubana2").value;
     if(total === '35' || total === '70'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
         + 'CUBANA, ' + cub + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
         + 'CUBANA, ' +  cub+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
         + 'CUBANA, ' +  cub + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
-        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
         + 'CUBANA, ' +  cub+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_ccubana = document.getElementById("mensagemCB").value;
@@ -712,19 +712,19 @@ function irPedidosCAL(){
 
     let total = document.getElementById("ccalabresa2").value;
     if(total === '30' || total === '60'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
     + 'CALABRESA, ' +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
     + 'CALABRESA, ' +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
     + 'CALABRESA, ' +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
     + 'CALABRESA, ' +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_ccalabresa = document.getElementById("mensagem1").value;
@@ -816,19 +816,19 @@ function irPedidosFC(){
 
     let total = document.getElementById("ffrango2").value;
     if(total === '30' || total === '60'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
     + 'FRANGO COM CATUPIRY, ' +  catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
     + 'FRANGO COM CATUPIRY, ' + catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
     + 'FRANGO COM CATUPIRY, ' + catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
     + 'FRANGO COM CATUPIRY, ' + catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_ffrango = document.getElementById("mensagem2").value;
@@ -919,19 +919,19 @@ function receberPT(valor, id){
 function irPedidosPT(){
     let total = document.getElementById("pportu2").value;
     if(total === '30' || total === '60'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
     + 'PORTUGUESA, ' + port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
     + 'PORTUGUESA, ' + port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
     + 'PORTUGUESA, ' + port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
     + 'PORTUGUESA, ' + port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_pportu = document.getElementById("mensagem3").value;
@@ -1023,19 +1023,19 @@ function irPedidosPP(){
 
     let total = document.getElementById("ppepe2").value;
     if(total === '30' || total === '60'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
     + 'PEPPERONI, ' + pepp+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
     + 'PEPPERONI, ' + pepp+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
     + 'PEPPERONI, ' + pepp + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
     + 'PEPPERONI, ' + pepp + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_ppepe = document.getElementById("mensagem4").value;
@@ -1127,19 +1127,19 @@ function irPedidosMG(){
 
     let total = document.getElementById("mmarguerita2").value;
     if(total === '30' || total === '60'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
     + 'MARGUERITA, ' + marg + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
     + 'MARGUERITA, ' + marg + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
     + 'MARGUERITA, ' + marg  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
     + 'MARGUERITA, ' + marg  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_mmarguerita = document.getElementById("mensagem5").value;
@@ -1232,19 +1232,19 @@ function irPedidosAT(){
 
     let total = document.getElementById("aatum2").value;
     if(total === '30' || total === '60'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
     + 'ATUM, ' + attum + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
     + 'ATUM, ' + attum  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
     + 'ATUM, ' + attum  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
     + 'ATUM, ' + attum  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_aatum = document.getElementById("mensagem6").value;
@@ -1337,19 +1337,19 @@ function irPedidosQQ(){
 
     let total = document.getElementById("qqueijo2").value;
     if(total === '30' || total === '60'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
     + 'QUATRO QUEIJO, ' +  qque + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
     + 'QUATRO QUEIJO, ' +   qque  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
     + 'QUATRO QUEIJO, ' +  qque   + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
     + 'QUATRO QUEIJO, ' + qque  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_qqueijo = document.getElementById("mensagem7").value;
@@ -1442,19 +1442,19 @@ function irPedidosNP(){
 
     let total = document.getElementById("nnapo2").value;
     if(total === '30' || total === '60'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
     + 'NAPOLITANA, ' + napp  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
     + 'NAPOLITANA, ' +  napp  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
     + 'NAPOLITANA, ' + napp   + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
-        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA <br> SABORES</strong>: <br>"
+        document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
     + 'NAPOLITANA, ' +  napp  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_nnapo = document.getElementById("mensagem8").value;
