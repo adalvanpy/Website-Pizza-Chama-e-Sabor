@@ -1616,13 +1616,6 @@ input,textarea:focus{
 
     }
 
-    .login{
-        display: flex;
-        justify-content: flex-end;
-        gap: 33%;
-        padding: 2%;
-    }
-
     .cont_endr{
 
             font-size: 20px;
