@@ -58,12 +58,11 @@ function maisCH(){
    }
 
 }
- let chocol = "";
+ let chocol = "CHOCOLATE, ";
 function receberCH(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
         if (!chocol.includes(valor + "<br>")){
-            chocol = 'CHOCOLATE, '
             chocol  += valor + "<br>";
         }
     }
@@ -78,19 +77,19 @@ function irPedidosCH(){
     let total = document.getElementById("cchoco2").value;
     if(total === '35' || total === '70'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-        + 'CHOCOLATE, ' +  chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +   chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-        + 'CHOCOLATE, ' +   chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +    chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-        + 'CHOCOLATE, ' +  chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +   chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-        + 'CHOCOLATE, ' +   chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +    chocol + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
    
     var obs_choco = document.getElementById("mensagemCH").value;
@@ -170,7 +169,7 @@ function maisRJ(){
    }
 
 }
-let rEj = "";
+let rEj = "ROMEU E JULIETA, ";
 function receberRJ(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -190,19 +189,19 @@ function irPedidosRJ(){
     let total = document.getElementById("rrej2").value;
     if(total === '35' || total === '70'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-        + 'ROMEU E JULIETA, ' + rEj + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  rEj + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-        + 'ROMEU E JULIETA, ' +  rEj+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +   rEj+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-        + 'ROMEU E JULIETA, ' +  rEj + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +   rEj + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-        + 'ROMEU E JULIETA, ' +  rEj + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +   rEj + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_rej = document.getElementById("mensagemRJ").value;
     
@@ -281,7 +280,7 @@ function maisBC(){
    }
 
 }
-let bEc = "";
+let bEc = "BANANA COM CANELA, ";
 function receberBC(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -300,19 +299,19 @@ function irPedidosBC(){
     let total = document.getElementById("bbanana2").value;
     if(total === '35' || total === '70'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-        + 'BANANA COM CANELA, ' +  bEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +   bEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-        + 'BANANA COM CANELA, ' +  bEc+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +   bEc+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-        + 'BANANA COM CANELA, ' + bEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  bEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-        + 'BANANA COM CANELA, ' + bEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  bEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
       
     var obs_banana = document.getElementById("mensagemBC").value;
@@ -385,7 +384,7 @@ function menosBR(){
         document.getElementById("bbriga2").value = valorAtual2 - 75;
     }
 }
-let brig = "";
+let brig = "BRIGADEIRO, ";
 function receberBR(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -402,19 +401,19 @@ function irPedidosBR(){
     let total = document.getElementById("bbriga2").value;
     if(total === '35' || total === '70'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-        + 'BRIGADEIRO, ' + brig + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  brig + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-        + 'BRIGADEIRO, ' + brig+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  brig+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-        + 'BRIGADEIRO, ' + brig + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  brig + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-        + 'BRIGADEIRO, ' + brig+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  brig+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_bbriga = document.getElementById("mensagemBG").value;
 
@@ -486,7 +485,7 @@ function menosMC(){
         document.getElementById("mmorango2").value = valorAtual2 - 75;
     }
 }
-let mEc = "";
+let mEc = "MORANGO COM CHOCOLATE, ";
 function receberMC(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -503,19 +502,19 @@ function irPedidosMC(){
     let total = document.getElementById("mmorango2").value;
     if(total === '35' || total === '70'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-        + 'MORANGO COM CHOCOLATE, ' + mEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  mEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-        + 'MORANGO COM CHOCOLATE, ' + mEc+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  mEc+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-        + 'MORANGO COM CHOCOLATE, ' + mEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  mEc + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-        + 'MORANGO COM CHOCOLATE, ' + mEc+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  mEc+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_mmorango = document.getElementById("mensagemMC").value;
 
@@ -587,7 +586,7 @@ function menosCB(){
         document.getElementById("ccubana2").value = valorAtual2 - 75;
     }
 }
-let cub = "";
+let cub = "CUBANA, ";
 function receberCB(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -607,19 +606,19 @@ function irPedidosCB(){
     let total = document.getElementById("ccubana2").value;
     if(total === '35' || total === '70'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-        + 'CUBANA, ' + cub + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +  cub + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '45' || total === '90'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-        + 'CUBANA, ' +  cub+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +   cub+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '55' || total === '110'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-        + 'CUBANA, ' +  cub + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +   cub + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '75' || total === '150'){
         document.getElementById("pedidos").innerHTML = "<strong>PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-        + 'CUBANA, ' +  cub+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+        +   cub+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_ccubana = document.getElementById("mensagemCB").value;
 
@@ -693,7 +692,7 @@ function menosCAL(){
         document.getElementById("ccalabresa2").value = valorAtual2 - 70;
     }
 }
-let calb = "";
+let calb = "CALABRESA, ";
 function receberCAL(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -713,19 +712,19 @@ function irPedidosCAL(){
     let total = document.getElementById("ccalabresa2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-    + 'CALABRESA, ' +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-    + 'CALABRESA, ' +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-    + 'CALABRESA, ' +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-    + 'CALABRESA, ' +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  calb + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_ccalabresa = document.getElementById("mensagem1").value;
 
@@ -797,7 +796,7 @@ function menosFC(){
         document.getElementById("ffrango2").value = valorAtual2 - 70;
     }
 }
-let catpy = "";
+let catpy = "FRANGO COM CATUPIRY, ";
 function receberFC(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -817,19 +816,19 @@ function irPedidosFC(){
     let total = document.getElementById("ffrango2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-    + 'FRANGO COM CATUPIRY, ' +  catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +   catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-    + 'FRANGO COM CATUPIRY, ' + catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-    + 'FRANGO COM CATUPIRY, ' + catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-    + 'FRANGO COM CATUPIRY, ' + catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  catpy + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_ffrango = document.getElementById("mensagem2").value;
 
@@ -901,7 +900,7 @@ function menosPT(){
         document.getElementById("pportu2").value = valorAtual2 - 70;
     }
 }
-let port = "";
+let port = "PORTUGUESA, ";
 function receberPT(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -920,19 +919,19 @@ function irPedidosPT(){
     let total = document.getElementById("pportu2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-    + 'PORTUGUESA, ' + port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-    + 'PORTUGUESA, ' + port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-    + 'PORTUGUESA, ' + port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-    + 'PORTUGUESA, ' + port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  port + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_pportu = document.getElementById("mensagem3").value;
 
@@ -1004,7 +1003,7 @@ function menosPP(){
         document.getElementById("ppepe2").value = valorAtual2 - 70;
     }
 }
-let pepp = "";
+let pepp = "PEPPERONI, ";
 function receberPP(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -1024,19 +1023,19 @@ function irPedidosPP(){
     let total = document.getElementById("ppepe2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-    + 'PEPPERONI, ' + pepp+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  pepp+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-    + 'PEPPERONI, ' + pepp+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  pepp+ "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-    + 'PEPPERONI, ' + pepp + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  pepp + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-    + 'PEPPERONI, ' + pepp + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  pepp + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_ppepe = document.getElementById("mensagem4").value;
 
@@ -1108,7 +1107,7 @@ function menosMG(){
         document.getElementById("mmarguerita2").value = valorAtual2 - 70;
     }
 }
-let marg = "";
+let marg = "MARGUERITA, ";
 function receberMG(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -1128,19 +1127,19 @@ function irPedidosMG(){
     let total = document.getElementById("mmarguerita2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-    + 'MARGUERITA, ' + marg + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  marg + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-    + 'MARGUERITA, ' + marg + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  marg + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-    + 'MARGUERITA, ' + marg  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  marg  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-    + 'MARGUERITA, ' + marg  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  marg  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_mmarguerita = document.getElementById("mensagem5").value;
 
@@ -1213,7 +1212,7 @@ function menosAT(){
         document.getElementById("aatum2").value = valorAtual2 - 70;
     }
 }
-let attum = "";
+let attum = "ATUM, ";
 function receberAT(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -1233,19 +1232,19 @@ function irPedidosAT(){
     let total = document.getElementById("aatum2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-    + 'ATUM, ' + attum + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  attum + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-    + 'ATUM, ' + attum  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  attum  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-    + 'ATUM, ' + attum  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  attum  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-    + 'ATUM, ' + attum  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  attum  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_aatum = document.getElementById("mensagem6").value;
 
@@ -1318,7 +1317,7 @@ function menosQQ(){
         document.getElementById("qqueijo2").value = valorAtual2 - 70;
     }
 }
-let qque ="";
+let qque ="QUATRO QUEIJO, ";
 function receberQQ(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -1338,19 +1337,19 @@ function irPedidosQQ(){
     let total = document.getElementById("qqueijo2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-    + 'QUATRO QUEIJO, ' +  qque + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +   qque + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-    + 'QUATRO QUEIJO, ' +   qque  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +    qque  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-    + 'QUATRO QUEIJO, ' +  qque   + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +   qque   + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-    + 'QUATRO QUEIJO, ' + qque  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  qque  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_qqueijo = document.getElementById("mensagem7").value;
 
@@ -1423,7 +1422,7 @@ function menosNP(){
         document.getElementById("nnapo2").value = valorAtual2 - 70;
     }
 }
-let napp = "";
+let napp = "NAPOLITANA, ";
 function receberNP(valor, id){
     let checkbox = document.getElementById(id);
     if(checkbox.checked){
@@ -1443,19 +1442,19 @@ function irPedidosNP(){
     let total = document.getElementById("nnapo2").value;
     if(total === '30' || total === '60'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO PEQUENA, <br> SABORES</strong>: <br>"
-    + 'NAPOLITANA, ' + napp  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    + napp  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '40' || total === '80'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO MEDIA, <br> SABORES</strong>: <br>"
-    + 'NAPOLITANA, ' +  napp  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  napp  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '50' || total === '100'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO GRANDE, <br> SABORES</strong>: <br>"
-    + 'NAPOLITANA, ' + napp   + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    + napp   + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     else if(total === '70' || total === '140'){
         document.getElementById("pedidos").innerHTML = "<strong> PIZZA TAMANHO FAMILIA, <br> SABORES</strong>: <br>"
-    + 'NAPOLITANA, ' +  napp  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
+    +  napp  + "<strong>VALOR TOTAL:</strong><br> <strong>R$</strong>  " + total;
     }
     var obs_nnapo = document.getElementById("mensagem8").value;
 
