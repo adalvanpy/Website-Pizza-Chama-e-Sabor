@@ -1592,8 +1592,8 @@ input,textarea:focus{
         padding: 2%;
     }
 
-@media (max-width: 1180px) {
-
+    @media (min-width: 820px) and (max-width: 1280px){
+        
     nav{
         padding: 40px;
         margin-bottom: 40px;
@@ -1607,7 +1607,7 @@ input,textarea:focus{
 
         font-size: 20px;
         width: 100%;
-        height: 50%;
+        height: 100%;
         margin: auto;
         padding: 0;
         position: relative; 
@@ -1619,8 +1619,8 @@ input,textarea:focus{
     .cont_endr{
 
             font-size: 20px;
-            width: 50%;
-            height: 70%; 
+            width: 100%;
+            height: 100%; 
             margin: auto;
             padding: 0;
             position: relative; 
@@ -1690,11 +1690,9 @@ input,textarea:focus{
             font-size: 20px; 
             width: 100%; 
             height: 100%; 
-            margin: 0;
             padding: 0;
             position:fixed ;
-            top: 50%; 
-            left: 0;
+            top: 50%;
             overflow: auto;
       }
     
@@ -1794,6 +1792,8 @@ input,textarea:focus{
       
 
 }
+
+
 
 @media (max-width: 768px) { 
 
