@@ -231,7 +231,7 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input onclick="receberCAL('CALABRESA,', 'calabresa1')"    type="checkbox" id="calabresa1" checked>
+                                <input onclick="receberCAL('CALABRESA,', 'calabresa1')"    type="checkbox" id="calabresa1" checked disabled>
                                 <label for="calabresa1">Calabresa ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
     
                                 <input onclick="receberCAL('PORTUGUESA,', 'portuguesa1')"   type="checkbox" id="portuguesa1">
@@ -335,7 +335,7 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input onclick="receberFC('FRANGO COM CATUPIRY,', 'frango2')"  type="checkbox" id="frango2" checked >
+                                    <input onclick="receberFC('FRANGO COM CATUPIRY,', 'frango2')"  type="checkbox" id="frango2" checked disabled >
                                     <label for="frango2">Frango ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
         
                                     <input onclick="receberFC('PORTUGUESA,', 'portuguesa2')"  type="checkbox" id="portuguesa2">
@@ -446,7 +446,7 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input onclick="receberPT('PORTUGUESA,', 'portuguesa3')"  type="checkbox" id="portuguesa3" checked >
+                                    <input onclick="receberPT('PORTUGUESA,', 'portuguesa3')"  type="checkbox" id="portuguesa3" checked disabled >
                                     <label for="portuguesa1">Portuguesa ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
         
                                     <input onclick="receberPT('CALABRESA,', 'calabresa3')"  type="checkbox" id="calabresa3">
@@ -555,7 +555,7 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input onclick="receberPP('PEPPERONI,', 'pepperoni4')"  type="checkbox" id="pepperoni4" checked >
+                                    <input onclick="receberPP('PEPPERONI,', 'pepperoni4')"  type="checkbox" id="pepperoni4" checked disabled >
                                     <label for="pepperoni4">Pepperoni ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
         
                                     <input onclick="receberPP('PORTUGUESA,', 'portuguesa4')"  type="checkbox" id="portuguesa4">
@@ -664,7 +664,7 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                             <div class="filho3">
-                                <input onclick="receberMG('MARGUERITA,', 'marguerita5')"  type="checkbox" id="marguerita5" checked >
+                                <input onclick="receberMG('MARGUERITA,', 'marguerita5')"  type="checkbox" id="marguerita5" checked disabled >
                                 <label for="marguerita5">Marguerita ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
         
                                 <input onclick="receberMG('PORTUGUESA,', 'portuguesa5')"  type="checkbox" id="portuguesa5">
@@ -769,7 +769,7 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input onclick="receberAT('ATUM,', 'atum6')" type="checkbox" id="atum6" checked >
+                                    <input onclick="receberAT('ATUM,', 'atum6')" type="checkbox" id="atum6" checked disabled >
                                     <label for="atum6">Atum ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
         
                                     <input onclick="receberAT('POSTUGUESA,', 'portuguesa6')"  type="checkbox" id="portuguesa6">
@@ -876,7 +876,7 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input onclick="receberQQ('QUATRO QUEIJO,', 'quatroq7')"  type="checkbox" id="quatroq7" checked >
+                                    <input onclick="receberQQ('QUATRO QUEIJO,', 'quatroq7')"  type="checkbox" id="quatroq7" checked disabled >
                                     <label for="quatroq7">Quatro queijos ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
         
                                     <input onclick="receberQQ('PORTUGUESA,', 'portuguesa7')"  type="checkbox" id="portuguesa7">
@@ -983,7 +983,7 @@
                                 <h3 class="h3cor">Escolha um sabor adicional</h3>
         
                                 <div class="filho3">
-                                    <input onclick="receberNP('NAPOLITANA,', 'napolitana8')"  type="checkbox" id="napolitana8" checked >
+                                    <input onclick="receberNP('NAPOLITANA,', 'napolitana8')"  type="checkbox" id="napolitana8" checked disabled >
                                     <label for="napolitana8">Napolitana ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
         
                                     <input onclick="receberNP('PORTUGUESA,', 'portuguesa8')"  type="checkbox" id="portuguesa8">
@@ -1146,16 +1146,18 @@
 
           <!--INICIO PAGAMENTO-->
 
-        <div id="pagamento" class="pagamento">
+          <div id="pagamento" class="pagamento">
             <form class="paga_content">
                 <img src="imagem/logoen.png" alt="">
                 <p>Forma de pagamento</p>
-                <input  type="radio" name="pagamento" id="cartao">
+                <input onclick="getElementById('trocoo').style.display= 'none'"   type="radio" name="pagamento" id="cartao">
                 <label for="cartao">CARTÃO</label><br><br>
-                <input  type="radio" name="pagamento" id="dinheiro">
+                <input onclick="getElementById('trocoo').style.display= 'block'"  type="radio" name="pagamento" id="dinheiro">
                 <label for="dinheiro">DINHEIRO</label><br><br>
-                <p>Troco?</p>
-                <textarea name="troco" id="troco"></textarea>
+                <div id="trocoo">
+                  <p>Troco?</p>
+                  <textarea name="troco" id="troco"></textarea>
+                </div>
                 <button id="fimm"> FINALIZAR PEDIDO </button>  
             </form>
         </div>

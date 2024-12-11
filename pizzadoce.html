@@ -188,7 +188,7 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input onclick="receberCH('CHOCOLATE,', 'chocolateCH')" type="checkbox" id="chocolateCH" checked >
+                                <input onclick="receberCH('CHOCOLATE,', 'chocolateCH')" type="checkbox" id="chocolateCH" checked disabled >
                                 <label for="chocolateCH">Chocolate ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
     
                                 <input onclick="receberCH('BANANA COM CANELA,', 'bananaCH')"  type="checkbox" id="bananaCH">
@@ -283,7 +283,7 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input onclick="receberRJ('ROMEU E JULIETA,', 'rejRJ')"  type="checkbox" id="rejRJ" checked>
+                                <input onclick="receberRJ('ROMEU E JULIETA,', 'rejRJ')"  type="checkbox" id="rejRJ" checked disabled>
                                 <label for="rejRJ">Romeu e Julieta ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
     
                                 <input onclick="receberRJ('BANANA COM CANELA,', 'bananaRJ')"  type="checkbox" id="bananaRJ">
@@ -379,7 +379,7 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input onclick="receberBC('BANANA COM CANELA,', 'bananaBC')"  type="checkbox" id="bananaBC" checked >
+                                <input onclick="receberBC('BANANA COM CANELA,', 'bananaBC')"  type="checkbox" id="bananaBC" checked disabled >
                                 <label for="bananaBC">Banana com canela ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
     
                                 <input onclick="receberBC('CHOCOLATE,', 'chocolateBC')"  type="checkbox" id="chocolateBC">
@@ -478,7 +478,7 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input onclick="receberBR('BRIGADEIRO,', 'brigadeiroBG')"    type="checkbox" id="brigadeiroBG" checked >
+                                <input onclick="receberBR('BRIGADEIRO,', 'brigadeiroBG')"    type="checkbox" id="brigadeiroBG" checked disabled >
                                 <label for="brigadeiroBG">Brigadeiro ( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
     
                                 <input onclick="receberBR('BANANA COM CANELA,', 'bananaBG')"     type="checkbox" id="bananaBG">
@@ -576,7 +576,7 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input onclick="receberMC('NORANAGO COM CHOCOLATE,', 'morangoMC')"   type="checkbox" id="morangoMC" checked >
+                                <input onclick="receberMC('NORANAGO COM CHOCOLATE,', 'morangoMC')"   type="checkbox" id="morangoMC" checked disabled >
                                 <label for="morangoMC">Morango com chocolate( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
     
                                 <input onclick="receberMC('BANANA COM CANELA,', 'bananaMC')"   type="checkbox" id="bananaMC">
@@ -675,7 +675,7 @@
                             <h3 class="h3cor">Escolha um sabor adicional</h3>
     
                             <div class="filho3">
-                                <input  onclick="receberCB('CUBANA,', 'cubanaCB')"   type="checkbox" id="cubanaCB" checked >
+                                <input  onclick="receberCB('CUBANA,', 'cubanaCB')"   type="checkbox" id="cubanaCB" checked disabled >
                                 <label for="cubanaCB">Cubana( <span class="vermelho">PRINCIPAL</span>)</label><br><br>
     
                                 <input onclick="receberCB('BANANA COM CANELA,', 'bananaCB')"   type="checkbox" id="bananaCB">
@@ -818,7 +818,7 @@
         <div class="regPedido">
         <div>
         <span class="cursor"><i onclick="document.getElementById('regPedid').style.display= 'none'" class="fa-solid fa-xmark"></i></span>
-        <p>Detalhe do pedido:</p><br>
+        <p><strong>Detalhe do pedido:</strong></p><br>
         <p id="sabor_valor">Sem pedidos!</p><br>
         <p id="entreg"></p><br>
         <p id="pag"></p>
@@ -834,12 +834,14 @@
             <form class="paga_content">
                 <img src="imagem/logoen.png" alt="">
                 <p>Forma de pagamento</p>
-                <input  type="radio" name="pagamento" id="cartao">
+                <input onclick="getElementById('trocoo').style.display= 'none'"   type="radio" name="pagamento" id="cartao">
                 <label for="cartao">CARTÃO</label><br><br>
-                <input  type="radio" name="pagamento" id="dinheiro">
+                <input onclick="getElementById('trocoo').style.display= 'block'"  type="radio" name="pagamento" id="dinheiro">
                 <label for="dinheiro">DINHEIRO</label><br><br>
-                <p>Troco?</p>
-                <textarea name="troco" id="troco"></textarea>
+                <div id="trocoo">
+                  <p>Troco?</p>
+                  <textarea name="troco" id="troco"></textarea>
+                </div>
                 <button id="fimm"> FINALIZAR PEDIDO </button>  
             </form>
         </div>

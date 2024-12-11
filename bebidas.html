@@ -1024,13 +1024,15 @@
     <form class="paga_content">
         <img src="imagem/logoen.png" alt="">
         <p>Forma de pagamento</p>
-        <input  type="radio" name="pagamento" id="cartao">
+        <input onclick="getElementById('trocoo').style.display= 'none'"   type="radio" name="pagamento" id="cartao">
         <label for="cartao">CARTÃO</label><br><br>
-        <input  type="radio" name="pagamento" id="dinheiro">
+        <input onclick="getElementById('trocoo').style.display= 'block'"  type="radio" name="pagamento" id="dinheiro">
         <label for="dinheiro">DINHEIRO</label><br><br>
-        <p>Troco?</p>
-        <textarea name="troco" id="troco"></textarea>
-        <button id="fimm"> FINALIZAR PEDIDO </button>  
+        <div id="trocoo">
+          <p>Troco?</p>
+          <textarea name="troco" id="troco"></textarea>
+        </div>
+        <button id="fimm"> FINALIZAR PEDIDO </button>
     </form>
 </div>
 

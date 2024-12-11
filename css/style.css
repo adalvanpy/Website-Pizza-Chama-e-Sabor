@@ -1592,6 +1592,10 @@ input,textarea:focus{
         padding: 2%;
     }
 
+    #trocoo{
+        display:none;
+    }
+
     @media (min-width: 820px) and (max-width: 1280px){
         
     nav{
