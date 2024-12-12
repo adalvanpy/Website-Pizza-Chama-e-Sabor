@@ -1393,7 +1393,7 @@ input,textarea:focus{
     margin: auto;
     background-color: white;
     position: relative;
-    height: 90%;
+    height: auto;
     top:10%;
     padding: 30px;
     border-radius: 5px;

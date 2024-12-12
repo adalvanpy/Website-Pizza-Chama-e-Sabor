@@ -179,20 +179,20 @@
         <!--INICIO PIZZA CALABRESA-->
 
         <div id="call" class="call"> <!--oculta todo conteudo de pizza calabresa-->
-            <div class="conteudoCal">
+            <div class="conteudoCal"> <!--Estiliza todo o cnteudo-->
                 <form>
                     
                     <div class="pai1">
-                        <div class="pai2">
+                        <div class="pai2"> <!--coloca os conteudos um do lado do outro-->
                             <button onclick="document.getElementById('call').style.display='none'" class="voltarPizza close" type="button">
                                 <i class="fa-solid fa-angle-left"></i> </button>
                             <h2>Pizza CALABRESA</h2>
                         </div>
                     </div>
     
-                    <div class="filho1">
-                        <div class="filho2">
-                            <div class="foto2"></div>
+                    <div class="filho1"> <!--coloca dois conteudos um do lado do outro-->
+                        <div class="filho2"> <!--deixa todo conteudo um abaixo do outro-->
+                            <div class="foto2"></div> <!--coloca a foto da calabresa como capa-->
                             <p class="mleft">Queijo muçarela, calabresa em rodelas, cebola
                             tomate, molho e orégano.</p>
                             <h3 class="h3cor h32">Selecione um tamanho</h3>
@@ -212,8 +212,8 @@
                             </div>
                         </div>
     
-                        <div class="filho2">
-                            <div class="alin h3cor">
+                        <div class="filho2"> <!--deixa todo conteudo um abaixo do outro-->
+                            <div class="alin h3cor"> <!--coloca os conteudos um do lado do outro-->
                                 <h3>Personalizar sabores</h3>
                                 <h3>Opcional</h3>
                             </div>
@@ -261,7 +261,7 @@
                         <p><small>* Serão acatadas apenas as que não alteram o valor</small></p>
                     </div>
     
-                    <div class="contador">
+                    <div class="contador"> <!--coloca os conteudos um do lado do outro-->
                         <div class="brd1">
                             <button onclick="menosCAL()"  class="bttm2" type="button" id="menos1"><i class="fa-solid fa-minus"></i></button>
                             <input type="number" id="ccalabresa" class="quantidade" value="1" min="1" readonly>
@@ -1039,10 +1039,10 @@
 
         <!--ENDERECO-->
 
-        <div class="endr" id="endr">
-            <div class="cont_endr">
-                <div class="cent">
-                    <div class="escol" >
+        <div class="endr" id="endr"> <!--Oculta todo o cnteudo-->
+            <div class="cont_endr"> <!--Estiliza todo o cnteudo-->
+                <div class="cent"> <!--centraliza todo o cnteudo-->
+                    <div class="escol" > <!--coloca os conteudos um do lado do outro-->
                         <p>Escolha a sua opção</p>
                         <p> <i onclick="document.getElementById('endr').style.display='none'" class="fa-solid fa-xmark close"></i> </p>
                     </div>
@@ -1055,7 +1055,7 @@
                     <button id="irPagamento" type="button"> IR PARA PAGAMENTO </button>
                     
                     <P class="pdd2">Vou até o local</P>
-                    <div class="cons">
+                    <div class="cons"> <!--coloca o conteudo um do lado do outro-->
                         <div id="Retirar" class="ret"> <i class=" cdd fa-solid fa-bag-shopping"></i>Retirar</div>
                         <div id="Consumir" class="ret"> <i class=" cdd fa-solid fa-utensils"></i>Consumir</div>
                     </div>
@@ -1069,9 +1069,9 @@
 
         <!--ENTRAR-->
 
-        <div id="entrarC">
-            <div class="cont_entrarC">
-                <div class="login">
+        <div id="entrarC"> <!--oculta todo o cnteudo-->
+            <div class="cont_entrarC"> <!--Estiliza todo o cnteudo-->
+                <div class="login"> <!--coloca os conteudos um do lado do outro-->
                     <img src="imagem/logoen.png" alt="">
                     <p onclick="document.getElementById('entrarC').style.display='none'"> <i class="fa-solid fa-xmark close"></i></p>
                 </div>
@@ -1090,8 +1090,8 @@
 
         <!--INICIO PEDIDO EM ANDAMENTO-->
 
-        <div id="pedid" class="pedid">
-            <div class="cont_pedid">
+        <div id="pedid" class="pedid"> <!--oculta todo o cnteudo-->
+            <div class="cont_pedid"> <!--Estiliza todo o cnteudo-->
                 
                 <div class="cont_1">
                     <h4 id="andamento">Pedido em andamento...</h4>
@@ -1102,8 +1102,8 @@
                 <div class="cont_2">
                     
                     <div class="pedidos">
-                        <p id="pedidos">Pedido vazio!</p>
-                        <p id="obs"></p>
+                        <p id="pedidos">Pedido vazio!</p> <!--Exibe as informações do pedido em andamento-->
+                        <p id="obs"></p> <!--Exibe as informações de observação-->
                         <button id="irEnde">ADICIONAR ENDEREÇO PARA ENTREGA</button>
                     </div>
                     
@@ -1119,14 +1119,14 @@
 
         <!--INICIO PEDIDOS-->
 
-        <div id="regPedid" class="regPedid">
+        <div id="regPedid" class="regPedid"> <!--oculta todo o cnteudo-->
             <div class="regPedido">
             <div>
             <span id="fecharMP" class="cursor"><i onclick="document.getElementById('regPedid').style.display= 'none'" class="fa-solid fa-xmark"></i></span>
             <p>Detalhe do pedido:</p><br>
-            <p id="sabor_valor">Sem pedidos!</p><br>
-            <p id="entreg"></p><br>
-            <p id="pag"></p>
+            <p id="sabor_valor">Sem pedidos!</p><br> <!--Exibe as informações do pedido finalizado-->
+            <p id="entreg"></p><br><!--Exibe as informações a forma de receber o pedido-->
+            <p id="pag"></p> <!--Exibe a forma de pagamento-->
             </div>
             </div>
         </div>
@@ -1135,8 +1135,8 @@
 
           <!--INICIO PAGAMENTO-->
 
-          <div id="pagamento" class="pagamento">
-            <form class="paga_content">
+          <div id="pagamento" class="pagamento"> <!--oculta todo o cnteudo-->
+            <form class="paga_content"> <!--Estiliza todo o cnteudo-->
                 <img src="imagem/logoen.png" alt="">
                 <p>Forma de pagamento</p>
                 <input onclick="getElementById('trocoo').style.display= 'none'"   type="radio" name="pagamento" id="cartao">
@@ -1155,7 +1155,7 @@
 
         <!--INICIO IDENTIFICAÇÃO-->
 
-        <div id="nc" class="nc">
+        <div id="nc" class="nc"> <!--oculta todo o cnteudo-->
             <form>
                 <img src="imagem/logoen.png" alt="">
                 <p>Adicione seu nome completo para o registro de seu pedido</p>
